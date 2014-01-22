@@ -4,14 +4,14 @@
 
 Este es el repositorio de Paginas GitHub para el proyecto _PHP: La Manera Correcta_.
 
-* Este sitio web utiliza el un proyecto Jekyll.
+* Este sitio web hace uso del proyecto Jekyll.
 * Cada sección y sub-sección son archivos Markdown alojados en el directorio `_post/`.
 * Las sub-secciones contiene `isChild: true` en su encabezado o texto preliminar.
 * La navegación y estructura de la pagina son generados automáticamente.
 
 ## ¡Corre la Voz!
 
-_PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en tu sitio. Muestra tu apoyo, y deja que los nuevos desarrolladores en PHP sepan dónde encontrar nueva información. 
+_PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en tu sitio. Muestra tu apoyo, y deja que los nuevos desarrolladores en PHP sepan dónde encontrar buena información. 
 
 [Ver las Imágenes para Banners](http://www.phptherightway.com/banners.html)
 
@@ -28,7 +28,7 @@ _PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en 
 3. Ajuste todo el texto a 120 caracteres.
 4. Los ejemplos de código deberán apegarse al estándar PSR-1 o mayor.
 
-## Dónde
+## ¿Dónde?
 
 <http://lamaneracorrecta.php.org.ve>
 
@@ -56,15 +56,15 @@ Para evitar fragmentación y confusiones al leer, por favor elige una de las sig
 1. Te enlazaremos a tu _fork_ de Paginas GitHub así `[nombreDeUsuario].github.com/php-the-right-way`.
 2. Te enlazaremos a tu _fork_ de Paginas GitHub con el subdominio (ejem. "es.phptherightway.com").
 
-Si utilizas un subdominio, ingresa el subdominio en el archivo `CNAME`, y informaros para configurar el DNS para ti. Si no utilizas un subdominio, elimina el archivo `CNAME` completamente de lo contrario tu _fork_ no podrá compilarse cuando lo actualices.
+Si utilizas un subdominio, ingresa el subdominio en el archivo `CNAME`, e informanos para configurar el DNS hacia ti. Si no utilizas un subdominio, elimina el archivo `CNAME` completamente de lo contrario tu _fork_ no podrá compilarse cuando lo actualices.
 
 Cuando tu traducción este lista, abre un _issue_ en el _Issue Tracker_ para hacernos saber.
 
-## Por qué
+## ¿Por qué?
 
 Ha habido mucha discusión últimamente acerca de cómo la comunidad PHP carece de suficiente información creíble para los nuevos programadores en PHP. Este repositorio tiene como objetivo resolver este problema.
 
-## Quién
+## ¿Quién?
 
 Mi nombre es [Josh Lockhart](http://twitter.com/codeguy). Soy el autor de [Slim Framework](http://www.slimframework.com/), y trabajo para [New Media Campaigns](http://www.newmediacampaigns.com/).
 
