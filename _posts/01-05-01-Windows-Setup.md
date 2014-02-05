@@ -11,14 +11,9 @@ Para aprender PHP o el desarrollo local, se puede utilizar el servidor web embeb
 
 Si necesita correr un sistema de producción en Windows entonces el servidor IIS 7 le ofrecerá un entorno más estable y con el mejor rendimiento.  Una herramienta como [phpmanager][phpmanager] (un complemento GUI para IIS 7) le simplificara la gestión y configuración de PHP en este servidor. IIS 7 viene configurado con FastCGI listo para su uso, solo necesita apuntar a PHP como controlador. Para más información y recursos adicionales refiérase a la [área dedicada en iis.net][php-iis] para PHP.
 
-En general, el que corra su aplicación en diferentes entornos para desarrollo y producción puede conducir a que se manifiesten errores extraños al usar su aplicación. Si está desarrollando en Windows y desplegando en Linux (o cualquier otro sistema que no sea Windows)  considere el uso de una Máquina Virtual. Quizás suene un poco complicado, pero con el uso de [Vagrant][vagrant] puede configurar contenedores simples los cuales se pueden disponer fácilmente con [Puppet][puppet] o [Chef][chef] y compartirlos con sus colegas para asegurar que todo su equipo de desarrollo esté trabajando con el mismo sistema.
-
 [php-downloads]: http://windows.php.net
 [phpmanager]: http://phpmanager.codeplex.com/
 [wpi]: http://www.microsoft.com/web/downloads/platform.aspx
 [xampp]: http://www.apachefriends.org/en/xampp.html
 [wamp]: http://www.wampserver.com/
 [php-iis]: http://php.iis.net/
-[vagrant]: http://vagrantup.com/
-[puppet]: http://www.puppetlabs.com/
-[chef]: http://www.opscode.com/
