@@ -1,5 +1,6 @@
 ---
 title: Frameworks
+isChild: true
 ---
 
 # Frameworks
