@@ -1,9 +1,9 @@
 ---
-title: Interface de Línea de Comando
+title: Interface de Línea de Comando (CLI)
 isChild: true
 ---
 
-## Interface de Línea de Comando
+## Interface de Línea de Comando (CLI)
 
 PHP fue creado principalmente para desarrollar aplicaciones web, pero también es muy útil para implementar programas que corren en la interface de línea de comando (CLI). Los programas de línea de comando en PHP pueden ayudarle a automatizar tareas comunes como pruebas, despliegues y la administración de aplicaciones.
 
