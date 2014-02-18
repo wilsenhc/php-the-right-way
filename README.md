@@ -30,7 +30,7 @@ _PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en 
 
 ## ¿Dónde?
 
-<http://lamaneracorrecta.php.org.ve>
+<http://phpdevenezuela.github.io/php-the-right-way/>
 
 * [Inglés](http://www.phptherightway.com)
 * [Catalán](http://ca.phptherightway.com)
@@ -41,7 +41,7 @@ _PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en 
 * [Polaco](http://pl.phptherightway.com)
 * [Portuges](http://br.phptherightway.com)
 * [Ruso](http://getjump.github.io/ru-php-the-right-way)
-* [Español](http://lamaneracorrecta.php.org.ve)
+* [Español](http://phpdevenezuela.github.io/php-the-right-way)
 * [Ucraniano](http://iflista.github.com/php-the-right-way)
 * [Búlgaro](http://bg.phptherightway.com)
 * [Alemán](http://rwetzlmayr.github.io/php-the-right-way)
