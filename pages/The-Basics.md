@@ -1,14 +1,14 @@
----
+ï»¿---
 layout: page
 title: Los Fundamentos
 ---
 
 # Los Fundamentos
 
-## Operadores de Comparación
+## Operadores de ComparaciÃ³n
 
-Los operadores de comparación son un aspecto a menudo pasado por alto en PHP, que pueden dar lugar a muchos resultados 
-inesperados. Uno de estos problemas radica en las comparaciones estrictas (la comparación de booleanos como enteros).
+Los operadores de comparaciÃ³n son un aspecto a menudo pasado por alto en PHP, que pueden dar lugar a muchos resultados 
+inesperados. Uno de estos problemas radica en las comparaciones estrictas (la comparaciÃ³n de booleanos como enteros).
 
 {% highlight php %}
 <?php
@@ -23,18 +23,18 @@ var_dump($a === '5');    // compara tipo/valor (entero vs. cadena); devuelve fal
  * Comparaciones estrictas
  */
 if (strpos('testing', 'test')) {    // 'test' is found at position 0, which is interpreted as the boolean 'false'
-    // código...
+    // cÃ³digo...
 }
 
 vs.
 
 if (strpos('testing', 'test') !== false) {    // true, as strict comparison was made (0 !== false)
-    // código...
+    // cÃ³digo...
 }
 {% endhighlight %}
 
-* [Operadores de comparación](http://php.net/manual/es/language.operators.comparison.php)
-* [Tablas de comparación de tipos de PHP](http://php.net/manual/es/types.comparisons.php)
+* [Operadores de comparaciÃ³n](http://php.net/manual/es/language.operators.comparison.php)
+* [Tablas de comparaciÃ³n de tipos de PHP](http://php.net/manual/es/types.comparisons.php)
 
 ## Conditional statements
 
@@ -246,7 +246,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
  */
 {% endhighlight %}
 
-* [Sintáxis Nowdoc](http://www.php.net/manual/es/language.types.string.php#language.types.string.syntax.nowdoc)
+* [SintÃ¡xis Nowdoc](http://www.php.net/manual/es/language.types.string.php#language.types.string.syntax.nowdoc)
 
 #### Heredoc syntax
 
@@ -274,7 +274,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
  */
 {% endhighlight %}
 
-* [Sintáxis Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
+* [SintÃ¡xis Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
 
 ## Ternary operators
 
@@ -306,7 +306,7 @@ $a = 5;
 return ($a == 5) ? 'yay' : 'nope';    // this example will return 'yay'
 {% endhighlight %}
 
-* [Operadores de comparación](http://php.net/manual/es/language.operators.comparison.php)
+* [Operadores de comparaciÃ³n](http://php.net/manual/es/language.operators.comparison.php)
 
 ## Variable declarations
 
