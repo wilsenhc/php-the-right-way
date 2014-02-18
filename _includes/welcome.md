@@ -19,7 +19,7 @@ _PHP: La Manera Correcta_ ha sido (o muy pronto será) traducido a diferentes le
 * [Polaco](http://pl.phptherightway.com/)
 * [Portugués](http://br.phptherightway.com/)
 * [Ruso](http://getjump.github.io/ru-php-the-right-way)
-* [Español](http://lamaneracorrecta.php.org.ve/)
+* [Español](http://phpdevenezuela.github.io/php-the-right-way/)
 * [Ucraniano](http://iflista.github.com/php-the-right-way/)
 * [Búlgaro](http://bg.phptherightway.com/)
 * [Alemán](http://rwetzlmayr.github.io/php-the-right-way/)
