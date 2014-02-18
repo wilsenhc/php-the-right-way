@@ -1,5 +1,5 @@
 ---
-title: Prácticas de Código 
+title: Buenas Prácticas
 ---
 
-# Prácticas de Código 
+# Buenas Prácticas
