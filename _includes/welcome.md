@@ -35,4 +35,4 @@ _PHP: La Manera Correcta_ tiene disponibles _banners_ que puedes usar en tu siti
 [Ver las imágenes para _banners_][2]
 
 [1]: https://github.com/phpdevenezuela/php-the-right-way/tree/gh-pages
-[2]: banners.html
+[2]: ./banners.html

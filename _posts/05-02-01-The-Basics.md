@@ -10,4 +10,4 @@ Sin embargo, mientras que avanzamos con el lenguaje, a menudo olvidamos (o pasam
 aprendimos al inicio, tomando así atajos o malas prácticas. Para ayudar a combatir este problema común, esta sección
 tiene como objetivo recordar a los desarrolladores las buenas prácticas dentro de PHP.
 
-* Continua leyendo acerca de [Los Fundamentos](/pages/The-Basics.html)
+* Continua leyendo acerca de [Los Fundamentos](./pages/The-Basics.html)
