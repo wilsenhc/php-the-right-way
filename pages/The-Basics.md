@@ -1,9 +1,9 @@
 ﻿---
 layout: page
-title: Los Fundamentos
+title: Fundamentos
 ---
 
-# Los Fundamentos
+# Fundamentos
 
 ## Operadores de Comparación
 

@@ -1,13 +1,13 @@
 ---
-title: Los Fundamentos
+title: Fundamentos
 isChild: true
 ---
 
-## Los Fundamentos {#the_basics_title}
+## Fundamentos {#the_basics_title}
 
 PHP es un gran lenguaje que permite a cualquier desarrollador producir código de forma rápida y de manera eficiente.
 Sin embargo, mientras que avanzamos con el lenguaje, a menudo olvidamos (o pasamos por alto) las prácticas básicas que
 aprendimos al inicio, tomando así atajos o malas prácticas. Para ayudar a combatir este problema común, esta sección
 tiene como objetivo recordar a los desarrolladores las buenas prácticas dentro de PHP.
 
-* Continua leyendo acerca de [Los Fundamentos](/php-the-right-way/pages/The-Basics.html)
+* Continua leyendo acerca de [Los Fundamentos](/pages/The-Basics.html)
