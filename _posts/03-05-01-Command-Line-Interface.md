@@ -1,5 +1,5 @@
 ---
-title: Interface de Línea de Comando (CLI)
+title: Línea de Comando (CLI)
 isChild: true
 ---
 
