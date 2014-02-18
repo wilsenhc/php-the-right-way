@@ -1,14 +1,14 @@
----
+ï»¿---
 layout: default
 title: Banners
-description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolladores acerca de PHP: La Manera Correcta"
+description: "Â¡Corre la voz! Usa estos banners e informa a los nuevos desarrolladores acerca de PHP: La Manera Correcta"
 ---
 
 # Banners
 
-¡Corre la voz con los banners de _PHP: La Manera Correcta_! Enséñales a los nuevos desarrolladores PHP donde pueden encontrar buena información.
+Â¡Corre la voz con los banners de _PHP: La Manera Correcta_! EnsÃ©Ã±ales a los nuevos desarrolladores PHP donde pueden encontrar buena informaciÃ³n.
 
-## Botón 1 (120x90)
+## BotÃ³n 1 (120x90)
 
 <p><img src="/php-the-right-way/images/banners/btn1-120x90.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -16,7 +16,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/btn1-120x90.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Botón 2 (120x60)
+## BotÃ³n 2 (120x60)
 
 <p><img src="/php-the-right-way/images/banners/btn2-120x60.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -32,7 +32,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/leaderboard-728x90.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Rectángulo Grande (386x280)
+## RectÃ¡ngulo Grande (386x280)
 
 <p><img src="/php-the-right-way/images/banners/lg-rect-386x280.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -40,7 +40,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/lg-rect-386x280.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Rectángulo Medio (300x250)
+## RectÃ¡ngulo Medio (300x250)
 
 <p><img src="/php-the-right-way/images/banners/med-rect-300x250.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -48,7 +48,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/med-rect-300x250.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Rectángulo (180x150)
+## RectÃ¡ngulo (180x150)
 
 <p><img src="/php-the-right-way/images/banners/rect-180x150.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -56,7 +56,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/rect-180x150.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Botón Cuadrado (125x125)
+## BotÃ³n Cuadrado (125x125)
 
 <p><img src="/php-the-right-way/images/banners/sq-btn-125x125.png" alt="PHP: La Manera Correcta"/></p>
 
@@ -64,7 +64,7 @@ description: "¡Corre la voz! Usa estos banners e informa a los nuevos desarrolla
         <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/sq-btn-125x125.png" alt="PHP: La Manera Correcta"/>
     </a>
 
-## Rectángulo Vertical (240x400)
+## RectÃ¡ngulo Vertical (240x400)
 
 <p><img src="/php-the-right-way/images/banners/vert-rect-240x400.png" alt="PHP: La Manera Correcta"/></p>
 
