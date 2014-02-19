@@ -1,40 +1,40 @@
 ---
 layout: page
-title: Fundamentos
+title: The Basics
 ---
 
-# Fundamentos
+# The Basics
 
-## Operadores de Comparación
+## Comparison operators
 
-Los operadores de comparación son un aspecto a menudo pasado por alto en PHP, que pueden dar lugar a muchos resultados 
-inesperados. Uno de estos problemas radica en las comparaciones estrictas (la comparación de booleanos como enteros).
+Comparison operators are an often overlooked aspect of PHP, which can lead to many unexpected outcomes. One such
+problem stems from strict comparisons (the comparison of booleans as integers).
 
 {% highlight php %}
 <?php
-$a = 5;   // 5 como un entero
+$a = 5;   // 5 as an integer
 
-var_dump($a == 5);       // compara valor; devuelve verdadero
-var_dump($a == '5');     // compara valor (ignora el tipo); devuelve verdadero
-var_dump($a === 5);      // compara tipo/valor (entero vs. entero); devuelve verdadero
-var_dump($a === '5');    // compara tipo/valor (entero vs. cadena); devuelve falso
+var_dump($a == 5);       // compare value; return true
+var_dump($a == '5');     // compare value (ignore type); return true
+var_dump($a === 5);      // compare type/value (integer vs. integer); return true
+var_dump($a === '5');    // compare type/value (integer vs. string); return false
 
 /**
- * Comparaciones estrictas
+ * Strict comparisons
  */
 if (strpos('testing', 'test')) {    // 'test' is found at position 0, which is interpreted as the boolean 'false'
-    // código...
+    // code...
 }
 
 vs.
 
 if (strpos('testing', 'test') !== false) {    // true, as strict comparison was made (0 !== false)
-    // código...
+    // code...
 }
 {% endhighlight %}
 
-* [Operadores de comparación](http://php.net/manual/es/language.operators.comparison.php)
-* [Tablas de comparación de tipos de PHP](http://php.net/manual/es/types.comparisons.php)
+* [Comparison operators](http://php.net/manual/en/language.operators.comparison.php)
+* [Comparison table](http://php.net/manual/en/types.comparisons.php)
 
 ## Conditional statements
 
@@ -66,7 +66,7 @@ function test($a)
 }
 {% endhighlight %}
 
-* [Sentencia If](http://php.net/manual/es/control-structures.if.php)
+* [If statements](http://php.net/manual/en/control-structures.if.php)
 
 ### Switch statements
 
@@ -99,7 +99,7 @@ function test($a)
 }
 {% endhighlight %}
 
-* [Sentencia Switch](http://php.net/manual/es/control-structures.switch.php)
+* [Switch statements](http://php.net/manual/en/control-structures.switch.php)
 * [PHP switch](http://phpswitch.com/)
 
 ## Global namespace
@@ -124,8 +124,8 @@ function array()
 }
 {% endhighlight %}
 
-* [Espacio Global](http://php.net/manual/es/language.namespaces.global.php)
-* [Reglas](http://php.net/manual/es/userlandnaming.rules.php)
+* [Global space](http://php.net/manual/en/language.namespaces.global.php)
+* [Global rules](http://php.net/manual/en/userlandnaming.rules.php)
 
 ## Strings
 
@@ -149,7 +149,7 @@ $a = 'Multi-line example'      // concatenation operator (.)
     . 'of what to do';
 {% endhighlight %}
 
-* [Operadores de Cadenas](http://php.net/manual/es/language.operators.string.php)
+* [String Operators](http://php.net/manual/en/language.operators.string.php)
 
 ### String types
 
@@ -175,7 +175,7 @@ echo 'This is my string, look at how pretty it is.';    // no need to parse a si
  */
 {% endhighlight %}
 
-* [Comillas Simples](http://www.php.net/manual/es/language.types.string.php#language.types.string.syntax.single)
+* [Single quote](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.single)
 
 #### Double quotes
 
@@ -220,7 +220,7 @@ $juice = array('apple', 'orange', 'plum');
 echo "I drank some juice made of {$juice[1]}s";   // $juice[1] will be parsed
 {% endhighlight %}
 
-* [Comillas Dobles](http://www.php.net/manual/es/language.types.string.php#language.types.string.syntax.double)
+* [Double quotes](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.double)
 
 #### Nowdoc syntax
 
@@ -246,7 +246,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
  */
 {% endhighlight %}
 
-* [Sintáxis Nowdoc](http://www.php.net/manual/es/language.types.string.php#language.types.string.syntax.nowdoc)
+* [Nowdoc syntax](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.nowdoc)
 
 #### Heredoc syntax
 
@@ -274,7 +274,7 @@ EOD;                        // closing 'EOD' must be on it's own line, and to th
  */
 {% endhighlight %}
 
-* [Sintáxis Heredoc](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
+* [Heredoc syntax](http://www.php.net/manual/en/language.types.string.php#language.types.string.syntax.heredoc)
 
 ## Ternary operators
 
@@ -306,7 +306,7 @@ $a = 5;
 return ($a == 5) ? 'yay' : 'nope';    // this example will return 'yay'
 {% endhighlight %}
 
-* [Operadores de comparación](http://php.net/manual/es/language.operators.comparison.php)
+* [Ternary operators](http://php.net/manual/en/language.operators.comparison.php)
 
 ## Variable declarations
 
