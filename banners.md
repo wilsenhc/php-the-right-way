@@ -1,89 +1,89 @@
 ---
 layout: default
-title: Website Banners
-description: "Spread the word! Use these banner to let new PHP programmers know about PHP: The Right Way"
+title: Banners
+description: "Corre la vozS! Usa estos banners para dejarle saber a los nuevos desarrolladores PHP de la guía PHP: La Manera Correcta"
 ---
 
-# Web Banners
+# Banners
 
-Spread the word with _PHP: The Right Way_ banner images! Show new PHP developers where to find good information.
+Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a los nuevos desarrolladores PHP donde encontrar información valiosa.
 
-## Button 1 (120x90)
+## Botón 1 (120x90)
 
-<p><img src="/images/banners/btn1-120x90.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/btn1-120x90.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/btn1-120x90.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/btn1-120x90.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Button 2 (120x60)
+## Botón 2 (120x60)
 
-<p><img src="/images/banners/btn2-120x60.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/btn2-120x60.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/btn2-120x60.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/btn2-120x60.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
 ## Leaderboard (728x90)
 
-<p><img src="/images/banners/leaderboard-728x90.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/leaderboard-728x90.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/leaderboard-728x90.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/leaderboard-728x90.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Large Rectangle (386x280)
+## Rectángulo Grande (386x280)
 
-<p><img src="/images/banners/lg-rect-386x280.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/lg-rect-386x280.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/lg-rect-386x280.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/lg-rect-386x280.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Medium Rectangle (300x250)
+## Rectángulo Mediano (300x250)
 
-<p><img src="/images/banners/med-rect-300x250.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/med-rect-300x250.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/med-rect-300x250.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/med-rect-300x250.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Rectangle (180x150)
+## Rectángulo (180x150)
 
-<p><img src="/images/banners/rect-180x150.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/rect-180x150.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/rect-180x150.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/rect-180x150.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Square Button (125x125)
+## Botón Cuadrado (125x125)
 
-<p><img src="/images/banners/sq-btn-125x125.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/sq-btn-125x125.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/sq-btn-125x125.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/sq-btn-125x125.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
 
-## Vertical Rectangle (240x400)
+## Rectángulo Vertical (240x400)
 
-<p><img src="/images/banners/vert-rect-240x400.png" alt="PHP: The Right Way"/></p>
+<p><img src="images/banners/vert-rect-240x400.png" alt="PHP: La Manera Correcta"/></p>
 
 {% highlight html %}
-<a href="http://www.phptherightway.com">
-    <img src="http://www.phptherightway.com/images/banners/vert-rect-240x400.png" alt="PHP: The Right Way"/>
+<a href="http://phpdevenezuela.github.io/php-the-right-way/">
+    <img src="http://phpdevenezuela.github.io/php-the-right-way/images/banners/vert-rect-240x400.png" alt="PHP: La Manera Correcta"/>
 </a>
 {% endhighlight %}
