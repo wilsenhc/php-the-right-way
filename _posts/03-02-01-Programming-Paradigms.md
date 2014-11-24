@@ -25,7 +25,7 @@ Las funciones anónimas (con soporte para closures) están presentes en PHP desd
 
 En PHP 5.4 se añadió la habilidad para vincular closure al ámbito de un objeto y también se mejoró el soporte de funciones de tipo _callable_ para que puedan intercambiarse con funciones anónimas en casi todos los casos.
 
-* Continúe leyendo acerca de la [programación funcional en PHP](/pages/Functional-Programming.html)
+* Continúe leyendo acerca de la [programación funcional en PHP](./pages/Functional-Programming.html)
 * [Leer acerca de las funciones anónimas][anonymous-functions]
 * [Leer acerca de la clase Closure][closure-class]
 * [Mas detalles definidos en el RFC de closures][closures-rfc]
