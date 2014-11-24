@@ -11,7 +11,7 @@ Este es el repositorio de Paginas GitHub para el proyecto _PHP: La Manera Correc
 
 ## ¡Corre la Voz!
 
-_PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en tu sitio. Muestra tu apoyo, y deja que los nuevos desarrolladores en PHP sepan dónde encontrar buena información. 
+_PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en tu sitio. Muestra tu apoyo, y deja que los nuevos desarrolladores en PHP sepan dónde encontrar buena información.
 
 [Ver las Imágenes para Banners](http://www.phptherightway.com/banners.html)
 
@@ -32,20 +32,24 @@ _PHP: La Manera Correcta_ tiene imágenes que puedes utilizar como _banners_ en 
 
 <http://phpdevenezuela.github.io/php-the-right-way/>
 
-* [Inglés](http://www.phptherightway.com)
-* [Catalán](http://ca.phptherightway.com)
-* [Chino](http://wulijun.github.com/php-the-right-way)
-* [Japones](http://ja.phptherightway.com)
-* [Coreano](http://wafe.github.io/php-the-right-way)
-* [Italiano](http://it.phptherightway.com)
-* [Polaco](http://pl.phptherightway.com)
-* [Portuges](http://br.phptherightway.com)
-* [Ruso](http://getjump.github.io/ru-php-the-right-way)
-* [Español](http://phpdevenezuela.github.io/php-the-right-way)
-* [Ucraniano](http://iflista.github.com/php-the-right-way)
-* [Búlgaro](http://bg.phptherightway.com)
 * [Alemán](http://rwetzlmayr.github.io/php-the-right-way)
+* [Búlgaro](http://bg.phptherightway.com)
+* [Chino (simplificado)](http://wulijun.github.com/php-the-right-way)
+* [Coreano](http://wafe.github.io/php-the-right-way)
+* [Esloveno](http://sl.phptherightway.com/)
+* [Español](http://phpdevenezuela.github.io/php-the-right-way)
+* [Francés](http://eilgin.github.io/php-the-right-way/)
+* [Indonesio](http://id.phptherightway.com/)
+* [Inglés](http://www.phptherightway.com)
+* [Italiano](http://it.phptherightway.com)
+* [Japones](http://ja.phptherightway.com)
+* [Polaco](http://pl.phptherightway.com)
+* [Portugués](http://br.phptherightway.com)
+* [Rumano](https://bgui.github.io/php-the-right-way/)
+* [Ruso](http://getjump.github.io/ru-php-the-right-way)
+* [Thai](https://apzentral.github.io/php-the-right-way/)
 * [Turco](http://hkulekci.github.io/php-the-right-way/)
+* [Ucraniano](http://iflista.github.com/php-the-right-way)
 
 ### Traducciones
 
