@@ -1,9 +1,10 @@
 ---
 title: Desarrollo Guiado por Comportamiento
+anchor: bdd
 isChild: true
 ---
 
-## Desarrollo Guiado por Comportamiento
+## Desarrollo Guiado por Comportamiento {#bdd}
 
 Existen dos tipos diferentes de Desarrollo Guiado por Comportamiento (BDD, por sus siglas en inglés): SpecBDD y StoryBDD. SpecBDD se enfoca en el comportamiento o funcionamiento técnico o de parte del código, mientras que StoryBDD se enfoca en el funcionamiento de negocios, el comportamiento de las características o las interacciones. PHP proporciona armazones para estos dos tipos de BDD.
 

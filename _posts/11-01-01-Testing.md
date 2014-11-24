@@ -1,5 +1,6 @@
 ---
 title: Pruebas
+anchor: pruebas
 ---
 
 # Pruebas

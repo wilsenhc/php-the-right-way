@@ -1,5 +1,6 @@
 ---
 title: Recursos
+anchor: recursos
 ---
 
 # Recursos

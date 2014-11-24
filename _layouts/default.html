@@ -22,7 +22,7 @@
         <nav class="site-navigation">
             <div class="build-date">Actualizado el: {{ site.time }}</div>
             <ul>
-                <li><a href="{{ site.baseurl }}/#site-header">Bienvenido</a>
+                <li><a href="{{ site.baseurl }}/#bienvenido">Bienvenido</a>
                     <ul>
                         <li><a href="{{ site.baseurl }}/#traducciones">Traducciones</a></li>
                         <li><a href="{{ site.baseurl }}/#como-colaborar">¿Cómo colaborar?</a></li>
@@ -49,7 +49,7 @@
                 {% endfor %}
                     </ul>
                 </li>
-                <li><a href="{{ site.baseurl }}/#site-footer">Créditos</a></li>
+                <li><a href="{{ site.baseurl }}/#creditos">Créditos</a></li>
             </ul>
         </nav>
 
@@ -68,6 +68,7 @@
             </header>
             {{ content }}
             <footer class="site-footer" id="site-footer">
+                <h2 id="creditos">Créditos</h2>
                 <h2 class="epsilon">Creado y mantenido por</h2>
                 <ul>
                     <li><a href="http://twitter.com/codeguy">Josh Lockhart</a></li>

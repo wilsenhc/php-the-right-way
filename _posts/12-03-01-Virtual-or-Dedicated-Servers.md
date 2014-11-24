@@ -1,5 +1,6 @@
 ---
 title: Servidores Virtuales o Dedicados
+anchor: servidores-virtuales-o-dedicados
 isChild: true
 ---
 

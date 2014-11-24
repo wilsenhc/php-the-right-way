@@ -1,9 +1,10 @@
 ---
-title: El Filtrado de Datos
+title: Filtrado de Datos
+anchor: filtrado-de-datos
 isChild: true
 ---
 
-## El Filtrado de Datos
+## Filtrado de Datos
 
 Nunca, jamás, se confíe de los datos que provienen del exterior de su aplicación PHP. Siempre sanee y verifique los datos de entrada antes de usarlos en su código. Las funciones `filter_var()` y `filter_input()` proporcionan saneamiento de los datos y verifican la validez del formato del texto (por ejemplo, las direcciones de correo electrónico).
 
@@ -15,7 +16,7 @@ Los datos pueden ser _filtrados_ de diferente manera dependiendo de su proposito
 
 Otro ejemplo es cuando se pasan opciones que van a ser ejecutadas en la línea de comando. Esto puede ser extremadamente peligroso y en general no es una buena idea. Sin embargo, puede usar la función `escapeshellarg` que viene incluida en PHP para sanear los argumentos de ejecución de un comando.
 
-Un último ejemplo es el de aceptar la entrada de datos para determinar que archivo se necesita cargar del sistema de archivos. Esto puede ser explotado al cambiar el nombre del archivo a una ruta de archivo diferente. En este caso es necesario remover los caracteres "/", "../", [bytes nulos][6] y otros de la ruta de archivo para que no permita cargar archivos escondidos, no públicos, o de otra manera sensitivos.  
+Un último ejemplo es el de aceptar la entrada de datos para determinar que archivo se necesita cargar del sistema de archivos. Esto puede ser explotado al cambiar el nombre del archivo a una ruta de archivo diferente. En este caso es necesario remover los caracteres "/", "../", [bytes nulos][6] y otros de la ruta de archivo para que no permita cargar archivos escondidos, no públicos, o de otra manera sensitivos.
 
 * [Aprenda acerca del filtrado de datos  ][1]
 * [Aprenda acerca de la función `filter_var`][4]
@@ -34,7 +35,7 @@ En veces es requerido que permita que algunas etiquetas de HTML que se considere
 
 ### Validación
 
-La validación asegura que lo que contiene la entrada de datos es lo que usted esperaba. Por ejemplo, quizás desee validar una dirección de correo electrónico, un número telefónico, o la edad de un usuario al procesar una solicitud de registro. 
+La validación asegura que lo que contiene la entrada de datos es lo que usted esperaba. Por ejemplo, quizás desee validar una dirección de correo electrónico, un número telefónico, o la edad de un usuario al procesar una solicitud de registro.
 
 [Vea los filtros de validación][3]
 

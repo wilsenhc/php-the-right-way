@@ -1,5 +1,6 @@
 ---
-title: Reporte de Errores 
+title: Reporte de Errores
+anchor: reporte-de-errores
 isChild: true
 ---
 

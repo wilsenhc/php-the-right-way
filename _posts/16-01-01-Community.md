@@ -1,5 +1,6 @@
 ---
 title: Comunidad
+anchor: comunidad
 ---
 
 # Comunidad

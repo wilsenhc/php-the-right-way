@@ -1,9 +1,10 @@
 ---
 title: Plataforma como Servicio (PaaS)
+anchor: paas
 isChild: true
 ---
 
-## Plataforma como Servicio (PaaS) 
+## Plataforma como Servicio (PaaS) {#paas}
 
 Las aplicaciones PHP se pueden desplegar y ejecutar en servidores web de producción de varias maneras.
 

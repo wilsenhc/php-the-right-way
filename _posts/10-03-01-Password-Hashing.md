@@ -1,9 +1,9 @@
 ---
-title: Codificación de contraseñas
+anchor: password-hashing
 isChild: true
 ---
 
-## Password Hashing {#password_hashing_title}
+## Password Hashing
 
 Eventually everyone builds a PHP application that relies on user login. Usernames and passwords are stored in a database and later used to authenticate users upon login.
 
@@ -17,7 +17,7 @@ Below we hash a string, and then check the hash against a new string. Because ou
 
 {% highlight php %}
 <?php
-                      
+
 require 'password.php';
 
 $passwordHash = password_hash('secret-password', PASSWORD_DEFAULT);
@@ -27,7 +27,7 @@ if (password_verify('bad-password', $passwordHash)) {
 } else {
     // Wrong password
 }
-{% endhighlight %}  
+{% endhighlight %}
 
 
 

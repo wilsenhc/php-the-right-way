@@ -1,9 +1,10 @@
 ---
 title: Herramientas Complementarias de Pruebas
+anchor: herramientas-complementarias-pruebas
 isChild: true
 ---
 
-## Herramientas Complementarias de Pruebas
+## Herramientas Complementarias de Pruebas {#herramientas-complementarias-pruebas}
 
 Además de armazones para pruebas individuales y guiados por comportamiento, también existen varios armazones genéricos y librerías auxiliares que son útiles para cualquier enfoque que se tome.
 

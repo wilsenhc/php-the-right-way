@@ -1,5 +1,6 @@
 ---
 title: Frameworks
+anchor: frameworks
 isChild: true
 ---
 
@@ -13,7 +14,7 @@ No es necesario usar un framework en todos sus proyectos. A veces la mejor alter
 * Frameworks Full-Stack (Completos)
 * Frameworks de Componentes
 
-Los **micro frameworks** son, en esencia, una envoltura para dirigir las solicitudes de HTTP a un controlador o método lo más rápido posible, y en veces incluyen otras librerías para asistir en el desarrollo, tal como envolturas básicas para bases de datos y así por el estilo. Estos frameworks son utilizados en su mayoría para desarrollar servicios remotos de HTTP. 
+Los **micro frameworks** son, en esencia, una envoltura para dirigir las solicitudes de HTTP a un controlador o método lo más rápido posible, y en veces incluyen otras librerías para asistir en el desarrollo, tal como envolturas básicas para bases de datos y así por el estilo. Estos frameworks son utilizados en su mayoría para desarrollar servicios remotos de HTTP.
 
 Muchos frameworks añaden un número considerable de funciones y características sobre la base disponible en un micro framework. A estos se les conoce como **frameworks full-stack (completos)**. A menudo, estos frameworks incluyen paquetes ORM para bases de datos, paquetes de autenticación, y otros.
 

@@ -1,5 +1,6 @@
 ---
-total: Register Globals
+title: Register Globals
+anchor: register-globals
 isChild: true
 ---
 
