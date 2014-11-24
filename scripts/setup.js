@@ -10,7 +10,7 @@
             dataType: 'jsonp',
             timeout: 3000,
             type: 'GET',
-            url: 'https://api.github.com/repos/phpdevenezuela/php-the-right-way/contributors'
+            url: 'https://api.github.com/repos/phpdevenezuela/php-the-right-way/contributors?per_page=100'
         }).done(function (data) {
             if ( data.data && data.data.length ) {
                 var $ul = $('<ul></ul>'), dataLength = data.data.length;
@@ -27,7 +27,7 @@
 
 (function ($) {
     //Add current view's highlighting to the navigation
-    
+
     /** helper for highlighting */
     function highlightNav(navLinks,id)
     {
@@ -55,6 +55,7 @@
             var eTop = $(e).offset().top;
             var eBottom = eTop + $(e).height();
             var id=e.id;
+            id = id.replace("_title", "");
 
             if (eTop >= viewTop) {
                 //if we are passed the view and no heading was highlighted yet, store previous one as fallback
@@ -76,4 +77,3 @@
         }
     });
 })(jQuery);
-

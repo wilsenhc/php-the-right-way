@@ -6,12 +6,12 @@ description: "Una referencia práctica y fácil de entender de PHP con los mejor
 {% capture welcome_content %}{% include welcome.md %}{% endcapture %}
 {{ welcome_content|markdownify }}
 
-{% capture backtotop %}[Regresar al Inicio](#top){.top}{% endcapture %}
+{% capture backtotop %}[Volver al Inicio](#top){:.top}{% endcapture %}
 {% for post in site.posts reversed %}
     {% if post.isChild != true and loop.first != true %}
     {{ backtotop|markdownify }}
     {% endif %}
-    <div id="{{ post.title | downcase | replace:' ','_' | replace:'(','' | replace:')','' | replace:'.','' | replace:'-','' }}">
+    <div id="{{ post.anchor }}">
     {{ post.content }}
     </div>
 {% endfor %}
