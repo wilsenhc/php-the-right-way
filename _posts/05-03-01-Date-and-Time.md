@@ -1,5 +1,6 @@
 ---
 title: Fecha y Hora
+anchor: fecha-y-hora
 isChild: true
 ---
 
@@ -38,8 +39,8 @@ if($inicio < $final) {
     echo "¡El inicio sucede antes que el final!\n";
 }
 {% endhighlight %}
-    
-Este último ejemplo demuestra cómo se utiliza la clase DatePeriod para iterar sobre eventos periódicos. El objeto toma dos objetos DateTime, uno para el inicio y el otro para el final, y el intervalo que define el número de eventos periódicos que se devuelven. 
+
+Este último ejemplo demuestra cómo se utiliza la clase DatePeriod para iterar sobre eventos periódicos. El objeto toma dos objetos DateTime, uno para el inicio y el otro para el final, y el intervalo que define el número de eventos periódicos que se devuelven.
 
 {% highlight php %}
 <?php

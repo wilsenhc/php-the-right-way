@@ -1,5 +1,6 @@
 ---
 title: Composer y Packagist
+anchor: composer-y-packagist
 isChild: true
 ---
 

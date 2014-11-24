@@ -1,8 +1,9 @@
 ---
 title: Gestión de Dependencias
+anchor: gestion-de-dependencias
 ---
 
-# Gestión de Dependencias
+# Gestión de Dependencias {#gestion-de-dependencias}
 
 Existen un sinnúmero de librerías, armazones de desarrollo (*frameworks*) y componentes de PHP de donde escoger y lo más probable es que su proyecto utilice varios de ellos. A estos se les llama dependencias de proyecto. Hasta muy recientemente, PHP no tenía una manera fácil de gestionar tales dependencias. Aun si usted se hacía cargo de estos manualmente, todavía tendría que mantenerse al tanto de los cargadores automáticos (autoloaders). Ahora ya no es así.
 

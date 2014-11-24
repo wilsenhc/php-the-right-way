@@ -1,9 +1,10 @@
 ---
 title: Fundamentos
+anchor: fundamentos
 isChild: true
 ---
 
-## Fundamentos {#the_basics_title}
+## Fundamentos {#fundamentos}
 
 PHP es un gran lenguaje que permite a cualquier desarrollador producir código de forma rápida y de manera eficiente.
 Sin embargo, mientras que avanzamos con el lenguaje, a menudo olvidamos (o pasamos por alto) las prácticas básicas que

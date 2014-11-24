@@ -1,8 +1,9 @@
 ---
+anchor: concepto-basico
 isChild: true
 ---
 
-## Basic Concept {#basic_concept_title}
+## Basic Concept {#concepto-basico}
 
 We can demonstrate the concept with a simple, yet naive example.
 

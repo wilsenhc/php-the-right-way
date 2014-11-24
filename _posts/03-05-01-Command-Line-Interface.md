@@ -1,9 +1,10 @@
 ---
 title: Línea de Comando (CLI)
+anchor: interface-de-linea-de-comando
 isChild: true
 ---
 
-## Interface de Línea de Comando (CLI)
+## Interface de Línea de Comando (CLI) {#interface-de-linea-de-comando}
 
 PHP fue creado principalmente para desarrollar aplicaciones web, pero también es muy útil para implementar programas que corren en la interface de línea de comando (CLI). Los programas de línea de comando en PHP pueden ayudarle a automatizar tareas comunes como pruebas, despliegues y la administración de aplicaciones.
 
@@ -15,7 +16,7 @@ Intente correr PHP desde la línea de comando:
 > php -i
 {% endhighlight %}
 
-La opción `-i` imprimirá la configuración de PHP, como sucede con la función [`phpinfo`][phpinfo]. 
+La opción `-i` imprimirá la configuración de PHP, como sucede con la función [`phpinfo`][phpinfo].
 La opción `-a` habilita una consola interactiva muy similar al IRB de Ruby o a la consola interactiva de Python. Existen varias [opciones de línea de comando][cli-options] que resultan muy útiles.
 Vamos a escribir un programa simple que imprima "Hola, $nombre" a la línea de comando. Para empezar, vamos a crear un archive llamad `hola.php` como se muestra enseguida:
 
@@ -33,7 +34,7 @@ PHP hace disponibles dos variables especiales basados en los argumentos que reci
 
 La expresión `exit()` se puede usar con un número que no es cero para dejarle saber a la consola que el comando ha fallado. [Aquí][exit-codes] puede encontrar los códigos de salida más comúnmente usados.
 
-Para ejecutar el programa desde la línea de comando: 
+Para ejecutar el programa desde la línea de comando:
 
 {% highlight bash %}
 > php hola.php

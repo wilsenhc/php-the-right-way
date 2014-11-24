@@ -1,9 +1,10 @@
 ---
 title: Patrones de Diseño
+anchor: patrones-de-diseno
 isChild: true
 ---
 
-## Patrones de Diseño
+## Patrones de Diseño {#patrones-de-diseno}
 
 Cuando se desarrolla una aplicación es muy bueno utilizar patrones de uso común en su código y patrones para la estructura general de su proyecto. El usar estos patrones ayuda y facilita el manejo de su código y permite a otros desarrolladores a entender fácilmente como es que encajan todas las partes de su aplicación.
 

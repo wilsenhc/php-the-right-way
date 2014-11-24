@@ -1,5 +1,6 @@
 ---
-title: Primeros pasos
+title: Primeros Pasos
+anchor: primeros-pasos
 ---
 
-# Primeros pasos {#getting_started_title}
+# Primeros pasos

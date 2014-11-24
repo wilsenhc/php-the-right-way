@@ -1,9 +1,10 @@
 ---
 title: Configuración en Mac
+anchor: configuracion-mac
 isChild: true
 ---
 
-## Configuración en Mac
+## Configuración en Mac {#configuracion-mac}
 
 El sistema OSX viene previamente configurado con un PHP que normalmente no está actualizado a la versión corriente. El sistema “Lion” viene configurado con PHP 5.3.6, el sistema “Mountain Lion” con la versión 5.3.10 y el sistema "Mavericks" con al versión 5.4.17.
 
