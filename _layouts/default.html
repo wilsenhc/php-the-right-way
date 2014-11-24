@@ -13,20 +13,20 @@
         <meta property="og:type" content="website"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One|Droid+Serif:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{ site.baseurl }}styles/all.css"/>
-        <link rel="stylesheet" href="{{ site.baseurl }}styles/print.css" media="print, handheld"/>
-        <link rel="stylesheet" href="{{ site.baseurl }}styles/syntax.css"/>
-        <link rel="icon" href="{{ site.baseurl }}images/favicon.png" type="image/png"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles/all.css"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles/print.css" media="print, handheld"/>
+        <link rel="stylesheet" href="{{ site.baseurl }}/styles/syntax.css"/>
+        <link rel="icon" href="{{ site.baseurl }}/images/favicon.png" type="image/png"/>
     </head>
     <body>
         <nav class="site-navigation">
             <div class="build-date">Actualizado el: {{ site.time }}</div>
             <ul>
-                <li><a href="/#site-header">Bienvenido</a>
+                <li><a href="{{ site.url }}{{ site.baseurl }}/#site-header">Bienvenido</a>
                     <ul>
-                        <li><a href="/#traducciones">Traducciones</a></li>
-                        <li><a href="/#como-colaborar">¿Cómo colaborar?</a></li>
-                        <li><a href="/#corre-la-voz">¡Corre la voz!</a></li>
+                        <li><a href="{{ site.url }}{{ site.baseurl }}/#traducciones">Traducciones</a></li>
+                        <li><a href="{{ site.url }}{{ site.baseurl }}/#como-colaborar">¿Cómo colaborar?</a></li>
+                        <li><a href="{{ site.url }}{{ site.baseurl }}/#corre-la-voz">¡Corre la voz!</a></li>
                     </ul>
                 </li>
                 {% assign lastIsChild = false %}
@@ -38,7 +38,7 @@
                             {% assign insideSection = false %}
                         {% endif %}
                     {% endif %}
-                    <li><a href="/#{{ post.anchor }}">{{ post.title }}</a>
+                    <li><a href="{{ site.url }}{{ site.baseurl }}/#{{ post.anchor }}">{{ post.title }}</a>
                     {% if post.isChild %}
                         </li>
                     {% else %}
