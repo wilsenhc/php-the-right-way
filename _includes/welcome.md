@@ -29,7 +29,7 @@ _PHP: La Manera Correcta_ ha sido (o muy pronto será) traducido a diferentes le
 * [Turco](http://hkulekci.github.io/php-the-right-way/)
 * [Ucraniano](http://iflista.github.com/php-the-right-way)
 
-## Como Colaborar
+## ¿Cómo Colaborar? {#como-colaborar}
 
 ¡Ayuda a que este sitio se convierta en el mejor recurso para nuevos programadores en PHP! [Colabora en GitHub][1]
 
