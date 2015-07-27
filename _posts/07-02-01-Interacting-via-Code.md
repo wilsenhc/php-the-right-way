@@ -45,7 +45,7 @@ Create a class to place that method in and you have a "Model". Create a simple `
 {% highlight php %}
 <?php
 
-$db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8', 'username', 'password');
+$db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8mb4', 'username', 'password');
 
 // Make your model available
 include 'models/FooModel.php';
