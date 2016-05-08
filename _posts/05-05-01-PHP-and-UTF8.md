@@ -10,11 +10,11 @@ _Esta sección fue escrita originalmente por [Alex Cabal](https://alexcabal.com/
 
 ### No hay una sola manera. Sea cuidadoso, detallista y consistente.
 
-Ahora mismo, PHP no soporta Unicode a bajo nivel. Hay formas de asegurarse de que las cadenas UTF-8 sean procesadas correctamente, pero no es sencillo, además requiere que excarvemos en todos los niveles de nuestra aplicación web, desde HTML, pasando por SQL hasta PHP. but it's not easy, and it requires digging in to almost all levels of the web app, from HTML to SQL to PHP. Nos esforzaremos por hacer un breve resumen práctico.
+Ahora mismo, PHP no soporta Unicode a bajo nivel. Hay formas de asegurarse de que las cadenas UTF-8 sean procesadas correctamente, pero no es sencillo, además requiere que excarvemos en todos los niveles de nuestra aplicación web, desde HTML, pasando por SQL hasta PHP. Nos esforzaremos por hacer un breve resumen práctico.
 
 ### UTF-8 al nivel de PHP
 
-Las operaciones básicas con cadenas, como la concatenación de dos cadenas o la asignación de de cadenas a variables, variables, no necesitan nada especial de UTF-8. Sin embargo, la mayoría de las funciones para el manejo de cadenas como `strpos()` o `strlen()`, necesitan consideración especial. A menudo, estas funciones tienen su contrapartida con funciones `mb_*` como por ejemplo: `mb_strpos()` o `mb_strlen()`. Estas cadenas `mb_*` están disponibles para Usted vía la extensión para el manejo de [Cadenas de Caracteres Cadenas Multibyte](http://php.net/manual/es/book.mbstring.php), y están diseñadas específicamente para operar con cadenas Unicode.
+Las operaciones básicas con cadenas, como la concatenación de dos cadenas o la asignación de cadenas a variables, sno necesitan nada especial de UTF-8. Sin embargo, la mayoría de las funciones para el manejo de cadenas como `strpos()` o `strlen()`, necesitan consideración especial. A menudo, estas funciones tienen su contrapartida con funciones `mb_*` como por ejemplo: `mb_strpos()` o `mb_strlen()`. Estas cadenas `mb_*` están disponibles para Usted vía la extensión para el manejo de [Cadenas de Caracteres Cadenas Multibyte](http://php.net/manual/es/book.mbstring.php), y están diseñadas específicamente para operar con cadenas Unicode.
 
 Siempre debe usar las funciones `mb_*` para trabajar con cadenas Unicode. Por ejemplo, si usa `substr()` sobre una cadena UTF-8, hay una gran posibilidad de que el resultado incluya algunos caracteres ilegibles. La función adecuada a usar es su contrapartida multibyte, `mb_substr()`.
 
@@ -40,7 +40,7 @@ Tenga en cuenta de que debe usar el juego de caracteres `utf8mb4` y no `utf8` pa
 
 Use la función `mb_http_output()` para asegurarse de que su script PHP genera una salida con cadenas UTF-8 hacia su navegador.
 
-La respuesta HTTP le indicará al navegador que esa página deberá considerarse como UTF-8. La aproximación histórica para hacer esto, era incluir la [etiqueta `<meta>` charset](http://htmlpurifier.org/docs/enduser-utf8.html) en el `<head>` de su página. Esta aproximación es perfectamente válida, pero establecer el juego de caracteres en la cabecera `Content-Type` es [mucho más rápido](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
+La respuesta HTTP le indicará al navegador que esa página debería considerarse como UTF-8. Anteriormente, para hacer esto, se incluía la [etiqueta `<meta>` charset](http://htmlpurifier.org/docs/enduser-utf8.html) en el `<head>` de la página. Esta solución es perfectamente válida, pero establecer el juego de caracteres en la cabecera `Content-Type` es [mucho más rápido](https://developers.google.com/speed/docs/best-practices/rendering#SpecifyCharsetEarly).
 
 {% highlight php %}
 <?php
