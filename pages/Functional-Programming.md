@@ -5,9 +5,9 @@ title: Programación Funcional en PHP
 
 # Programación Funcional en PHP
 
-PHP soporta funciones de primera-clase, lo que significa que una función puede asignarse a una variable. De igual forma, tanto las funciones definidas por el usuario como las funciones nativas de PHP pueden ser referenciados por una variable y se invocan dinámicamente. Las funciones pueden ser pasadas como argumentos / parámetros a otras funciones (funciones de orden superior) y una función puede retornar otras funciones.
+PHP soporta funciones de primera-clase, lo que significa que una función puede asignarse a una variable. De igual forma, tanto las funciones definidas por el usuario como las funciones nativas de PHP pueden ser referenciadas por una variable e invocarse dinámicamente. Las funciones pueden ser pasadas como argumentos / parámetros a otras funciones (funciones de orden superior) y una función puede retornar otras funciones.
 
-La recursión, una característica que permite a una función llamarse a si misma, es soportada por el lenguaje, sin embargo, PHP se enfoca en la iteración.
+La recursión, una característica que permite a una función llamarse a sí misma, es soportada por el lenguaje, sin embargo, PHP se enfoca en la iteración.
 
 Las nuevas funciones anónimas (con soporte para cierres) están presentes a partir de PHP 5.3 (2009).
 
