@@ -9,9 +9,9 @@ PHP soporta funciones de primera-clase, lo que significa que una función puede 
 
 La recursión, una característica que permite a una función llamarse a sí misma, es soportada por el lenguaje, sin embargo, PHP se enfoca en la iteración.
 
-Las nuevas funciones anónimas (con soporte para cierres) están presentes a partir de PHP 5.3 (2009).
+Las nuevas funciones anónimas (con soporte para `closures`) están presentes a partir de PHP 5.3 (2009).
 
-PHP 5.4 agregó la capacidad de unir cierres al ámbito de un objeto mejorando el soporte a las llamadas de tal manera que puedan ser intercambiables con funciones anónimas en casi todos los casos.
+PHP 5.4 agregó la capacidad de unir `closures` al ámbito de un objeto mejorando el soporte a las llamadas de tal manera que puedan ser intercambiables con funciones anónimas en casi todos los casos.
 
 El uso más común para las funciones de orden superior es cuando se implementa un patrón estrategia. La función interna `array_filter` solicita dos argumentos, una matriz (data) y una función de retorno (callback) o patrón estrategia que se usará como filtro para cada elemento de la matriz.
 
@@ -35,9 +35,9 @@ $retorno = array_filter($entrada, function($elemento) {
 print_r($retorno);
 {% endhighlight %}
 
-Un cierre es una función anónima que puede acceder a las variables importadas fuera del ámbito sin usar variables globales. En teoría, un cierre es una función con algunos argumentos cerrados (por ejemplo, fijo) por el entorno cuando este ha sido definido. Los cierres pueden evitar las restricciones de ámbito de variables de una manera limpia.
+Un cierre es una función anónima que puede acceder a las variables importadas fuera del ámbito sin usar variables globales. En teoría, un cierre es una función con algunos argumentos cerrados (por ejemplo, fijo) por el entorno cuando este ha sido definido. Los `closures` pueden evitar las restricciones de ámbito de variables de una manera limpia.
 
-En el siguiente ejemplo usaremos cierres para definir una función que retorne una función de filtro sencilla para `array_filter`, fuera de una familia de funciones de filtro.
+En el siguiente ejemplo usaremos `closures` para definir una función que retorne una función de filtro sencilla para `array_filter`, fuera de una familia de funciones de filtro.
 
 {% highlight php %}
 <?php
@@ -63,10 +63,10 @@ print_r($salida); // elementos > 3
 
 Cada función de filtro en la familia aceptará sólo los elementos mayores que el valor mínimo. El filtro sencillo retornado por `criterio_mayor_que` es un cierre con un argumento `$min` cerrado por el valor en el ámbito (dado como argumento cuando `criterio_mayor_que` es llamado).
 
-El primer enlace es usado por defecto para importar la variable `$min` en la función. Para cierres verdaderos con uniones tardías debe usarse una referencia cuando se importen. Imagina una plantilla o bibliotecas de validación de entradas, donde se define el cierre para capturar variables en el ámbito y acceder luego, cuando se evalúe la función anónima.
+El primer enlace es usado por defecto para importar la variable `$min` en la función. Para `closures` verdaderos con uniones tardías debe usarse una referencia cuando se importen. Imagina una plantilla o bibliotecas de validación de entradas, donde se define el cierre para capturar variables en el ámbito y acceder luego, cuando se evalúe la función anónima.
 
 * [Leer acerca de Funciones Anónimas][anonymous-functions]
-* [Más detalles en el RFC de Cierres][closures-rfc]
+* [Más detalles en el RFC de Closures][closures-rfc]
 * [Leer acerca de la invocación dinámica de funciones con `call_user_func_array`][call-user-func-array]
 
 [anonymous-functions]: http://www.php.net/manual/en/functions.anonymous.php
