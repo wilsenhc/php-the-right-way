@@ -35,7 +35,7 @@ $retorno = array_filter($entrada, function($elemento) {
 print_r($retorno);
 {% endhighlight %}
 
-Un cierre es una función anónima que puede acceder a las variables importadas fuera del ámbito sin usar variables globales. En teoría, un cierre es una función con algunos argumentos cerrados (por ejemplo, fijo) por el entorno cuando este ha sido definido. Los `closures` pueden evitar las restricciones de ámbito de variables de una manera limpia.
+Un `closure` es una función anónima que puede acceder a las variables importadas fuera del ámbito sin usar variables globales. En teoría, un `closure` es una función con algunos argumentos cerrados (por ejemplo, fijo) por el entorno cuando este ha sido definido. Los `closures` pueden evitar las restricciones de ámbito de variables de una manera limpia.
 
 En el siguiente ejemplo usaremos `closures` para definir una función que retorne una función de filtro sencilla para `array_filter`, fuera de una familia de funciones de filtro.
 
@@ -61,9 +61,9 @@ $salida = array_filter($entrada, criterio_mayor_que(3));
 print_r($salida); // elementos > 3
 {% endhighlight %}
 
-Cada función de filtro en la familia aceptará sólo los elementos mayores que el valor mínimo. El filtro sencillo retornado por `criterio_mayor_que` es un cierre con un argumento `$min` cerrado por el valor en el ámbito (dado como argumento cuando `criterio_mayor_que` es llamado).
+Cada función de filtro en la familia aceptará sólo los elementos mayores que el valor mínimo. El filtro sencillo retornado por `criterio_mayor_que` es un `closure` con un argumento `$min` cerrado por el valor en el ámbito (dado como argumento cuando `criterio_mayor_que` es llamado).
 
-El primer enlace es usado por defecto para importar la variable `$min` en la función. Para `closures` verdaderos con uniones tardías debe usarse una referencia cuando se importen. Imagina una plantilla o bibliotecas de validación de entradas, donde se define el cierre para capturar variables en el ámbito y acceder luego, cuando se evalúe la función anónima.
+El primer enlace es usado por defecto para importar la variable `$min` en la función. Para `closures` verdaderos con uniones tardías debe usarse una referencia cuando se importen. Imagina una plantilla o bibliotecas de validación de entradas, donde se define el `closure` para capturar variables en el ámbito y acceder luego, cuando se evalúe la función anónima.
 
 * [Leer acerca de Funciones Anónimas][anonymous-functions]
 * [Más detalles en el RFC de Closures][closures-rfc]
