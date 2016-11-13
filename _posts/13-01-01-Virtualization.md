@@ -1,14 +1,9 @@
 ---
-anchor: virtualization
+anchor: virtualizacion
 ---
 
-# Virtualization
+# Virtualización
 
-Running your application on different environments in development and production can lead to strange bugs
-popping up when you go live. It's also tricky to keep different development environments up to date with the same
-version for all libraries used when working with a team of developers.
+Ejecutar tu aplicación en diferentes entornos en desarrollo y producción puede llevar a extraños errores que aparecen en vivo. También es complicado mantener diferentes ambientes de desarrollo actualizados con las mismas versiones de todas las bibliotecas utilizadas cuando se trabaja con un equipo de desarrolladores.
 
-If you are developing on Windows and deploying to Linux (or anything non-Windows) or are developing in a team, you
-should consider using a virtual machine.
-This sounds tricky, but besides the widely known virtualization environments like VMware or VirtualBox, there are
-additional tools that may help you setting up a virtual environment in a few easy steps.
+Si estás desarrollando en Windows y desplegando en Linux (o cualquier cosa que no sea Windows) o si estás desarrollando en un equipo, deberías considerar el uso de una máquina virtual. Esto suena complicado, pero además de los entornos de virtualización ampliamente conocidos como VMware o VirtualBox, hay herramientas adicionales que pueden ayudarte a configurar un entorno virtual en unos pocos pasos sencillos.
