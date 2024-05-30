@@ -5,13 +5,13 @@ description: "Spread the word! Use these banner to let new PHP programmers know 
 sitemap: true
 ---
 
-# Banners
+# Web Banners
 
-Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a los nuevos desarrolladores PHP donde encontrar información valiosa.
+Spread the word with _PHP: The Right Way_ banner images! Show new PHP developers where to find good information.
 
-## Botón 1 (120x90)
+## Button 1 (120x90)
 
-<p><img src="images/banners/btn1-120x90.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/btn1-120x90.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -19,9 +19,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Botón 2 (120x60)
+## Button 2 (120x60)
 
-<p><img src="images/banners/btn2-120x60.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/btn2-120x60.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -31,7 +31,7 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 
 ## Leaderboard (728x90)
 
-<p><img src="images/banners/leaderboard-728x90.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/leaderboard-728x90.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -39,9 +39,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Rectángulo Grande (386x280)
+## Large Rectangle (386x280)
 
-<p><img src="images/banners/lg-rect-386x280.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/lg-rect-386x280.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -49,9 +49,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Rectángulo Mediano (300x250)
+## Medium Rectangle (300x250)
 
-<p><img src="images/banners/med-rect-300x250.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/med-rect-300x250.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -59,9 +59,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Rectángulo (180x150)
+## Rectangle (180x150)
 
-<p><img src="images/banners/rect-180x150.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/rect-180x150.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -69,9 +69,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Botón Cuadrado (125x125)
+## Square Button (125x125)
 
-<p><img src="images/banners/sq-btn-125x125.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/sq-btn-125x125.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">
@@ -79,9 +79,9 @@ Corre la voz a través de los banners de _PHP: La Manera Correcta_! Muestrale a 
 </a>
 {% endhighlight %}
 
-## Rectángulo Vertical (240x400)
+## Vertical Rectangle (240x400)
 
-<p><img src="images/banners/vert-rect-240x400.png" alt="PHP: La Manera Correcta"/></p>
+<p><img src="/images/banners/vert-rect-240x400.png" alt="PHP: The Right Way"/></p>
 
 {% highlight html %}
 <a href="https://www.phptherightway.com">

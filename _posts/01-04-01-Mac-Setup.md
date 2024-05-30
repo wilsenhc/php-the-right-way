@@ -1,6 +1,4 @@
 ---
-title: Configuración en Mac
-anchor: configuracion-mac
 isChild: true
 anchor:  mac_setup
 ---

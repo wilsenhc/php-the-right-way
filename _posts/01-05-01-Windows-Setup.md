@@ -1,6 +1,4 @@
 ---
-title: Configuración en Windows
-anchor: configuracion-windows
 isChild: true
 anchor:  windows_setup
 ---

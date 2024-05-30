@@ -1,6 +1,5 @@
 ---
-title: Librería Estándar de PHP
-anchor: libreria-estandar-de-php
+title:   Standard PHP Library
 isChild: true
 anchor:  standard_php_library
 ---

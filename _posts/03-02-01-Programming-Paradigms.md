@@ -1,6 +1,4 @@
 ---
-title: Paradigmas de Programación
-anchor: paradigmas-de-programacion
 isChild: true
 anchor:  programming_paradigms
 ---
@@ -11,15 +9,15 @@ PHP is a flexible, dynamic language that supports a variety of programming techn
 the years, notably adding a solid object-oriented model in PHP 5.0 (2004), anonymous functions and namespaces in
 PHP 5.3 (2009), and traits in PHP 5.4 (2012).
 
-### Programación Orientada a Objetos
+### Object-oriented Programming
 
 PHP has a very complete set of object-oriented programming features including support for classes, abstract classes,
 interfaces, inheritance, constructors, cloning, exceptions, and more.
 
-* [Leer más acerca de PHP orientado a objetos][oop]
-* [Leer más acerca de Rasgos][traits]
+* [Read about Object-oriented PHP][oop]
+* [Read about Traits][traits]
 
-### Programación Funcional
+### Functional Programming
 
 PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
 built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
@@ -28,9 +26,10 @@ other functions (a feature called _Higher-order Functions_) and functions can re
 Recursion, a feature that allows a function to call itself, is supported by the language, but most PHP code
 is focused on iteration.
 
-Las funciones anónimas (con soporte para closures) están presentes en PHP desde la versión 5.3 (2009).
+New anonymous functions (with support for closures) are present since PHP 5.3 (2009).
 
-En PHP 5.4 se añadió la habilidad para vincular closure al ámbito de un objeto y también se mejoró el soporte de funciones de tipo _callable_ para que puedan intercambiarse con funciones anónimas en casi todos los casos.
+PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
+can be used interchangeably with anonymous functions in almost all cases.
 
 * Continue reading on [Functional Programming in PHP](/pages/Functional-Programming.html)
 * [Read about Anonymous Functions][anonymous-functions]
@@ -39,7 +38,7 @@ En PHP 5.4 se añadió la habilidad para vincular closure al ámbito de un objet
 * [Read about Callables][callables]
 * [Read about dynamically invoking functions with `call_user_func_array()`][call-user-func-array]
 
-### Programación Meta
+### Meta Programming
 
 PHP supports various forms of meta-programming through mechanisms like the Reflection API and Magic Methods. There are
 many Magic Methods available like `__get()`, `__set()`, `__clone()`, `__toString()`, `__invoke()`, etc. that allow

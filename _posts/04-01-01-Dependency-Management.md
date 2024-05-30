@@ -15,7 +15,3 @@ Knowing PEAR's history is a good idea, since you may still find references to it
 
 [Composer]: /#composer_and_packagist
 [PEAR]: /#pear
-
-* Utiliza **PEAR** cuando manejes las dependencias de todo el sistema de PHP en su plataforma.
-
-Generalmente, los paquetes de Composer solo estarán disponibles en los proyectos que especifiques explícitamente, mientras que un paquete de PEAR estaría disponible a todos los proyectos bajo el sistema PHP. Puede que PEAR parezca la propuesta más accesible a primera vista, sin embargo, también existen ventajas al manejar las dependencias con Composer en base al proyecto en que se está trabajando.

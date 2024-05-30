@@ -1,6 +1,4 @@
 ---
-title: Namespaces
-anchor: namespaces
 isChild: true
 anchor:  namespaces
 ---

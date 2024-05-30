@@ -13,7 +13,7 @@ To start the server, run the following command from your terminal in your projec
 > php -S localhost:8000
 {% endhighlight %}
 
-* [Aprenda más acerca del servidor web integrado][cli-server]
+* [Learn about the built-in, command line web server][cli-server]
 
 
 [cli-server]: https://www.php.net/features.commandline.webserver

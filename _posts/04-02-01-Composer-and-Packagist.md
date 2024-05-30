@@ -13,7 +13,7 @@ you. Composer is analogous to NPM in the node.js world, or Bundler in the Ruby w
 There is a plethora of PHP libraries that are compatible with Composer and ready to be used in your project. These
 "packages" are listed on [Packagist], the official repository for Composer-compatible PHP libraries.
 
-### Como configurar Composer
+### How to Install Composer
 
 The safest way to download composer is by [following the official instructions](https://getcomposer.org/download/).
 This will verify the installer is not corrupt or tampered with.
@@ -63,7 +63,7 @@ autoloader for your project dependencies.
 require 'vendor/autoload.php';
 {% endhighlight %}
 
-Esta instrucción le dice al programa que use el cargador automático de Composer para cargar cualquier dependencia que hayas configurado. Ahora tus dependencias serán cargadas dinámicamente según tu programa las requiera.
+Now you can use your project dependencies, and they'll be autoloaded on demand.
 
 ### Updating your dependencies
 

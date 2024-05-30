@@ -1,6 +1,4 @@
 ---
-title: Línea de Comando (CLI)
-anchor: interface-de-linea-de-comando
 isChild: true
 anchor:  command_line_interface
 ---
@@ -13,7 +11,7 @@ Command line PHP programs can help automate common tasks like testing, deploymen
 CLI PHP programs are powerful because you can use your app's code directly without having to create and secure a web
 GUI for it. Just be sure **not** to put your CLI PHP scripts in your public web root!
 
-Intente correr PHP desde la línea de comando:
+Try running PHP from your command line:
 
 {% highlight console %}
 > php -i
@@ -43,7 +41,7 @@ The first argument is always the name of your PHP script file, in this case `hel
 The `exit()` expression is used with a non-zero number to let the shell know that the command failed. Commonly used
 exit codes can be found [here][exit-codes].
 
-Para ejecutar el programa desde la línea de comando:
+To run our script, above, from the command line:
 
 {% highlight console %}
 > php hello.php

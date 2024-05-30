@@ -4,7 +4,7 @@ title:  Functional Programming in PHP
 sitemap: true
 ---
 
-# Programación Funcional en PHP
+# Functional Programming in PHP
 
 PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
 built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
@@ -15,7 +15,8 @@ focus is on iteration.
 
 Anonymous functions (with support for closures) have been present since PHP 5.3 (2009).
 
-PHP 5.4 agregó la capacidad de unir `closures` al ámbito de un objeto mejorando el soporte a las llamadas de tal manera que puedan ser intercambiables con funciones anónimas en casi todos los casos.
+PHP 5.4 added the ability to bind closures to an object's scope and also improved support for callables such that they
+can be used interchangeably with anonymous functions in almost all cases.
 
 The most common usage of higher-order functions is when implementing a strategy pattern. The built-in `array_filter()`
 function asks both for the input array (data) and a function (a strategy or a callback) used as a filter function on
@@ -23,22 +24,22 @@ each array item.
 
 {% highlight php %}
 <?php
-$entrada = array(1, 2, 3, 4, 5, 6);
+$input = array(1, 2, 3, 4, 5, 6);
 
-// Crea una nueva función anónima y la asigna a una variable
-$filtro_inclusivo = function($elemento) {
-    return(($elemento % 2) == 0);
+// Creates a new anonymous function and assigns it to a variable
+$filter_even = function($item) {
+    return ($item % 2) == 0;
 };
 
-// La función interna array_filter acepta ambos, data y la función
-$retorno = array_filter($entrada, $filtro_inclusivo);
+// Built-in array_filter accepts both the data and the function
+$output = array_filter($input, $filter_even);
 
-// La función NO necesita ser asignada a una variable. Esto es válido también:
-$retorno = array_filter($entrada, function($elemento) {
-    return(($elemento % 2) == 0)
+// The function doesn't need to be assigned to a variable. This is valid too:
+$output = array_filter($input, function($item) {
+    return ($item % 2) == 0;
 });
 
-print_r($retorno);
+print_r($output);
 {% endhighlight %}
 
 A closure is an anonymous function that can access variables imported from the outside scope without using any global
@@ -51,23 +52,23 @@ of a family of filter functions.
 {% highlight php %}
 <?php
 /**
- * Se crear un una función anónima de filtrado que aceptará elementos > $min
+ * Creates an anonymous filter function accepting items > $min
  *
- * Retorna un filtro sencillo fue de la familia de de filtros "mayores que n"
+ * Returns a single filter out of a family of "greater than n" filters
  */
-function criterio_mayor_que($min)
+function criteria_greater_than($min)
 {
-    return function($elemento) use ($min) {
-        return $elemento > $min;
+    return function($item) use ($min) {
+        return $item > $min;
     };
 }
 
-$entrada = array(1, 2, 3, 4, 5, 6);
+$input = array(1, 2, 3, 4, 5, 6);
 
-// Use array_filter sobre una entrada con una función de filtro seleccionada
-$salida = array_filter($entrada, criterio_mayor_que(3));
+// Use array_filter on a input with a selected filter function
+$output = array_filter($input, criteria_greater_than(3));
 
-print_r($salida); // elementos > 3
+print_r($output); // items > 3
 {% endhighlight %}
 
 Each filter function in the family accepts only elements greater than some minimum value. The single filter returned by
