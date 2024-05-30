@@ -34,10 +34,10 @@
             <input type="checkbox" id="toggle"/>
             <label for="toggle">Table of Contents</label>
             <ul>
-                <li><a href="/#welcome">Welcome</a>
+                <li><a href="{{ site.baseurl }}/#welcome">Welcome</a>
                     <ul>
-                        <li><a href="/#translations">Translations</a></li>
-                        <li><a href="/#how-to-contribute">How to Contribute</a></li>
+                        <li><a href="{{ site.baseurl }}/#translations">Translations</a></li>
+                        <li><a href="{{ site.baseurl }}/#how-to-contribute">How to Contribute</a></li>
                     </ul>
                 </li>
                 {% assign lastIsChild = false %}
@@ -49,7 +49,7 @@
                             {% assign insideSection = false %}
                         {% endif %}
                     {% endif %}
-                    <li><a href="/#{{ post.anchor }}">{{ post.title }}</a>
+                    <li><a href="{{ site.baseurl }}/#{{ post.anchor }}">{{ post.title }}</a>
                     {% if post.isChild %}
                         </li>
                     {% else %}
@@ -60,7 +60,7 @@
                 {% endfor %}
                     </ul>
                 </li>
-                <li><a href="/#credits">Credits</a></li>
+                <li><a href="{{ site.baseurl }}/#credits">Credits</a></li>
             </ul>
         </nav>
 
