@@ -1,19 +1,25 @@
 ---
 layout: page
-title: Programación Funcional en PHP
+title:  Functional Programming in PHP
+sitemap: true
 ---
 
 # Programación Funcional en PHP
 
-PHP soporta funciones de primera-clase, lo que significa que una función puede asignarse a una variable. De igual forma, tanto las funciones definidas por el usuario como las funciones nativas de PHP pueden ser referenciadas por una variable e invocarse dinámicamente. Las funciones pueden ser pasadas como argumentos / parámetros a otras funciones (funciones de orden superior) y una función puede retornar otras funciones.
+PHP supports first-class functions, meaning that a function can be assigned to a variable. Both user-defined and
+built-in functions can be referenced by a variable and invoked dynamically. Functions can be passed as arguments to
+other functions and a function can return other functions (a feature called higher-order functions).
 
-La recursión, una característica que permite a una función llamarse a sí misma, es soportada por el lenguaje, sin embargo, PHP se enfoca en la iteración.
+Recursion, a feature that allows a function to call itself, is supported by the language, but most of the PHP code
+focus is on iteration.
 
-Las nuevas funciones anónimas (con soporte para `closures`) están presentes a partir de PHP 5.3 (2009).
+Anonymous functions (with support for closures) have been present since PHP 5.3 (2009).
 
 PHP 5.4 agregó la capacidad de unir `closures` al ámbito de un objeto mejorando el soporte a las llamadas de tal manera que puedan ser intercambiables con funciones anónimas en casi todos los casos.
 
-El uso más común para las funciones de orden superior es cuando se implementa un patrón estrategia. La función interna `array_filter` solicita dos argumentos, una matriz (data) y una función de retorno (callback) o patrón estrategia que se usará como filtro para cada elemento de la matriz.
+The most common usage of higher-order functions is when implementing a strategy pattern. The built-in `array_filter()`
+function asks both for the input array (data) and a function (a strategy or a callback) used as a filter function on
+each array item.
 
 {% highlight php %}
 <?php
@@ -35,9 +41,12 @@ $retorno = array_filter($entrada, function($elemento) {
 print_r($retorno);
 {% endhighlight %}
 
-Un `closure` es una función anónima que puede acceder a las variables importadas fuera del ámbito sin usar variables globales. En teoría, un `closure` es una función con algunos argumentos cerrados (por ejemplo, fijo) por el entorno cuando este ha sido definido. Los `closures` pueden evitar las restricciones de ámbito de variables de una manera limpia.
+A closure is an anonymous function that can access variables imported from the outside scope without using any global
+variables. Theoretically, a closure is a function with some arguments closed (e.g. fixed) by the environment when it is
+defined. Closures can work around variable scope restrictions in a clean way.
 
-En el siguiente ejemplo usaremos `closures` para definir una función que retorne una función de filtro sencilla para `array_filter`, fuera de una familia de funciones de filtro.
+In the next example we use closures to define a function returning a single filter function for `array_filter()`, out
+of a family of filter functions.
 
 {% highlight php %}
 <?php
@@ -61,14 +70,19 @@ $salida = array_filter($entrada, criterio_mayor_que(3));
 print_r($salida); // elementos > 3
 {% endhighlight %}
 
-Cada función de filtro en la familia aceptará sólo los elementos mayores que el valor mínimo. El filtro sencillo retornado por `criterio_mayor_que` es un `closure` con un argumento `$min` cerrado por el valor en el ámbito (dado como argumento cuando `criterio_mayor_que` es llamado).
+Each filter function in the family accepts only elements greater than some minimum value. The single filter returned by
+`criteria_greater_than` is a closure with `$min` argument closed by the value in the scope (given as an argument when
+`criteria_greater_than` is called).
 
-El primer enlace es usado por defecto para importar la variable `$min` en la función. Para `closures` verdaderos con uniones tardías debe usarse una referencia cuando se importen. Imagina una plantilla o bibliotecas de validación de entradas, donde se define el `closure` para capturar variables en el ámbito y acceder luego, cuando se evalúe la función anónima.
+Early binding is used by default for importing `$min` variable into the created function. For true closures with late
+binding one should use a reference when importing. Imagine a templating or input validation library, where a closure is
+defined to capture variables in scope and access them later when the anonymous function is evaluated.
 
-* [Leer acerca de Funciones Anónimas][anonymous-functions]
-* [Más detalles en el RFC de Closures][closures-rfc]
-* [Leer acerca de la invocación dinámica de funciones con `call_user_func_array`][call-user-func-array]
+* [Read about Anonymous functions][anonymous-functions]
+* [More details in the Closures RFC][closures-rfc]
+* [Read about dynamically invoking functions with `call_user_func_array()`][call-user-func-array]
 
-[anonymous-functions]: http://www.php.net/manual/en/functions.anonymous.php
-[call-user-func-array]: http://php.net/manual/en/function.call-user-func-array.php
+
+[anonymous-functions]: https://www.php.net/functions.anonymous
 [closures-rfc]: https://wiki.php.net/rfc/closures
+[call-user-func-array]: https://www.php.net/function.call-user-func-array
