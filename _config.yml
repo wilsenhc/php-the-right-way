@@ -1,5 +1,5 @@
 host: wilsenhc.github.io
-baseurl: php-the-right-way
+baseurl: /php-the-right-way
 timezone: America/Caracas
 highlighter: rouge
 markdown: kramdown
