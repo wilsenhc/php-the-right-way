@@ -2,16 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="utf-8"/>
-        <title>{% if page.title %}{{ page.title }} - {% endif %}PHP: The Right Way</title>
+        <title>{% if page.title %}{{ page.title }} - {% endif %}PHP: La Manera Correcta</title>
         <meta name="description" content="{{ page.description }}"/>
         <meta name="robots" content="index,follow,archive"/>
         <meta property="og:image:url" content="https://www.phptherightway.com/images/og-image.png"/>
         <meta property="og:image:width" content="1024"/>
         <meta property="og:image:height" content="640"/>
-        <meta property="og:title" content="PHP: The Right Way"/>
-        <meta property="og:description" content="An easy-to-read, quick reference for PHP best practices, accepted coding standards, and links to authoritative PHP tutorials around the Web"/>
+        <meta property="og:title" content="PHP: La Manera Correcta"/>
+        <meta property="og:description" content="Una referencia práctica y fácil de entender de PHP con las mejores prácticas, estándares de codigo, y enlaces a tutoriales autoritativos de PHP en la Web"/>
         <meta property="og:url" content="https://www.phptherightway.com"/>
-        <meta property="og:site_name" content="PHP: The Right Way"/>
+        <meta property="og:site_name" content="PHP: La Manera Correcta"/>
         <meta property="og:type" content="website"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <link rel="icon" href="{{ site.baseurl }}images/favicon.png" type="image/png"/>
@@ -22,22 +22,22 @@
     </head>
     <body>
         <header class="site-header">
-            <h1><a href="/">PHP <em>The Right Way</em></a></h1>
-            <div class="build-date">Last Updated: {{ site.time }}</div>
+            <h1><a href="{{ site.baseurl }}/">PHP <em>La Manera Correcta</em></a></h1>
+            <div class="build-date">Actualizado el: {{ site.time }}</div>
             <div class="share">
-                <a class="btn-share" href="https://twitter.com/intent/tweet?text=PHP+The+Right+Way&amp;url=https%3A%2F%2Fwww.phptherightway.com&amp;hashtags=PHP" target="_blank">Share on Twitter</a>
+                <a class="btn-share" href="https://twitter.com/intent/tweet?text=PHP+The+Right+Way&amp;url=https%3A%2F%2Fwww.phptherightway.com&amp;hashtags=PHP" target="_blank">Compartir en Twitter</a>
             </div>
             <a class="fork-me" href="https://github.com/codeguy/php-the-right-way" target="_blank"></a>
         </header>
 
         <nav class="site-navigation">
             <input type="checkbox" id="toggle"/>
-            <label for="toggle">Table of Contents</label>
+            <label for="toggle">Índice de Contenido</label>
             <ul>
-                <li><a href="{{ site.baseurl }}/#welcome">Welcome</a>
+                <li><a href="{{ site.baseurl }}/#welcome">Bienvenido</a>
                     <ul>
-                        <li><a href="{{ site.baseurl }}/#translations">Translations</a></li>
-                        <li><a href="{{ site.baseurl }}/#how-to-contribute">How to Contribute</a></li>
+                        <li><a href="{{ site.baseurl }}/#translations">Traducciones</a></li>
+                        <li><a href="{{ site.baseurl }}/#how-to-contribute">¿Cómo Colaborar?</a></li>
                     </ul>
                 </li>
                 {% assign lastIsChild = false %}
@@ -60,7 +60,7 @@
                 {% endfor %}
                     </ul>
                 </li>
-                <li><a href="{{ site.baseurl }}/#credits">Credits</a></li>
+                <li><a href="{{ site.baseurl }}/#credits">Créditos</a></li>
             </ul>
         </nav>
 
@@ -69,11 +69,11 @@
         </div>
 
         <footer class="site-footer" id="credits">
-            <h2>Created and maintained by</h2>
+            <h2>Creado y mantenido por</h2>
             <ul>
                 <li><a href="https://joshlockhart.com" target="_blank">Josh Lockhart</a></li>
                 <li><a href="https://philsturgeon.uk/" target="_blank">Phil Sturgeon</a></li>
-                <li><a href="https://github.com/codeguy/php-the-right-way/graphs/contributors" target="_blank">Project Contributors</a></li>
+                <li><a href="https://github.com/codeguy/php-the-right-way/graphs/contributors" target="_blank">Contribuyentes del proyecto</a></li>
             </ul>
             <div class="license">
                 <a class="cc-badge" rel="license" href="https://creativecommons.org/licenses/by-nc-sa/3.0/"></a>
