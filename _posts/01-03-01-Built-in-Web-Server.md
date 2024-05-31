@@ -1,19 +1,19 @@
 ---
-title:   Built-in Web Server
+title:   Servidor Web Integrado
 isChild: true
-anchor:  builtin_web_server
+anchor:  servidor_web_integrado
 ---
 
-## Built-in web server {#builtin_web_server_title}
+## Servidor Web Integrado {#servidor_web_integrado_title}
 
-With PHP 5.4 or newer, you can start learning PHP without installing and configuring a full-fledged web server.
-To start the server, run the following command from your terminal in your project's web root:
+Con PHP 5.4 o posteriores, puede empezar a aprender PHP sin necesidad de instalar y configurar un servidor web completo.
+Para iniciar el servidor, ejecute el siguiente comando desde su terminal en la raíz web de su proyecto:
 
 {% highlight console %}
 > php -S localhost:8000
 {% endhighlight %}
 
-* [Learn about the built-in, command line web server][cli-server]
+* [Más información sobre el servidor web integrado de línea de comandos][cli-server]
 
 
 [cli-server]: https://www.php.net/features.commandline.webserver
