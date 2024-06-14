@@ -1,9 +1,10 @@
 ---
+title:   Caché Opcode
 isChild: true
 anchor:  opcode_cache
 ---
 
-## Opcode Cache {#opcode_cache_title}
+## Caché Opcode {#opcode_cache_title}
 
 When a PHP file is executed, it must first be compiled into [opcodes](https://php-legacy-docs.zend.com/manual/php4/en/internals2.opcodes) (machine language instructions for the CPU). If the source code is unchanged, the opcodes will be the same, so this compilation step becomes a waste of CPU resources.
 

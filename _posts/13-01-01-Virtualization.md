@@ -1,8 +1,9 @@
 ---
-anchor: virtualization
+title:  Virtualización
+anchor: virtualizaciones
 ---
 
-# Virtualization {#virtualization_title}
+# Virtualización {#virtualizaciones_title}
 
 Running your application on different environments in development and production can lead to strange bugs popping up
 when you go live. It's also tricky to keep different development environments up to date with the same version for all

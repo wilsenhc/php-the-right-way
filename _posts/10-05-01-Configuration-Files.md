@@ -1,9 +1,10 @@
 ---
+title:   Archivos de Configuración
 isChild: true
-anchor:  configuration_files
+anchor:  archivos_de_configuracion
 ---
 
-## Configuration Files {#configuration_files_title}
+## Archivos de Configuración {#archivos_de_configuracion_title}
 
 When creating configuration files for your applications, best practices recommend that one of the following methods be
 followed:

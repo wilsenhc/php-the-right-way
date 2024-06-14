@@ -1,10 +1,10 @@
 ---
+title:   Extensión PDO
 isChild: true
-title:   PDO Extension
-anchor:  pdo_extension
+anchor:  extension_pdo
 ---
 
-## PDO Extension {#pdo_extension_title}
+## Extensión PDO {#extension_pdo_title}
 
 [PDO] is a database connection abstraction library &mdash; built into PHP since 5.1.0 &mdash; that provides a common
 interface to talk with many different databases. For example, you can use basically identical code to interface with

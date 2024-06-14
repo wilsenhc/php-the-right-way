@@ -1,9 +1,10 @@
 ---
+title:   Beneficios
 isChild: true
-anchor:  templating_benefits
+anchor:  beneficios_de_las_plantillas
 ---
 
-## Benefits {#templating_benefits_title}
+## Beneficios {#beneficios_de_las_plantillas_title}
 
 The main benefit to using templates is the clear separation they create between the presentation logic and the rest of
 your application. Templates have the sole responsibility of displaying formatted content. They are not responsible for

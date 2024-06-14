@@ -1,9 +1,10 @@
 ---
+title:   Filtrado de Datos
 isChild: true
-anchor:  data_filtering
+anchor:  filtrado_de_datos
 ---
 
-## Data Filtering {#data_filtering_title}
+## Filtrado de Datos {#filtrado_de_datos_title}
 
 Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate foreign input before
 using it in code. The `filter_var()` and `filter_input()` functions can sanitize text and validate text formats (e.g.

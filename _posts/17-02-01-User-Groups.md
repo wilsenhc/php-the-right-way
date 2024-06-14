@@ -1,9 +1,10 @@
 ---
+title:   Grupos de Usuarios PHP
 isChild: true
-anchor:  user_groups
+anchor:  grupos_de_usuarios
 ---
 
-## PHP User Groups {#user_groups_title}
+## Grupos de Usuarios PHP {#grupos_de_usuarios_title}
 
 If you live in a larger city, odds are there's a PHP user group nearby. You can easily find your local PUG at
 [PHP.ug][php-ug]. Alternate sources might be [Meetup.com][meetup] or a search for ```php user group near me```

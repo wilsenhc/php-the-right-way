@@ -1,9 +1,10 @@
 ---
+title:   Registro de Globales
 isChild: true
-anchor:  register_globals
+anchor:  registro_de_globales
 ---
 
-## Register Globals {#register_globals_title}
+## Registro de Globales {#registro_de_globales_title}
 
 **NOTE:** As of PHP 5.4.0 the `register_globals` setting has been removed and can no longer be used. This is only
 included as a warning for anyone in the process of upgrading a legacy application.

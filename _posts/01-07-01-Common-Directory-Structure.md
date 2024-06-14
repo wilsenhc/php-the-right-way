@@ -1,10 +1,10 @@
 ---
-title:   Common Directory Structure
+title:   Estructura Común de Directorios
 isChild: true
-anchor:  common_directory_structure
+anchor:  estructura_comun_de_directorios
 ---
 
-## Common Directory structure {#common_directory_structure_title}
+## Estructura Común de Directorios {#estructura_comun_de_directorios_title}
 
 A common question among those starting out with writing programs for the web is, "where do I put my stuff?" Over the years, this answer has consistently been "where the `DocumentRoot` is." Although this answer is not complete, it's a great place to start.
 

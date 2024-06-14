@@ -1,9 +1,10 @@
 ---
+title:   Seguridad de Aplicaciones Web
 isChild: true
-anchor:  web_application_security
+anchor:  seguridad_de_aplicaciones_web
 ---
 
-## Web Application Security {#web_application_security_title}
+## Seguridad de Aplicaciones Web {#seguridad_de_aplicaciones_web_title}
 
 It is very important for every PHP developer to learn [the basics of web application security][4], which can be broken
 down into a handful of broad topics:

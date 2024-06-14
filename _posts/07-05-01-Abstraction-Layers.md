@@ -1,10 +1,10 @@
 ---
+title:   Capas de Abstracción
 isChild: true
-title:   Abstraction Layers
-anchor:  databases_abstraction_layers
+anchor:  capas_de_abstraccion_de_bases_de_datos
 ---
 
-## Abstraction Layers {#databases_abstraction_layers_title}
+## Capas de Abstracción {#capas_de_abstraccion_de_bases_de_datos_title}
 
 Many frameworks provide their own abstraction layer which may or may not sit on top of [PDO][1]. These will often
 emulate features for one database system that is missing from another by wrapping your queries in PHP methods, giving

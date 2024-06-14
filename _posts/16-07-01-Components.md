@@ -1,9 +1,10 @@
 ---
+title:   Componentes
 isChild: true
-anchor:  components
+anchor:  componentes
 ---
 
-## Components {#components_title}
+## Componentes {#componentes_title}
 
 As mentioned above "Components" are another approach to the common goal of creating, distributing and implementing
 shared code. Various component repositories exist, the main two of which are:
@@ -26,7 +27,7 @@ For example, you can use the [FuelPHP Validation package], without needing to us
     * [Datasource]
     * [Event]
     * [I18n]
-    * [ORM]   
+    * [ORM]
 * [FuelPHP]
 * [Hoa Project]
 * [Symfony Components]
