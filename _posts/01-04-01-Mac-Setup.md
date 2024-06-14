@@ -6,7 +6,7 @@ anchor:  instalacion_en_macos
 
 ## Instalación en macOS {#instalacion_en_macos_title}
 
-macOS 12 (Monterey) and later does not come prepackaged with PHP. Earlier macOS versions include PHP but are behind the latest stable release. There are multiple ways to install the latest PHP version on macOS.
+macOS 12 (Monterey) y posteriores no vienen preempaquetados con PHP. Las versiones anteriores de macOS incluyen PHP pero no incluyen la última versión estable. Hay varias formas de instalar la última versión de PHP en macOS.
 
 ### Instalar PHP vía Homebrew
 
