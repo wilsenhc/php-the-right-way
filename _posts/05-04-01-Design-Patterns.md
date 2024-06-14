@@ -1,9 +1,10 @@
 ---
+title:   Patrones de Diseño
 isChild: true
-anchor:  design_patterns
+anchor:  patrones_de_diseno
 ---
 
-## Design Patterns {#design_patterns_title}
+## Patrones de Diseño {#patrones_de_diseno_title}
 
 When you are building your application it is helpful to use common patterns in your code and common patterns for the
 overall structure of your project. Using common patterns is helpful because it makes it much easier to manage your code

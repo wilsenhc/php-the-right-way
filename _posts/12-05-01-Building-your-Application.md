@@ -1,9 +1,10 @@
 ---
+title:   Construir y Desplegar su Aplicación
 isChild: true
-anchor:  building_and_deploying_your_application
+anchor:  construir_y_desplegar_su_aplicacion
 ---
 
-## Building and Deploying your Application {#building_and_deploying_your_application_title}
+## Construir y Desplegar su Aplicación {#construir_y_desplegar_su_aplicacion_title}
 
 If you find yourself doing manual database schema changes or running your tests manually before updating your files
 (manually), think twice! With every additional manual task needed to deploy a new version of your app, the chances for

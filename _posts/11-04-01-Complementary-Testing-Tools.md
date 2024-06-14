@@ -1,9 +1,10 @@
 ---
+title:   Herramientas de Prueba Complementarias
 isChild: true
-anchor:  complementary_testing_tools
+anchor:  herramientas_de_prueba_complementarias
 ---
 
-## Complementary Testing Tools {#complementary_testing_tools_title}
+## Herramientas de Prueba Complementarias {#herramientas_de_prueba_complementarias_title}
 
 Besides individual testing and behavior driven frameworks, there are also a number of generic frameworks and helper
 libraries useful for any preferred approach taken.

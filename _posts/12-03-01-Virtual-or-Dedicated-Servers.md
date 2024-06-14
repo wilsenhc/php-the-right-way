@@ -1,10 +1,10 @@
 ---
-title:   Virtual or Dedicated Servers
+title:   Servidores Virtuales o Dedicados
 isChild: true
-anchor:  virtual_or_dedicated_servers
+anchor:  servidores_virtuales_o_dedicados
 ---
 
-## Virtual or Dedicated Servers {#virtual_or_dedicated_servers_title}
+## Servidores Virtuales o Dedicados {#servidores_virtuales_o_dedicados_title}
 
 If you are comfortable with systems administration, or are interested in learning it, virtual or dedicated servers give
 you complete control of your application's production environment.

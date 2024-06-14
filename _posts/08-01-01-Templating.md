@@ -1,9 +1,9 @@
 ---
-title:  Templating
-anchor: templating
+title:  Plantillas
+anchor: plantillas
 ---
 
-# Templating {#templating_title}
+# Plantillas {#plantillas_title}
 
 Templates provide a convenient way of separating your controller and domain logic from your presentation logic.
 Templates typically contain the HTML of your application, but may also be used for other formats, such as XML.

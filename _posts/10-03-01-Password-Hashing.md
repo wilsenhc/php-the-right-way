@@ -1,9 +1,10 @@
 ---
+title:   Hashing de Contraseñas
 isChild: true
-anchor:  password_hashing
+anchor:  hashing_contrasenas
 ---
 
-## Password Hashing {#password_hashing_title}
+## Hashing de Contraseñas {#hashing_contrasenas_title}
 
 Eventually everyone builds a PHP application that relies on user login. Usernames and passwords are stored in a
 database and later used to authenticate users upon login.
@@ -72,4 +73,3 @@ if (password_verify('bad-password', $passwordHash)) {
 [5]: https://wikipedia.org/wiki/Salt_(cryptography)
 [6]: https://paragonie.com/blog/2016/02/how-safely-store-password-in-2016
 [7]: https://paragonie.com/blog/2015/08/you-wouldnt-base64-a-password-cryptography-decoded
-

@@ -1,10 +1,10 @@
 ---
+title:   Interacción con Bases de Datos
 isChild: true
-title:   Interacting with Databases
-anchor:  databases_interacting
+anchor:  interaccion_con_bases_de_datos
 ---
 
-## Interacting with Databases {#databases_interacting_title}
+## Interacción con Bases de Datos {#interaccion_con_bases_de_datos_title}
 
 When developers first start to learn PHP, they often end up mixing their database interaction up with their
 presentation logic, using code that might look like this:

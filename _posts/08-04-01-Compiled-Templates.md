@@ -1,9 +1,10 @@
 ---
+title:   Plantillas Compiladas
 isChild: true
-anchor:  compiled_templates
+anchor:  plantillas_compiladas
 ---
 
-## Compiled Templates {#compiled_templates_title}
+## Plantillas Compiladas {#plantillas_compiladas_title}
 
 While PHP has evolved into a mature, object oriented language, it [hasn't improved much][article_templating_engines] as
 a templating language. Compiled templates, like [Twig], [Brainy], or [Smarty]*, fill this void by offering a new syntax that has

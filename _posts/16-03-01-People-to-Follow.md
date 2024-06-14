@@ -1,10 +1,10 @@
 ---
-title:   People to Follow
+title:   Personas a Seguir
 isChild: true
-anchor:  people_to_follow
+anchor:  personas_a_seguir
 ---
 
-## People to Follow {#people_to_follow_title}
+## Personas a Seguir {#personas_a_seguir_title}
 
 It's difficult to find interesting and knowledgeable PHP
 community members when you are first starting out. You can

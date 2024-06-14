@@ -1,10 +1,10 @@
 ---
-title: Plain PHP Templates
+title:   Plantillas en PHP simple
 isChild: true
-anchor:  plain_php_templates
+anchor:  plantillas_php_simple
 ---
 
-## Plain PHP Templates {#plain_php_templates_title}
+## Plantillas en PHP simple {#plantillas_php_simple_title}
 
 Plain PHP templates are simply templates that use native PHP code. They are a natural choice since PHP is actually a
 template language itself. That simply means that you can combine PHP code within other code, like HTML. This is

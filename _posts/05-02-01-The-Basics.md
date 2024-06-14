@@ -1,9 +1,10 @@
 ---
+title:   Conceptos Básicos
 isChild: true
-anchor:  the_basics
+anchor:  conceptos_basicos
 ---
 
-## The Basics {#the_basics_title}
+## Conceptos Básicos {#conceptos_basicos_title}
 
 PHP is a vast language that allows coders of all levels the ability to produce code not only quickly, but efficiently.
 However, while advancing through the language, we often forget the basics that we first learnt (or overlooked) in favor

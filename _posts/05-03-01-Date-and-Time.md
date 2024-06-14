@@ -1,10 +1,10 @@
 ---
-title:   Date and Time
+title:   Fecha y Hora
 isChild: true
-anchor:  date_and_time
+anchor:  fecha_y_hora
 ---
 
-## Date and Time {#date_and_time_title}
+## Fecha y Hora {#fecha_y_hora_title}
 
 PHP has a class named DateTime to help you when reading, writing, comparing or calculating with date and time. There
 are many date and time related functions in PHP besides DateTime, but it provides nice object-oriented interface to

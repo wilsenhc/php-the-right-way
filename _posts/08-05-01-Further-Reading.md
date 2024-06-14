@@ -1,9 +1,10 @@
 ---
+title:   Lectura Adicional
 isChild: true
-anchor:  templating_further_reading
+anchor:  lectura_adicional_plantillas
 ---
 
-## Further Reading {#templating_further_reading_title}
+## Lectura Adicional {#lectura_adicional_plantillas_title}
 
 ### Articles & Tutorials
 

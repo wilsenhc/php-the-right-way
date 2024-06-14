@@ -1,9 +1,9 @@
 ---
-title:  Databases
-anchor: databases
+title:  Bases de Datos
+anchor: bases_de_datos
 ---
 
-# Databases {#databases_title}
+# Bases de Datos {#bases_de_datos_title}
 
 Many times your PHP code will use a database to persist information. You have a few options to connect and interact
 with your database. The recommended option **until PHP 5.1.0** was to use native drivers such as [mysqli], [pgsql],

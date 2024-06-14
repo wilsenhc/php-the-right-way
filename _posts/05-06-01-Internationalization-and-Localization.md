@@ -1,10 +1,10 @@
 ---
-title:   Internationalization and Localization
+title:   Internacionalización y Localización
 isChild: true
 anchor:  i18n_l10n
 ---
 
-## Internationalization (i18n) and Localization (l10n) {#i18n_l10n_title}
+## Internacionalización (i18n) y Localización (l10n) {#i18n_l10n_title}
 
 _Disclaimer for newcomers: i18n and l10n are numeronyms, a kind of abbreviation where numbers are used to shorten
 words - in our case, internationalization becomes i18n and localization, l10n._
@@ -17,8 +17,8 @@ probably need some huge changes in the source!
 - **Localization** happens when you adapt the interface (mainly) by translating contents, based on the i18n work done
 before. It usually is done every time a new language or region needs support and is updated when new interface pieces
 are added, as they need to be available in all supported languages.
-- **Pluralization** defines the rules required between distinct languages to interoperate strings containing numbers and 
-counters. For instance, in English when you have only one item, it is singular, and anything different from that is 
+- **Pluralization** defines the rules required between distinct languages to interoperate strings containing numbers and
+counters. For instance, in English when you have only one item, it is singular, and anything different from that is
 called plural; plural in this language is indicated by adding an S after some words, and sometimes changes parts of it.
 In other languages, such as Russian or Serbian, there are two plural forms in addition to the singular - you may even
 find languages with a total of four, five or six forms, such as Slovenian, Irish or Arabic.
@@ -85,14 +85,14 @@ files are not mandatory: depending on the tool you are using to do l10n, you can
 You will always have one pair of PO/MO files per language and region, but only one POT per domain.
 
 ### Domains
-There are some cases, in big projects, where you might need to separate translations when the same words convey 
+There are some cases, in big projects, where you might need to separate translations when the same words convey
 different meaning given a context. In those cases, you split them into different _domains_. They are, basically, named
 groups of POT/PO/MO files, where the filename is the said _translation domain_. Small and medium-sized projects usually,
 for simplicity, use only one domain; its name is arbitrary, but we will be using "main" for our code samples.
 In [Symfony] projects, for example, domains are used to separate the translation for validation messages.
 
 #### Locale code
-A locale is simply a code that identifies one version of a language. It is defined following the [ISO 639-1][639-1] and 
+A locale is simply a code that identifies one version of a language. It is defined following the [ISO 639-1][639-1] and
 [ISO 3166-1 alpha-2][3166-1] specs: two lower-case letters for the language, optionally followed by an underline and two
 upper-case letters identifying the country or regional code. For [rare languages][rare], three letters are used.
 

@@ -1,8 +1,9 @@
 ---
-anchor: code_style_guide
+title:  Guía de Estilos del Código
+anchor: guia_de_estilos_del_codigo
 ---
 
-# Code Style Guide {#code_style_guide_title}
+# Guía de Estilos del Código {#guia_de_estilos_del_codigo_title}
 
 The PHP community is large and diverse, composed of innumerable libraries, frameworks, and components. It is common for
 PHP developers to choose several of these and combine them into a single project. It is important that PHP code adheres

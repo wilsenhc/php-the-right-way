@@ -1,10 +1,10 @@
 ---
-title:   From the Source
+title:   Desde la Fuente
 isChild: true
-anchor:  from_the_source
+anchor:  desde_la_fuente
 ---
 
-## From the Source {#from_the_source_title}
+## Desde la Fuente {#desde_la_fuente_title}
 
 * [PHP Website](https://www.php.net/)
 * [PHP Documentation](https://www.php.net/docs.php)

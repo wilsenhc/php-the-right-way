@@ -1,9 +1,9 @@
 ---
-title:  Dependency Injection
-anchor: dependency_injection
+title:  Inyección de Dependencias
+anchor: inyeccion_de_dependencias
 ---
 
-# Dependency Injection {#dependency_injection_title}
+# Inyección de Dependencias {#inyeccion_de_dependencias_title}
 
 From [Wikipedia](https://wikipedia.org/wiki/Dependency_injection):
 

@@ -1,10 +1,10 @@
 ---
-title:   Working with UTF-8
+title:   Trabajar con UTF-8
 isChild: true
-anchor:  php_and_utf8
+anchor:  php_y_utf8
 ---
 
-## Working with UTF-8 {#php_and_utf8_title}
+## Trabajar con UTF-8 {#php_y_utf8_title}
 
 _This section was originally written by [Alex Cabal](https://alexcabal.com/) over at
 [PHP Best Practices](https://phpbestpractices.org/#utf-8) and has been used as the basis for our own UTF-8 advice_.
@@ -83,7 +83,7 @@ if (!$utf_set) {
 
 // Tell PHP that we'll be outputting UTF-8 to the browser
 mb_http_output('UTF-8');
- 
+
 // Our UTF-8 test string
 $string = 'Êl síla erin lû e-govaned vîn.';
 
