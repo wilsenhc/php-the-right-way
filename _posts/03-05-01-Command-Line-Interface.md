@@ -23,7 +23,7 @@ La opción `-i` imprimirá su configuración PHP igual que la función [`phpinfo
 La opción `-a` proporciona un shell interactivo, similar al IRB de ruby o al shell interactivo de python. También existen
 de otras útiles [opciones de línea de comandos][cli-options], también.
 
-Escribamos un simple programa CLI «Hola, $nombre». Para probarlo, crea un archivo llamado `hello.php`, como se muestra a continuación.
+Escribamos un simple programa CLI "Hola, $nombre". Para probarlo, crea un archivo llamado `hello.php`, como se muestra a continuación.
 
 {% highlight php %}
 <?php
