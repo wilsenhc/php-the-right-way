@@ -23,7 +23,7 @@ hyper-fast data store in a central location and many different systems can pull 
 Note that whether the cache is shared across PHP processes depends on how PHP is used. When running PHP via PHP-FPM,
 the cache is shared across all processes of all pools. When running PHP as a (Fast-)CGI application inside your
 webserver, the cache is not shared, i.e every PHP process will have its own APCu data. When running PHP as a command
-line, the cache is not shared and will only exists for the duration of the command. So you have to be mindful of your
+line, the cache is not shared and will only exist for the duration of the command. So you have to be mindful of your
 situation and goals. And you might want to consider using memcached instead, as it's not tied to the PHP processes.
 
 In a networked configuration APCu will usually outperform memcached in terms of access speed, but memcached will be
