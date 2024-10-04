@@ -6,76 +6,77 @@ anchor:  problema_complejo
 
 ## Problema Complejo {#problema_complejo_title}
 
-If you have ever read about Dependency Injection then you have probably seen the terms *"Inversion of Control"* or
-*"Dependency Inversion Principle"*. These are the complex problems that Dependency Injection solves.
+Si alguna vez has leído sobre Inyección de Dependencias es probable que hayas visto los términos *"Inversión de control"* o 
+*"Principio de Inversión de Dependencias"*. Estos son los problemas complejos que resuelve la Inyección de Dependencias.
 
-### Inversion of Control
+### Inversión de Control
 
-Inversion of Control is as it says, "inverting the control" of a system by keeping organizational control entirely
-separate from our objects. In terms of Dependency Injection, this means loosening our dependencies by controlling and
-instantiating them elsewhere in the system.
+Inversión de Control, como su nombre lo indica, es "invertir el control" de un sistema al mantener el control organizacional completamente separado de nuestros objetos. En términos de Inyección de Dependencias, esto significa desacoplar nuestras dependencias al controlarlas e instanciarlas en otras partes del sistema.
 
-For years, PHP frameworks have been achieving Inversion of Control, however, the question became, which part of control
-are we inverting, and where to? For example, MVC frameworks would generally provide a super object or base controller
-that other controllers must extend to gain access to its dependencies. This **is** Inversion of Control, however,
-instead of loosening dependencies, this method simply moved them.
+Durante años, los frameworks PHP han estado logrando la Inversión de Control, sin embargo, surge la pregunta, ¿qué parte del control estamos invirtiendo y hacia dónde? Por ejemplo, los frameworks MVC generalmente proveen un superobjeto o controlador base que otros controladores deben extender para obtener acceso a sus dependencias. Esto **es** Inversión de Control, sin embargo, en lugar de desacoplar las dependencias, este método simplemente las mueve.
 
-Dependency Injection allows us to more elegantly solve this problem by only injecting the dependencies we need, when we
-need them, without the need for any hard coded dependencies at all.
+La Inyección de Dependencia nos permite resolver este problema de una forma mas elegante al inyectar solamente las dependencias que necesitamos, cuando la necesitamos sin la necesidad de tener dependencias en duro.
 
 ### S.O.L.I.D.
 
-#### Single Responsibility Principle
+#### Principio de Responsabilidad Única
 
-The Single Responsibility Principle is about actors and high-level architecture. It states that “A class should have
-only one reason to change.” This means that every class should _only_ have responsibility over a single part of the
-functionality provided by the software. The largest benefit of this approach is that it enables improved code
-_reusability_. By designing our class to do just one thing, we can use (or re-use) it in any other program without
-changing it.
+El Principio de Responsabilidad Única (en inglés _Single Responsibility Principle_) se refiere a
+los actores y a la arquitectura de alto nivel.
+Establece que “Una clase debería tener solo una razón para cambiar”.
+Esto significa que cada clase debería _solo_ tener responsabilidad sobre una única parte de la
+funcionalidad proporcionada por el software. El mayor beneficio de este enfoque es que permite una mejor
+_reutilización_ del código. Al diseñar nuestras clases para que hagan solo una cosa, podemos utilizar (o reutilizarlas) en cualquier otro programa sin cambiarlas.
 
-#### Open/Closed Principle
+#### Principio Abierto/Cerrado
 
-The Open/Closed Principle is about class design and feature extensions. It states that “Software entities (classes,
-modules, functions, etc.) should be open for extension, but closed for modification.” This means that we should design
-our modules, classes and functions in a way that when a new functionality is needed, we should not modify our existing
-code but rather write new code that will be used by existing code. Practically speaking, this means that we should write
-classes that implement and adhere to _interfaces_, then type-hint against those interfaces instead of specific classes.
+El Principio abierto/cerrado (_Open/Closed Principle_) se refiere al diseño de clases y la
+extensión de funcionalidades. Establece que "Las entidades de software (clases,
+módulos, funciones, etc.) deben estar abiertas a la extensión, pero cerradas a la modificación".
+Esto significa que debemos diseñar nuestros módulos, clases y funciones de manera que cuando se
+necesite una nueva funcionalidad, no deberíamos modificar nuestro código existente sino que
+escribamos código nuevo que será utilizado por el código existente. En términos prácticos,
+esto significa que deberíamos escribir clases que implementen y respeten las _interfaces_,
+luego hacer sugerencias de tipos hacía esas interfaces en lugar de clases específicas.
 
-The largest benefit of this approach is that we can very easily extend our code with support for something new without
-having to modify existing code, meaning that we can reduce QA time, and the risk for negative impact to the application
-is substantially reduced. We can deploy new code, faster, and with more confidence.
+El mayor beneficio de este enfoque es que podemos extender nuestro código muy fácilmente con soporte para algo nuevo sin tener que modificar el código existente, lo que significa que podemos reducir el tiempo de Control de Calidad (QA) y el riesgo de un impacto negativo a la aplicación se reduce considerablemente. Podemos desplegar nuevo código más rápido y con más confianza.
 
-#### Liskov Substitution Principle
+#### Principio de Sustitución de Liskov
 
-The Liskov Substitution Principle is about subtyping and inheritance. It states that “Child classes should never break
-the parent class’ type definitions.” Or, in Robert C. Martin’s words, “Subtypes must be substitutable for their base
-types.”
+El Principio de Sustitución de Liskov (_Liskov Substitution Principle_) se refiere a la subtipificación y la herencia.
+Establece que “Las clases hijas nunca deben romper las definiciones de tipo de la clase padre”. O, en palabras de Robert C. Martin,
+“Los subtipos deben ser sustituibles por sus tipos base”.
 
-For example, if we have a `FileInterface` interface which defines an `embed()` method, and we have `Audio` and `Video`
-classes which both implement the `FileInterface` interface, then we can expect that the usage of the `embed()` method will always
-do the thing that we intend. If we later create a `PDF` class or a `Gist` class which implement the `FileInterface`
-interface, we will already know and understand what the `embed()` method will do. The largest benefit of this approach
-is that we have the ability to build flexible and easily-configurable programs, because when we change one object of a
-type (e.g., `FileInterface`) to another we don't need to change anything else in our program.
+Por ejemplo, si tenemos una interfaz `FileInterface` que define un método `embed()`, y contamos con las clases `Audio` y `Video`
+las cuales implementan esta interfaz `FileInterface`, podemos esperar que el uso del método `embed()` siempre haga lo que pretendemos.
+Si más adelante creamos una clase `PDF` o una clase `Gist` que también implementen la interfaz `FileInterface`, ya sabremos
+y entenderemos lo que hará el método `embed()`. El mayor beneficio de este enfoque es que tenemos la capacidad de construir
+programas flexibles y fácilmente configurables, ya que cuando cambiamos un objeto de un tipo (por ejemplo, `FileInterface`)
+por otro, no necesitamos modificar más nada en nuestro programa.
 
-#### Interface Segregation Principle
+#### Principio de Segregación de Interfaces
 
-The Interface Segregation Principle (ISP) is about _business-logic-to-clients_ communication. It states that “No client
-should be forced to depend on methods it does not use.” This means that instead of having a single monolithic interface
-that all conforming classes need to implement, we should instead provide a set of smaller, concept-specific interfaces
-that a conforming class implements one or more of.
+El Principio de Segregación de Interfaces (_Interface Segregation Principle_, ISP
+por sus siglas en inglés) trata sobre la comunicación entre la _lógica de negocio_ y los _clientes_.
+Establece que “Ningún cliente debería verse obligado a depender de métodos que no utiliza”.
+Esto quiere decir que en lugar de tener una única interfaz monolítica que todas las clases
+conformantes deben implementar, deberíamos en su lugar proporcionar un conjunto de interfaces
+más pequeñas y específicas por concepto que una clase conformante implemente una o más de ellas.
 
-For example, a `Car` or `Bus` class would be interested in a `steeringWheel()` method, but a `Motorcycle` or `Tricycle`
-class would not. Conversely, a `Motorcycle` or `Tricycle` class would be interested in a `handlebars()` method, but a
-`Car` or `Bus` class would not. There is no need to have all of these types of vehicles implement support for both
-`steeringWheel()` as well as `handlebars()`, so we should break-apart the source interface.
+Por ejemplo, una clase `Car` o `Bus` estaría interesada en un método `steeringWheel()`, pero una
+clase `Motorcycle` o `Tricycle` no lo estaría. Por otro lado, una clase `Motorcycle` o `Tricycle`
+se interesaría en un método `handlebars()`, mientras que una clase `Car` o `Bus` no. No es necesario
+que todos estos tipos de vehículos implementen soporte tanto para `steeringWheel()` como para `handlebars()`,
+por lo que deberíamos descomponer la interfaz original.
 
-#### Dependency Inversion Principle
+#### Principio de Inversión de Dependencias
 
-The Dependency Inversion Principle is about removing hard-links between discrete classes so that new functionality can
-be leveraged by passing a different class. It states that one should *"Depend on Abstractions. Do not depend on
-concretions."*. Put simply, this means our dependencies should be interfaces/contracts or abstract classes rather than
-concrete implementations. We can easily refactor the above example to follow this principle.
+El Principio de Inversión de Dependencias (_Dependency Inversion Principle_) trata sobre eliminar los vínculos rígidos entre
+clases discretas para que se pueda aprovechar nueva funcionalidad al pasar una clase diferente.
+Establece que se debe *"depender de abstracciones. No depender de implementaciones"*.
+En términos simples, esto significa que nuestras dependencias deberían ser interfaces/contratos
+o clases abstractas en lugar de implementaciones concretas. Podemos fácilmente refactorizar
+el ejemplo anterior para seguir este principio.
 
 {% highlight php %}
 <?php
@@ -93,14 +94,14 @@ interface AdapterInterface {}
 class MysqlAdapter implements AdapterInterface {}
 {% endhighlight %}
 
-There are several benefits to the `Database` class now depending on an interface rather than a concretion.
+Hay varios beneficios al hacer que la clase `Database` ahora dependa de una interfaz en lugar de una implementación concreta.
 
-Consider that we are working in a team and the adapter is being worked on by a colleague. In our first example, we
-would have to wait for said colleague to finish the adapter before we could properly mock it for our unit tests. Now
-that the dependency is an interface/contract we can happily mock that interface knowing that our colleague will build
-the adapter based on that contract.
+Consideremos que estamos trabajando en un equipo y el adaptador está siendo desarrollado por un colega.
+En nuestro primer ejemplo, tendríamos que esperar a que dicho colega termine el adaptador antes de poder
+simularlo adecuadamente para nuestras pruebas unitarias. Ahora que la dependencia es una interfaz/contrato,
+podemos simular esa interfaz sin problemas, sabiendo que nuestro colega construirá el adaptador basado en ese contrato.
 
-An even bigger benefit to this method is that our code is now much more scalable. If a year down the line we decide
-that we want to migrate to a different type of database, we can write an adapter that implements the original interface
-and injects that instead, no more refactoring would be required as we can ensure that the adapter follows the contract
-set by the interface.
+Un beneficio incluso aún mayor de este enfoque es que nuestro código ahora es mucho más escalable. Si dentro de
+un año decidimos que queremos migrar a un tipo diferente de base de datos, podemos escribir un adaptador que implemente
+la interfaz original e inyectar eso en su lugar, no se requeriría más refactorización ya que podemos asegurar que el
+adaptador sigue el contrato establecido por la interfaz.

@@ -5,11 +5,12 @@ anchor: inyeccion_de_dependencias
 
 # Inyección de Dependencias {#inyeccion_de_dependencias_title}
 
-From [Wikipedia](https://wikipedia.org/wiki/Dependency_injection):
+De [Wikipedia](https://es.wikipedia.org/wiki/Inyecci%C3%B3n_de_dependencias):
 
-> Dependency injection is a software design pattern that allows the removal of hard-coded dependencies and makes it
-> possible to change them, whether at run-time or compile-time.
+> Inyección de dependencias (_Dependency Injection_, DI) es un patrón de diseño en el que se suministran objetos a 
+> una clase en lugar de ser la propia clase la que cree dichos objetos. Esos objetos cumplen contratos que necesitan
+> nuestras clases para poder funcionar (de ahí el concepto de _dependencia_).
 
-This quote makes the concept sound much more complicated than it actually is. Dependency Injection is providing a
-component with its dependencies either through constructor injection, method calls or the setting of properties. It is
-that simple.
+Esta cita hace que el concepto suene mucho más complejo de lo que es en realidad. La inyección de dependencias
+consiste en proporcionar a un componente sus dependencias a través de la inyección en constructor, llamadas
+a métodos o la configuración de propiedades. Es así de simple.
