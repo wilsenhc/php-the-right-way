@@ -6,21 +6,22 @@ anchor:  excepciones
 
 ## Excepciones {#excepciones_title}
 
-Exceptions are a standard part of most popular programming languages, but they are often overlooked by PHP programmers.
-Languages like Ruby are extremely Exception heavy, so whenever something goes wrong such as a HTTP request failing, or
-a DB query goes wrong, or even if an image asset could not be found, Ruby (or the gems being used) will throw an
-exception to the screen meaning you instantly know there is a mistake.
+Las excepciones son una parte estándar de la mayoría de los lenguajes de programación populares,
+pero a menudo son pasadas por alto por los programadores de PHP. Lenguajes como Ruby son extremadamente dependientes de
+excepciones, así que cada vez que algo sale mal, como una falla en una solicitud HTTP, un error en una consulta a
+la base de datos, o incluso si no se puede encontrar un recurso de imagen, Ruby (o las gems utilizadas) lanzará una excepción
+a la pantalla, lo que significa que instantáneamente sabrás que hay un error.
 
-PHP itself is fairly lax with this, and a call to `file_get_contents()` will usually just get you a `FALSE` and a
-warning.
-Many older PHP frameworks like CodeIgniter will just return a false, log a message to their proprietary logs and maybe
-let you use a method like `$this->upload->get_error()` to see what went wrong. The problem here is that you have to go
-looking for a mistake and check the docs to see what the error method is for this class, instead of having it made
-extremely obvious.
+PHP, por su parte, es bastante indulgente con esto, y una llamada a `file_get_contents()` generalmente solo te devolverá
+un `FALSE` y un `warning`. Muchos frameworks antiguos de PHP, como CodeIgniter, simplemente devolverán un falso,
+registrarán un mensaje en sus registros y tal vez te permitan usar un método como $this->upload->get_error() para ver
+qué salió mal. El problema aquí es que tienes que ir a buscar un error y consultar la documentación para ver cuál es
+el método de error para esta clase, en lugar de que se te haga extremadamente obvio.
 
-Another problem is when classes automatically throw an error to the screen and exit the process. When you do this you
-stop another developer from being able to dynamically handle that error. Exceptions should be thrown to make a
-developer aware of an error; they then can choose how to handle this. E.g.:
+Otro problema es cuando las clases lanzan automáticamente un error en la pantalla y terminan el proceso.
+Cuando haces esto, detienes a otro desarrollador de poder manejar dinámicamente ese error.
+Las excepciones deben lanzarse para hacer que un desarrollador sea consciente de un error;
+luego puede elegir cómo manejarlo. Por ejemplo:
 
 {% highlight php %}
 <?php
@@ -35,39 +36,39 @@ try
 }
 catch(Fuel\Email\ValidationFailedException $e)
 {
-    // The validation failed
+    // La validación falló
 }
 catch(Fuel\Email\SendingFailedException $e)
 {
-    // The driver could not send the email
+    // El controlador no pudo enviar el correo electrónico
 }
 finally
 {
-    // Executed regardless of whether an exception has been thrown, and before normal execution resumes
+    // Ejecutado independientemente de si se ha lanzado una excepción, y antes de que se reanude la ejecución normal
 }
 {% endhighlight %}
 
-### SPL Exceptions
+### Excepciones SPL
 
-The generic `Exception` class provides very little debugging context for the developer; however, to remedy this, it is
-possible to create a specialized `Exception` type by sub-classing the generic `Exception` class:
+La clase genérica `Exception` proporciona muy poco contexto de depuración para el desarrollador; sin embargo, 
+para remediar esto, es posible crear un tipo de `Exception` especializado al sub-clasificar la clase genérica `Exception`:
 
 {% highlight php %}
 <?php
 class ValidationException extends Exception {}
 {% endhighlight %}
 
-This means you can add multiple catch blocks and handle different Exceptions differently. This can lead to the
-creation of a <em>lot</em> of custom Exceptions, some of which could have been avoided using the SPL Exceptions
-provided in the [SPL extension][splext].
+Esto significa que puedes agregar múltiples bloques de captura y manejar diferentes excepciones de manera diferente. 
+Esto puede llevar a la creación de un <em>gran</em> número de Excepciones personalizadas, 
+algunas de las cuales podrían haberse evitado utilizando las excepciones SPL proporcionadas en la [extensión SPL][splext]. 
 
-If for example you use the `__call()` Magic Method and an invalid method is requested then instead of throwing a
-standard Exception which is vague, or creating a custom Exception just for that, you could just
-`throw new BadMethodCallException;`.
+Si, por ejemplo, utilizas el método mágico `__call()` y se solicita un método no válido, en lugar de lanzar una 
+Excepción estándar que es vaga, o crear una Excepción personalizada solo para eso, 
+podrías simplemente `throw new BadMethodCallException;`.
 
-* [Read about Exceptions][exceptions]
-* [Read about SPL Exceptions][splexe]
-* [Nesting Exceptions In PHP][nesting-exceptions-in-php]
+* [Lee sobre Excepciones][exceptions]
+* [Lee sobre Excepciones SPL][splexe]
+* [Nidificación de Excepciones en PHP][nesting-exceptions-in-php]
 
 
 [splext]: /#standard_php_library
