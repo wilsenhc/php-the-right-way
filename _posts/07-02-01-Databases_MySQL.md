@@ -6,26 +6,25 @@ anchor:  extension_mysql
 
 ## Extensión MySQL {#extension_mysql_title}
 
-The [mysql] extension for PHP is incredibly old and has been superseded by two other extensions:
+La extensión [mysql] para PHP es increíblemente antigua y ha sido reemplazada por otras dos extensiones:
 
 - [mysqli]
 - [pdo]
 
-Not only did development stop long ago on [mysql], but it
-**has been [officially removed in PHP 7.0][mysql_removed]**.
+No sólo el desarrollo de [mysql] se detuvo hace mucho tiempo, sino que además
+**ha sido [oficialmente eliminado en PHP 7.0][mysql_removed]**.
 
-To save digging into your `php.ini` settings to see which module you are using, one option is to search for `mysql_*`
-in your editor of choice. If any functions such as `mysql_connect()` and `mysql_query()` show up, then `mysql` is
-in use.
+Para ahorrarse la búsqueda en su `php.ini` para ver qué módulo está utilizando, una opción es buscar `mysql_*`
+en el editor de su elección. Si aparecen funciones como `mysql_connect()` y `mysql_query()`, entonces está usando `mysql`.
 
-Even if you are not using PHP 7.x or later yet, failing to consider this upgrade as soon as possible will lead to greater
-hardship when the PHP upgrade does come about. The best option is to replace mysql usage with [mysqli] or [PDO] in
-your applications within your own development schedules so you won't be rushed later on.
+Incluso si aún no está utilizando PHP 7.x o posterior, no considerar esta actualización lo antes posible le acarreará mayores
+dificultades cuando se produzca la actualización de PHP. La mejor opción es reemplazar el uso de mysql por [mysqli] o [PDO] en tus
+aplicaciones dentro de tus propios calendarios de desarrollo para que no te veas apurado más adelante.
 
-**If you are upgrading from [mysql] to [mysqli], beware lazy upgrade guides that suggest you can simply find and replace `mysql_*` with `mysqli_*`. Not only is that a gross oversimplification, it misses out on the advantages that mysqli provides, such as parameter binding, which is also offered in [PDO][pdo].**
+**Si está actualizando de [mysql] a [mysqli], tenga cuidado con las guías de actualización perezosas que sugieren que simplemente puede encontrar y reemplazar `mysql_*` con `mysqli_*`. No sólo es una simplificación excesiva, sino que pierde las ventajas que mysqli proporciona, como la vinculación de parámetros, que también se ofrece en [PDO][pdo].**
 
-* [MySQLi Prepared Statements][mysqli_prepared_statements]
-* [PHP: Choosing an API for MySQL][mysql_api]
+* [Sentencias Preparadas de MySQLi][mysqli_prepared_statements]
+* [PHP: Cómo elegir una API para MySQL][mysql_api]
 
 [mysql]: https://www.php.net/mysqli
 [mysql_removed]: https://www.php.net/manual/migration70.removed-exts-sapis.php

@@ -6,8 +6,8 @@ anchor:  interaccion_con_bases_de_datos
 
 ## Interacción con Bases de Datos {#interaccion_con_bases_de_datos_title}
 
-When developers first start to learn PHP, they often end up mixing their database interaction up with their
-presentation logic, using code that might look like this:
+Cuando los desarrolladores comienzan a aprender PHP, a menudo terminan mezclando su interacción con la base de datos con su
+lógica de presentación, utilizando código que podría parecerse a esto:
 
 {% highlight php %}
 <ul>
@@ -19,13 +19,12 @@ foreach ($db->query('SELECT * FROM table') as $row) {
 </ul>
 {% endhighlight %}
 
-This is bad practice for all sorts of reasons, mainly that it's hard to debug, hard to test, hard to read and it is
-going to output a lot of fields if you don't put a limit on there.
+Esta es una mala práctica por todo tipo de razones, principalmente que es difícil de depurar, difícil de probar, difícil de leer
+y que va a dar salida a un montón de campos si no pones un límite.
 
-While there are many other solutions to doing this - depending on if you prefer [OOP](/#object-oriented-programming) or
-[functional programming](/#functional-programming) - there must be some element of separation.
+Aunque hay muchas otras soluciones para hacer esto - dependiendo de si prefieres [POO](/#programación-orientada-a-objetos) o [programación funcional](/#programación-funcional) - debe haber algún elemento de separación.
 
-Consider the most basic step:
+Considere el paso más básico:
 
 {% highlight php %}
 <?php
@@ -39,11 +38,11 @@ foreach ($results as $row) {
 }
 {% endhighlight %}
 
-That is a good start. Put those two items in two different files and you've got some clean separation.
+Es un buen comienzo. Pon esos dos elementos en dos archivos diferentes y tendrás una separación limpia.
 
-Create a class to place that method in and you have a "Model". Create a simple `.php` file to put the presentation
-logic in and you have a "View", which is very nearly [MVC] - a common OOP architecture for most
-[frameworks](/#frameworks).
+Crea una clase en la que colocar ese método y tendrás un "Modelo". Crea un simple archivo `.php` para colocar
+la lógica de presentación y tendrás una "Vista", que es muy parecido a [MVC] - una arquitectura OOP común para
+la mayoría de los [frameworks](/#frameworks).
 
 **foo.php**
 
@@ -51,15 +50,15 @@ logic in and you have a "View", which is very nearly [MVC] - a common OOP archit
 <?php
 $db = new PDO('mysql:host=localhost;dbname=testdb;charset=utf8mb4', 'username', 'password');
 
-// Make your model available
+// Ponga su modelo a disposición
 include 'models/FooModel.php';
 
-// Create an instance
+// Crear una instancia
 $fooModel = new FooModel($db);
-// Get the list of Foos
+// Obtener la lista de Foos
 $fooList = $fooModel->getAllFoos();
 
-// Show the view
+// Mostrar la vista
 include 'views/foo-list.php';
 {% endhighlight %}
 
@@ -88,9 +87,9 @@ class FooModel
 <?php endforeach ?>
 {% endhighlight %}
 
-This is essentially the same as what most modern frameworks are doing, albeit a little more manual. You might not
-need to do all of that every time, but mixing together too much presentation logic and database interaction can be a
-real problem if you ever want to [unit-test](/#unit-testing) your application.
+Esto es esencialmente lo mismo que hacen la mayoría de los frameworks modernos, aunque un poco más manual.
+Puede que no necesites hacer todo eso cada vez, pero mezclar demasiada lógica de presentación e interacción con la base de datos
+puede ser un verdadero problema si alguna vez quieres hacer [test unitarios](/#test-unitarios) a tu aplicación.
 
 
 [MVC]: https://code.tutsplus.com/tutorials/mvc-for-noobs--net-10488
