@@ -6,7 +6,7 @@ anchor:  lectura_adicional_plantillas
 
 ## Lectura Adicional {#lectura_adicional_plantillas_title}
 
-### Articles & Tutorials
+### Artículos & Tutoriales
 
 * [Templating Engines in PHP](http://fabien.potencier.org/templating-engines-in-php.html)
 * [An Introduction to Views & Templating in CodeIgniter](https://code.tutsplus.com/tutorials/an-introduction-to-views-templating-in-codeigniter--net-25648)
@@ -16,7 +16,7 @@ anchor:  lectura_adicional_plantillas
 * [Working With Templates in Symfony 2](https://code.tutsplus.com/tutorials/working-with-templates-in-symfony-2--cms-21172)
 * [Writing Safer Templates](https://github.com/box/brainy/wiki/Writing-Safe-Templates)
 
-### Libraries
+### Bibliotecas
 
 * [Aura.View](https://github.com/auraphp/Aura.View) *(native)*
 * [Blade](https://laravel.com/docs/blade) *(compiled, framework specific)*

@@ -6,18 +6,19 @@ anchor:  plantillas_compiladas
 
 ## Plantillas Compiladas {#plantillas_compiladas_title}
 
-While PHP has evolved into a mature, object oriented language, it [hasn't improved much][article_templating_engines] as
-a templating language. Compiled templates, like [Twig], [Brainy], or [Smarty]*, fill this void by offering a new syntax that has
-been geared specifically to templating. From automatic escaping, to inheritance and simplified control structures,
-compiled templates are designed to be easier to write, cleaner to read and safer to use. Compiled templates can even be
-shared across different languages, [Mustache] being a good example of this. Since these templates must be compiled
-there is a slight performance hit, however this is very minimal when proper caching is used.
+Aunque PHP ha evolucionado hasta convertirse en un lenguaje maduro, orientado a objetos, [no ha mejorado mucho][article_templating_engines]
+como lenguaje de plantillas. Las plantillas compiladas, como [Twig], [Brainy] o [Smarty]*, llenan este vacío al ofrecer
+una nueva sintaxis diseñada específicamente para la creación de plantillas. Desde el escape automático hasta la herencia
+y estructuras de control simplificadas, las plantillas compiladas están diseñadas para ser más fáciles de escribir, más
+legibles y más seguras de usar. Las plantillas compiladas incluso pueden compartirse entre diferentes lenguajes,
+siendo [Mustache] un buen ejemplo de esto. Dado que estas plantillas deben ser compiladas, hay una ligera pérdida de rendimiento,
+sin embargo, esto es muy mínimo cuando se utiliza un sistema de caché apropiado.
 
-**While Smarty offers automatic escaping, this feature is NOT enabled by default.*
+**Aunque Smarty ofrece escape automático, NO está habilitado por defecto.*
 
-### Simple example of a compiled template
+### Ejemplo de una plantilla compilada
 
-Using the [Twig] library.
+Haciendo uso de [Twig].
 
 {% highlight html+jinja %}
 {% raw %}
@@ -30,9 +31,9 @@ Using the [Twig] library.
 {% endraw %}
 {% endhighlight %}
 
-### Example of compiled templates using inheritance
+### Ejemplo de plantillas compiladas usando herencia
 
-Using the [Twig] library.
+Usando [Twig].
 
 {% highlight html+jinja %}
 {% raw %}
