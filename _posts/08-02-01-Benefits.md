@@ -6,17 +6,18 @@ anchor:  beneficios_de_las_plantillas
 
 ## Beneficios {#beneficios_de_las_plantillas_title}
 
-The main benefit to using templates is the clear separation they create between the presentation logic and the rest of
-your application. Templates have the sole responsibility of displaying formatted content. They are not responsible for
-data lookup, persistence or other more complex tasks. This leads to cleaner, more readable code which is especially
-helpful in a team environment where developers work on the server-side code (controllers, models) and designers work on
-the client-side code (markup).
+El principal beneficio de utilizar plantillas es la clara separación que crean entre la lógica de presentación y el
+resto de tu aplicación. Las plantillas tienen la única responsabilidad de mostrar contenido formateado. No son responsables
+de la búsqueda de datos, la persistencia u otras tareas más complejas. Esto lleva a un código más limpio y más legible,
+lo cual es especialmente útil en un entorno de equipo donde los desarrolladores trabajan en el código del lado del servidor
+(controladores, modelos) y los diseñadores trabajan en el código del lado del cliente (maquetado).
 
-Templates also improve the organization of presentation code. Templates are typically placed in a "views" folder, each
-defined within a single file. This approach encourages code reuse where larger blocks of code are broken into smaller,
-reusable pieces, often called partials. For example, your site header and footer can each be defined as templates,
-which are then included before and after each page template.
+Las plantillas también mejoran la organización del código de presentación. Por lo general, las plantillas se colocan
+en una carpeta de "vistas" (_"views"_), cada una definida en un solo archivo. Este enfoque fomenta la reutilización
+del código, donde bloques más grandes de código se dividen en piezas más pequeñas y reutilizables, a menudo llamadas
+parciales (_partials_). Por ejemplo, el encabezado y el pie de página de tu sitio pueden definirse como plantillas,
+las cuales se incluyen antes y después de cada plantilla de página.
 
-Finally, depending on the library you use, templates can offer more security by automatically escaping user-generated
-content. Some libraries even offer sand-boxing, where template designers are only given access to white-listed
-variables and functions.
+Finalmente, dependiendo de la biblioteca que uses, las plantillas pueden ofrecer más seguridad al escapar automáticamente
+el contenido generado por los usuarios. Algunas bibliotecas incluso ofrecen un sistema de "sand-boxing", donde los diseñadores
+de plantillas solo tienen acceso a variables y funciones en una lista blanca.
