@@ -6,13 +6,13 @@ anchor:  registro_de_globales
 
 ## Registro de Globales {#registro_de_globales_title}
 
-**NOTE:** As of PHP 5.4.0 the `register_globals` setting has been removed and can no longer be used. This is only
-included as a warning for anyone in the process of upgrading a legacy application.
+**NOTA:** A partir de PHP 5.4.0 el parámetro `register_globals` ha sido eliminado y ya no puede ser usado.
+Esto sólo se incluye como una advertencia para cualquier persona en el proceso de actualización de una aplicación de legado.
 
-When enabled, the `register_globals` configuration setting makes several types of variables (including ones from
-`$_POST`, `$_GET` and `$_REQUEST`) available in the global scope of your application. This can easily lead to security
-issues as your application cannot effectively tell where the data is coming from.
+Cuando está activada, la configuración `register_globals` hace que varios tipos de variables (incluyendo las de `$_POST`,
+`$_GET` y `$_REQUEST`) estén disponibles en el ámbito global de tu aplicación. Esto puede llevar
+fácilmente a problemas de seguridad ya que tu aplicación no puede saber de dónde vienen los datos.
 
-For example: `$_GET['foo']` would be available via `$foo`, which can override variables that have been declared.
+Por ejemplo: `$_GET['foo']` estaría disponible a través de `$foo`, lo cual puede anular variables que hayan sido declaradas.
 
-If you are using PHP < 5.4.0 __make sure__ that `register_globals` is __off__.
+Si estás usando PHP < 5.4.0 __asegúrate__ de que `register_globals` está __desactivado__.

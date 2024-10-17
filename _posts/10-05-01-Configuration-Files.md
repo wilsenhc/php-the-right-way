@@ -6,13 +6,12 @@ anchor:  archivos_de_configuracion
 
 ## Archivos de Configuración {#archivos_de_configuracion_title}
 
-When creating configuration files for your applications, best practices recommend that one of the following methods be
-followed:
+Al crear archivos de configuración para sus aplicaciones, las mejores prácticas recomiendan que se siga uno de los siguientes métodos
+siguientes:
 
-- It is recommended that you store your configuration information where it cannot be accessed directly and pulled in
-via the file system.
-- If you must store your configuration files in the document root, name the files with a `.php` extension. This ensures
-that, even if the script is accessed directly, it will not be output as plain text.
-- Information in configuration files should be protected accordingly, either through encryption or group/user file
-system permissions.
-- It is a good idea to ensure that you do not commit configuration files containing sensitive information e.g. passwords or API tokens to source control.
+- Se recomienda almacenar la información de configuración en un lugar al que no se pueda acceder directamente
+y al que no se pueda acceder a través del sistema de archivos.
+- Si debe almacenar los archivos de configuración en la raíz del documento, nómbrelos con la extensión `.php`. Esto garantiza que,
+aunque se acceda directamente al script, no se mostrará como texto sin formato.
+- La información de los archivos de configuración debe protegerse en consecuencia, ya sea mediante cifrado o permisos de grupo/usuario en el sistema de archivos.
+- Es una buena idea asegurarse de no confirmar (del inglés _commit_) archivos de configuración que contengan información sensible, por ejemplo, contraseñas o tokens de API al control de código fuente.
