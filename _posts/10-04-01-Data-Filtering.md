@@ -6,61 +6,63 @@ anchor:  filtrado_de_datos
 
 ## Filtrado de Datos {#filtrado_de_datos_title}
 
-Never ever (ever) trust foreign input introduced to your PHP code. Always sanitize and validate foreign input before
-using it in code. The `filter_var()` and `filter_input()` functions can sanitize text and validate text formats (e.g.
-email addresses).
+Nuca (nunca) confíes en la introducción de datos ajenos en tu código PHP. Siempre sanee y valide la entrada ajena antes
+de usarla en el código. Las funciones `filter_var()` y `filter_input()` pueden sanear texto y validar formatos de texto
+(por ejemplo, direcciones de correo electrónico).
 
-Foreign input can be anything: `$_GET` and `$_POST` form input data, some values in the `$_SERVER` superglobal, and the
-HTTP request body via `fopen('php://input', 'r')`. Remember, foreign input is not limited to form data submitted by the
-user. Uploaded and downloaded files, session values, cookie data, and data from third-party web services are foreign
-input, too.
+La entrada ajena puede ser cualquier cosa: datos de formulario `$_GET` y `$_POST`, algunos valores en el superglobal `$_SERVER`,
+y el cuerpo de la petición HTTP a través de `fopen('php://input', 'r')`. Recuerde, la entrada de datos externos
+no se limita a los datos del formulario enviados por el usuario. Los archivos cargados y descargados, los valores de sesión,
+los datos de cookies y los datos de servicios web de terceros también son entradas de datos externos.
 
-While foreign data can be stored, combined, and accessed later, it is still foreign input. Every time you process,
-output, concatenate, or include data in your code, ask yourself if the data is filtered properly and can it be trusted.
+Aunque la introducción de datos ajenos pueden almacenarse, combinarse y accederse posteriormente, siguen siendo entrada ajena.
+Cada vez que proceses, des salida, concatenes o incluyas datos en tu código, pregúntate si los datos están filtrados correctamente
+y si son de confianza.
 
-Data may be _filtered_ differently based on its purpose. For example, when unfiltered foreign input is passed into HTML
-page output, it can execute HTML and JavaScript on your site! This is known as Cross-Site Scripting (XSS) and can be a
-very dangerous attack. One way to avoid XSS is to sanitize all user-generated data before outputting it to your page by
-removing HTML tags with the `strip_tags()` function or escaping characters with special meaning into their respective
-HTML entities with the `htmlentities()` or `htmlspecialchars()` functions.
+Los datos pueden _filtrarse_ de forma diferente en función de su finalidad. Por ejemplo, cuando una entrada ajena no filtrada
+se pasa a la salida de una página HTML, ¡puede ejecutar HTML y JavaScript en su sitio! Esto se conoce como Cross-Site Scripting (XSS)
+y puede ser un ataque muy peligroso. Una forma de evitar XSS es desinfectar todos los datos generados por el usuario antes de enviarlos
+a la página eliminando las etiquetas HTML con la función `strip_tags()` o escapando caracteres con significado especial
+en sus respectivas entidades HTML con las funciones `htmlentities()` o `htmlspecialchars()`.
 
-Another example is passing options to be executed on the command line. This can be extremely dangerous (and is usually
-a bad idea), but you can use the built-in `escapeshellarg()` function to sanitize the executed command's arguments.
+Otro ejemplo es pasar opciones para ser ejecutadas en la línea de comandos. Esto puede ser extremadamente peligroso (y suele ser una mala idea),
+pero puede utilizar la función integrada `escapeshellarg()` para desinfectar los argumentos del comando ejecutado.
 
-One last example is accepting foreign input to determine a file to load from the filesystem. This can be exploited by
-changing the filename to a file path. You need to remove `"/"`, `"../"`, [null bytes][6], or other characters from the
-file path so it can't load hidden, non-public, or sensitive files.
+Un último ejemplo es aceptar una entrada extraña para determinar un fichero a cargar del sistema de ficheros. Esto puede
+ser explotado cambiando el nombre del archivo a una ruta de archivo. Es necesario eliminar `"/"`, `"../"`,
+[bytes nulos][6], u otros caracteres de la ruta del archivo para que no pueda cargar archivos ocultos, no públicos o sensibles.
 
-* [Learn about data filtering][1]
-* [Learn about `filter_var`][4]
-* [Learn about `filter_input`][5]
-* [Learn about handling null bytes][6]
+* [Más información sobre el filtrado de datos][1]
+* [Más información sobre `filter_var`][4]
+* [Más información sobre `filter_input`][5]
+* [Más información sobre la gestión de bytes nulos][6]
 
 ### Sanitization
 
-Sanitization removes (or escapes) illegal or unsafe characters from foreign input.
+La sanitización elimina (o escapa) caracteres ilegales o inseguros de los datos de entrada ajenos.
 
-For example, you should sanitize foreign input before including the input in HTML or inserting it into a raw SQL query.
-When you use bound parameters with [PDO](#databases), it will sanitize the input for you.
+Por ejemplo, debe desinfectar los datos de entrada ajenos antes de incluirla en HTML o insertarla en una consulta SQL sin procesar.
+Cuando use parámetros vinculados con [PDO](#bases_de_datos), se limpiarán los datos de entrada por usted.
 
-Sometimes it is required to allow some safe HTML tags in the input when including it in the HTML page. This is very
-hard to do and many avoid it by using other more restricted formatting like Markdown or BBCode, although whitelisting
-libraries like [HTML Purifier][html-purifier] exist for this reason.
+A veces es necesario permitir algunas etiquetas HTML seguras en los datos de entrada al incluirla en la página HTML.
+Esto es muy difícil de hacer y muchos lo evitan usando otros formatos más restringidos como Markdown o BBCode, aunque para ello
+existen librerías de filtrado de datos como [HTML Purifier][html-purifier].
 
-[See Sanitization Filters][2]
+[Ver Filtros de Sanitización][2]
 
-### Unserialization
+### Deserialización
 
-It is dangerous to `unserialize()` data from users or other untrusted sources.  Doing so can allow malicious users to instantiate objects (with user-defined properties) whose destructors will be executed, **even if the objects themselves aren't used**.  You should therefore avoid unserializing untrusted data.
+Es peligroso deserializar datos de usuarios u otras fuentes no confiables utilizando `unserialize()`.
+Hacerlo puede permitir a usuarios maliciosos instanciar objetos (con propiedades definidas por el usuario) cuyos destructores serán ejecutados,
+**incluso si los propios objetos no son utilizados**. Por lo tanto, debes evitar deserializar datos que no sean de confianza.
 
-Use a safe, standard data interchange format such as JSON (via [`json_decode`][json_decode] and [`json_encode`][json_encode]) if you need to pass serialized data to the user.
+Utiliza un formato de intercambio de datos seguro y estándar como JSON (a través de [`json_decode`][json_decode] y [`json_encode`][json_encode]) si necesitas pasar datos serializados al usuario.
 
-### Validation
+### Validación
 
-Validation ensures that foreign input is what you expect. For example, you may want to validate an email address, a
-phone number, or age when processing a registration submission.
+La validación garantiza que la entrada de datos ajenos es la esperada. Por ejemplo, es posible que desee validar una dirección de correo electrónico, un número de teléfono o la edad al procesar un envío de registro.
 
-[See Validation Filters][3]
+[Ver Filtros de Validación][3]
 
 
 [1]: https://www.php.net/book.filter

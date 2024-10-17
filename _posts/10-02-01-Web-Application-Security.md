@@ -6,31 +6,31 @@ anchor:  seguridad_de_aplicaciones_web
 
 ## Seguridad de Aplicaciones Web {#seguridad_de_aplicaciones_web_title}
 
-It is very important for every PHP developer to learn [the basics of web application security][4], which can be broken
-down into a handful of broad topics:
+Es muy importante que todo desarrollador PHP aprenda [los fundamentos de la seguridad de las aplicaciones web][4], que pueden dividirse en un puñado de temas generales:
 
-1. Code-data separation.
-   * When data is executed as code, you get SQL Injection, Cross-Site Scripting, Local/Remote File Inclusion, etc.
-   * When code is printed as data, you get information leaks (source code disclosure or, in the case of C programs,
-     enough information to bypass [ASLR][5]).
-2. Application logic.
-   * Missing authentication or authorization controls.
-   * Input validation.
-3. Operating environment.
-   * PHP versions.
-   * Third party libraries.
-   * The operating system.
-4. Cryptography weaknesses.
-   * [Weak random numbers][6].
-   * [Chosen-ciphertext attacks][7].
-   * [Side-channel information leaks][8].
+1. Separación de código y datos.
+   * Cuando los datos se ejecutan como código, se obtiene Inyección SQL, Cross-Site Scripting, Inclusión de Archivos Locales/Remotos, etc.
+   * Cuando el código se imprime como datos, se producen fugas de información (revelación del código fuente o, en el caso de los programas en C,
+     información suficiente para saltarse [ASLR][5]).
+2. Lógica de aplicación.
+   * Ausencia de controles de autenticación o autorización.
+   * Validación de las entradas.
+3. Entorno operativo.
+   * Versiones de PHP.
+   * Bibliotecas de terceros.
+   * Sistema operativo.
+4. Puntos débiles de la criptografía.
+   * [Números aleatorios débiles][6].
+   * [Ataques con texto cifrado elegido][7].
+   * [Fugas de información por canales laterales][8].
 
-There are bad people ready and willing to exploit your web application. It is important that you take necessary
-precautions to harden your web application's security. Luckily, the fine folks at
-[The Open Web Application Security Project][1] (OWASP) have compiled a comprehensive list of known security issues and
-methods to protect yourself against them. This is a must read for the security-conscious developer. [Survive The Deep End: PHP Security][3] by Padraic Brady is also another good web application security guide for PHP.
+Hay gente mala lista y dispuesta a explotar su aplicación web. Es importante que tome las precauciones necesarias
+para reforzar la seguridad de su aplicación web. Por suerte, la buena gente de [The Open Web Application Security Project][1] (OWASP)
+ha recopilado una lista exhaustiva de problemas de seguridad conocidos y métodos para protegerse contra ellos. Se trata de una lectura
+obligatoria para los desarrolladores preocupados por la seguridad. [Survive The Deep End: PHP Security][3] de Padraic Brady es también
+otra buena guía de seguridad de aplicaciones web para PHP.
 
-* [Read the OWASP Security Guide][2]
+* [Lea la Guía de seguridad de OWASP][2]
 
 
 [1]: https://www.owasp.org/
