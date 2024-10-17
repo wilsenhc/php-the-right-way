@@ -6,35 +6,35 @@ anchor:  test_driven_development
 
 ## Desarrollo Guiado por Pruebas {#test_driven_development_title}
 
-From [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
+De [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
 
-> Test-driven development (TDD) is a software development process that relies on the repetition of a very short
-> development cycle: first the developer writes a failing automated test case that defines a desired improvement or new
-> function, then produces code to pass that test and finally refactors the new code to acceptable standards. Kent Beck,
-> who is credited with having developed or 'rediscovered' the technique, stated in 2003 that TDD encourages simple
-> designs and inspires confidence.
+> El desarrollo dirigido por pruebas (TDD, por sus siglas en inglés) es un proceso de desarrollo de software que se basa
+> en la repetición de un ciclo de desarrollo muy corto: primero, el desarrollador escribe un caso de prueba automatizado que falla
+> y que define una mejora deseada o una nueva función; después, produce código para superar esa prueba y,
+> por último, refactoriza el nuevo código para que cumpla unos estándares aceptables. Kent Beck, a quien se atribuye haber
+> desarrollado o "redescubierto" la técnica, declaró en 2003 que el TDD fomenta los diseños sencillos e inspira confianza.
 
-There are several different types of testing that you can do for your application:
+Hay varios tipos diferentes de pruebas que puede realizar para su aplicación:
 
-### Test Unitarios
+### Pruebas Unitarios
 
-Unit Testing is a programming approach to ensure functions, classes and methods are working as expected, from the point
-you build them all the way through the development cycle. By checking values going in and out of various functions and
-methods, you can make sure the internal logic is working correctly. By using Dependency Injection and building "mock"
-classes and stubs you can verify that dependencies are correctly used for even better test coverage.
+Las pruebas unitarias son un enfoque de programación para garantizar que las funciones, clases y métodos funcionan como se espera,
+desde el momento en que se construyen hasta el final del ciclo de desarrollo. Comprobando los valores que entran y salen de varias
+funciones y métodos, puedes asegurarte de que la lógica interna funciona correctamente. Mediante el uso de la inyección de dependencias
+y la creación de clases y stubs "simulados", puede comprobar que las dependencias se utilizan correctamente para mejorar aún más la cobertura de las pruebas.
 
-When you create a class or function you should create a unit test for each behavior it must have. At a very basic level
-you should make sure it errors if you send it bad arguments and make sure it works if you send it valid arguments. This
-will help ensure that when you make changes to this class or function later on in the development cycle that the old
-functionality continues to work as expected. The only alternative to this would be `var_dump()` in a test.php, which is
-no way to build an application - large or small.
+Cuando creas una clase o función deberías crear una prueba unitaria para cada comportamiento que deba tener. A un nivel muy básico
+deberías asegurarte de que da error si le envías argumentos erróneos y asegurarte de que funciona si le envías argumentos válidos.
+Esto ayudará a asegurar que cuando hagas cambios a esta clase o función más adelante en el ciclo de desarrollo, la funcionalidad antigua
+siga funcionando como se esperaba. La única alternativa a esto sería `var_dump()` en un test.php, que no es forma de construir
+una aplicación - grande o pequeña.
 
-The other use for unit tests is contributing to open source. If you can write a test that shows broken functionality
-(i.e. fails), then fix it, and show the test passing, patches are much more likely to be accepted. If you run a project
-which accepts pull requests then you should suggest this as a requirement.
+La otra utilidad de las pruebas unitarias es contribuir al código abierto. Si puedes escribir una prueba que muestre una
+funcionalidad rota (es decir, que falla), luego arreglarla, y mostrar que la prueba pasa, es mucho más probable que los parches sean aceptados.
+Si diriges un proyecto que acepta pull requests, deberías sugerirlo como requisito.
 
-[PHPUnit](https://phpunit.de/) is the de-facto testing framework for writing unit tests for PHP applications, but there
-are several alternatives:
+[PHPUnit](https://phpunit.de/) PHPUnit es el marco de pruebas de facto para escribir pruebas unitarias para aplicaciones PHP,
+pero existen varias alternativas:
 
 * [atoum](https://github.com/atoum/atoum)
 * [Kahlan](https://github.com/kahlan/kahlan)
@@ -42,29 +42,29 @@ are several alternatives:
 * [Pest](https://pestphp.com/)
 * [SimpleTest](https://github.com/simpletest/simpletest)
 
-### Integration Testing
+### Pruebas de Integración
 
-From [Wikipedia](https://wikipedia.org/wiki/Integration_testing):
+De [Wikipedia](https://wikipedia.org/wiki/Integration_testing):
 
-> Integration testing (sometimes called Integration and Testing, abbreviated "I&T") is the phase in software testing in
-> which individual software modules are combined and tested as a group. It occurs after unit testing and before
-> validation testing. Integration testing takes as its input modules that have been unit tested, groups them in larger
-> aggregates, applies tests defined in an integration test plan to those aggregates, and delivers as its output the
-> integrated system ready for system testing.
+Las pruebas de integración (a veces denominadas integración y pruebas, abreviadas "I&T") son la fase de las pruebas de software
+en la que se combinan módulos de software individuales y se prueban como un grupo. Se realiza después de las pruebas unitarias
+y antes de las de validación. Las pruebas de integración toman como entrada los módulos que se han probado por unidades,
+los agrupan en conjuntos más grandes, aplican a esos conjuntos las pruebas definidas en un plan de pruebas de integración
+y entregan como salida el sistema integrado listo para las pruebas del sistema.
 
-Many of the same tools that can be used for unit testing can be used for integration testing as many of the same
-principles are used.
+Muchas de las mismas herramientas que pueden utilizarse para las pruebas unitarias pueden emplearse para las pruebas de integración,
+ya que se utilizan muchos de los mismos principios.
 
-### Functional Testing
+### Pruebas Funcionales
 
-Sometimes also known as acceptance testing, functional testing consists of using tools to create automated tests that
-actually use your application instead of just verifying that individual units of code are behaving correctly and that
-individual units can speak to each other correctly. These tools typically work using real data and simulating actual
-users of the application.
+A veces también conocidas como pruebas de aceptación, las pruebas funcionales consisten en utilizar herramientas para crear pruebas
+automatizadas que realmente utilizan la aplicación, en lugar de limitarse a verificar que las unidades individuales de código se comportan
+correctamente y que las unidades individuales pueden hablar entre sí correctamente.
+Estas herramientas suelen funcionar utilizando datos reales y simulando usuarios reales de la aplicación.
 
-#### Functional Testing Tools
+#### Herramientas de Pruebas Funcionales
 
 * [Selenium](https://www.selenium.dev/)
 * [Mink](https://mink.behat.org/)
-* [Codeception](https://codeception.com/) is a full-stack testing framework that includes acceptance testing tools
-* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) is a full-stack testing framework that includes support for creating and destroying test environments on demand
+* [Codeception](https://codeception.com/) es un marco de pruebas de pila completa que incluye herramientas de pruebas de aceptación
+* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) es un marco de pruebas completo que permite crear y destruir entornos de prueba a petición del usuario.
