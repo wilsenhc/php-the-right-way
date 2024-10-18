@@ -6,15 +6,9 @@ anchor:  vagrant
 
 ## Vagrant {#vagrant_title}
 
-[Vagrant] helps you build your virtual boxes on top of the known virtual environments and will configure these
-environments based on a single configuration file. These boxes can be set up manually, or you can use "provisioning"
-software such as [Puppet] or [Chef] to do this for you. Provisioning the base box is a great way to ensure that
-multiple boxes are set up in an identical fashion and removes the need for you to maintain complicated "set up"
-command lists. You can also "destroy" your base box and recreate it without many manual steps, making it easy to create
-a "fresh" installation.
+[Vagrant] te ayuda a construir tus máquinas virtuales sobre los entornos virtuales conocidos y configurará estos entornos en base a un único archivo de configuración. Estas máquinas pueden configurarse manualmente, o puedes usar software de "provisión" como [Puppet] o [Chef] para hacerlo por ti. Proveer la caja base es una excelente manera de asegurarte de que múltiples máquinas se configuren de manera idéntica y elimina la necesidad de mantener listas de comandos de "configuración" complicadas. También puedes "destruir" tu caja base y recrearla sin muchos pasos manuales, lo que facilita crear una instalación "nueva".
 
-Vagrant creates folders for sharing your code between your host and your virtual machine, which means that you can
-create and edit your files on your host machine and then run the code inside your virtual machine.
+Vagrant crea carpetas para compartir tu código entre tu máquina host y tu máquina virtual, lo que significa que puedes crear y editar tus archivos en tu máquina host y luego ejecutar el código dentro de tu máquina virtual.
 
 
 [Vagrant]: https://www.vagrantup.com/
