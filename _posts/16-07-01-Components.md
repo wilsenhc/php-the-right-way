@@ -6,22 +6,22 @@ anchor:  componentes
 
 ## Componentes {#componentes_title}
 
-As mentioned above "Components" are another approach to the common goal of creating, distributing and implementing
-shared code. Various component repositories exist, the main two of which are:
+Como ya se ha mencionado, los "componentes" son otro enfoque del objetivo común de crear, distribuir e implementar código compartido.
+Existen varios repositorios de componentes, los dos principales de los cuales son:
 
 * [Packagist]
 * [PEAR]
 
-Both of these repositories have command line tools associated with them to help the installation and upgrade processes,
-and have been explained in more detail in the [Dependency Management] section.
+Ambos repositorios tienen herramientas de línea de comandos asociadas para ayudar en los procesos de instalación y actualización,
+y se han explicado con más detalle en la sección [Gestión de dependencias][Dependency Management].
 
-There are also component-based frameworks and component-vendors that offer no framework at all. These projects provide
-another source of packages which ideally have little to no dependencies on other packages, or specific frameworks.
+También existen frameworks basados en componentes y proveedores de componentes que no ofrecen ningún tipo de framework.
+Estos proyectos proporcionan otra fuente de paquetes que idealmente tienen poca o ninguna dependencia de otros paquetes, o frameworks específicos.
 
-For example, you can use the [FuelPHP Validation package], without needing to use the FuelPHP framework itself.
+Por ejemplo, puede utilizar el [Paquete de Validación FuelPHP][FuelPHP Validation package], sin necesidad de utilizar el propio framework FuelPHP.
 
 * [Aura]
-* CakePHP Components
+* Componentes CakePHP
     * [Collection]
     * [Database]
     * [Datasource]
@@ -29,21 +29,21 @@ For example, you can use the [FuelPHP Validation package], without needing to us
     * [I18n]
     * [ORM]
 * [FuelPHP]
-* [Hoa Project]
-* [Symfony Components]
-* [The League of Extraordinary Packages]
-* Laravel's Illuminate Components
-    * [IoC Container]
+* [Proyecto Hoa][Hoa Project]
+* [Componentes Symfony][Symfony Components]
+* [Paquetes Extraordinarios de The League][The League of Extraordinary Packages]
+* Componentes Illuminate de Laravel
+    * [Contenedor IoC][IoC Container]
     * [Eloquent ORM]
     * [Queue]
 
-_Laravel's [Illuminate components] will become better decoupled from the Laravel framework. For now, only the
-components best decoupled from the Laravel framework are listed above._
+_Los [componentes Illuminate][Illuminate components] de Laravel se desacoplarán mejor del framework Laravel.
+Por ahora, sólo los componentes mejor desacoplados del framework Laravel se enumeran más arriba._.
 
 
-[Packagist]: /#composer_and_packagist
+[Packagist]: /#composer_y_packagist
 [PEAR]: /#pear
-[Dependency Management]: /#dependency_management
+[Dependency Management]: /#gestion_de_dependencias
 [FuelPHP Validation package]: https://github.com/fuelphp/validation
 [Aura]: https://auraphp.com/framework/
 [FuelPHP]: https://github.com/fuelphp

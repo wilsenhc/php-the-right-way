@@ -6,5 +6,5 @@ anchor:  desde_la_fuente
 
 ## Desde la Fuente {#desde_la_fuente_title}
 
-* [PHP Website](https://www.php.net/)
-* [PHP Documentation](https://www.php.net/docs.php)
+* [Sitio Web de PHP](https://www.php.net/)
+* [Documentación de PHP](https://www.php.net/docs.php)
