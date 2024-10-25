@@ -22,3 +22,4 @@ anchor:  proveedores_paas_php
 * [Platform.sh](https://platform.sh/)
 * [Red Hat OpenShift](https://www.openshift.com/)
 * [Virtuozzo](https://www.virtuozzo.com/application-platform-partners/)
+* [Laravel Cloud](https://cloud.laravel.com/)
