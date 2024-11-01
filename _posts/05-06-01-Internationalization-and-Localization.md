@@ -153,7 +153,7 @@ Ahora que comprendes las bases de cómo funcionan las reglas para el plural - y 
 explicacion mas a fondo [LingoHub tutorial][lingohub_plurals] -, podrias querer copias las que necesitas es una
 [lista][plural] en lugar de escribirlas a mano.
 
-Cuando invocas a Gettext para realizar una localización en **oraciones** con contadores, necesitarás proveer también
+Cuando invocas a Gettext para realizar una localización en oraciones con contadores, necesitarás proveer también
 el número relacionado. Gettext determinará las reglas que se deben aplicar y usará la versión de localización correcta.
 Necesitarás incluir en el archivo `.po` una sentencia diferente por cada regla plural definida.
 
@@ -180,8 +180,8 @@ msgstr[0] "Só uma mensagem não lida"
 msgstr[1] "%d mensagens não lidas"
 {% endhighlight %}
 
-La primera sección funciona como una cabecera, teniendo los `msgid` and `msgstr` vacios(mensaje id, mensaje string). Esta describe el **encoding* del
-archivo, la forma plural y otras cosas son menos relevantes.
+La primera sección funciona como una cabecera, teniendo los `msgid` and `msgstr` vacios(mensaje id, mensaje string). Esta describe
+la codificación del archivo, la forma plural y otras cosas son menos relevantes.
 La segunda sección traduce una cadena sencilla desde el español al Portuges de Brasil, y la tercera hace lo mismo, pero
 utilizando el reemplazo de cadena de [`sprintf`][sprintf] así la traducción puede contener el nombre y la fecha de visita.
 La últimas sección es un muestra de la forma de pluralización, mostrando tanto la forma singular y plural como `msgid` en
@@ -221,7 +221,7 @@ donde la cadena está ubicada actualmente en lugar de su contenido.
 
 El [manual Gettext][manual] favorece la primera estrategia debido a que, en general, es más fácil para los traductores
 y usuarios en caso de problema. Por lo que esa es la forma en la que trabajaremos aquí. Sin embargo, la
-[Documentación de Symfony][symfony-keys] favorece la traducción basada en **palabras claves**, para permitir cambios
+[Documentación de Symfony][symfony-keys] favorece la traducción basada en palabras claves, para permitir cambios
 independientes de todas las traducciones sin afectar a las plantillas.
 
 ### Uso Usual
@@ -275,7 +275,7 @@ function valido($local) {
 $lang = 'en_US';
 
 if (isset($_GET['lang']) && valid($_GET['lang'])) {
-    // El local puede ser cambiado por medio del **query-string**
+    // El local puede ser cambiado por medio del query-string
     $lang = $_GET['lang'];    //deberías sanitizar esto!..
     setcookie('lang', $lang); //Se almacena en una cookie para que así pueda ser reutilizado.
 } elseif (isset($_COOKIE['lang']) && valid($_COOKIE['lang'])) {
