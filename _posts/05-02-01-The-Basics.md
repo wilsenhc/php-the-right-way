@@ -6,9 +6,7 @@ anchor:  conceptos_basicos
 
 ## Conceptos Básicos {#conceptos_basicos_title}
 
-PHP is a vast language that allows coders of all levels the ability to produce code not only quickly, but efficiently.
-However, while advancing through the language, we often forget the basics that we first learnt (or overlooked) in favor
-of short cuts and/or bad habits. To help combat this common issue, this section is aimed at reminding coders of the
-basic coding practices within PHP.
+PHP es un gran lenguaje que permite la creación de código de forma rápida y eficiente a programadores de todos los niveles. Sin embargo, a medida que se avanza en el lenguaje, es común olvidar (o pasar por alto) los conceptos básicos aprendidos en favor de atajos y/o malas prácticas. Para ayudar a combatir este problema común, esta sección tiene como objetivo recordar a los desarrolladores las buenas prácticas dentro de PHP.
 
-* Continue reading on [The Basics](/pages/The-Basics.html)
+
+* Continue leyendo sobre [Los Fundamentos](/pages/The-Basics.html)
