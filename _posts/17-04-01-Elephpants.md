@@ -6,9 +6,13 @@ anchor:  elephpants
 
 ## ElePHPants {#elephpants_title}
 
-[ElePHPant][elephpant] is that beautiful mascot of the PHP project with an elephant in its design. It was originally designed for the PHP project in 1998 by [Vincent Pontier][vincent-pontier] - spiritual father of thousands of elePHPants around the world - and ten years later adorable plush elephant toys came to birth as well. Now elePHPants are present at many PHP conferences and with many PHP developers at their computers for fun and inspiration.
+[ElePHPant][elephpant] es esa hermosa mascota del proyecto PHP con un elefante en su diseño.
+Fue originalmente creada para el proyecto PHP en 1998 por [Vincent Pontier][vincent-pontier] -
+el padre espiritual de miles de elePHPants alrededor del mundo - y diez años después también nacieron
+adorables peluches de elefante. Ahora los elePHPants están presentes en muchas conferencias de PHP y
+con muchos desarrolladores de PHP en sus computadoras, brindando diversión e inspiración.
 
-[Interview with Vincent Pontier][vincent-pontier-interview]
+[Entrevista con Vincent Pontier][vincent-pontier-interview]
 
 
 [elephpant]: https://www.php.net/elephpant.php
