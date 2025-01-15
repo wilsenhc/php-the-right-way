@@ -6,11 +6,11 @@ anchor:  conferencias
 
 ## Conferencias sobre PHP {#conferencias_title}
 
-The PHP community also hosts larger regional and national conferences in many countries around the world. Well-known
-members of the PHP community usually speak at these larger events, so it's a great opportunity to learn directly from
-industry leaders.
+La comunidad de PHP también organiza conferencias regionales y nacionales más grandes en muchos países alrededor del mundo.
+Los miembros más conocidos de la comunidad PHP suelen hablar en estos eventos más grandes, por lo que es una gran
+oportunidad para aprender directamente de los líderes de la industria.
 
-[Find a PHP Conference][php-conf]
+[Encuentra una Conferencia de PHP][php-conf]
 
 
 [php-conf]: https://www.php.net/conferences/index.php

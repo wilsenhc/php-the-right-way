@@ -6,18 +6,18 @@ anchor:  grupos_de_usuarios
 
 ## Grupos de Usuarios PHP {#grupos_de_usuarios_title}
 
-If you live in a larger city, odds are there's a PHP user group nearby. You can easily find your local PUG at
-[PHP.ug][php-ug]. Alternate sources might be [Meetup.com][meetup] or a search for ```php user group near me```
-using your favorite search engine (i.e. [Google][google]). If you live in a smaller town, there may not be a
-local PUG; if that's the case, start one!
+Si vives en una ciudad grande, es probable que haya un grupo de usuarios de PHP cerca. Puedes encontrar fácilmente tu PUG local en
+[PHP.ug][php-ug]. Fuentes alternativas podrían ser [Meetup.com][meetup] o realizar una búsqueda de php user group near me usando
+tu motor de búsqueda favorito (por ejemplo: [Google][google]). Si vives en una ciudad más pequeña, puede que no haya un PUG local;
+si ese es el caso, ¡créalo tú mismo!
 
-Special mention should be made of two global user groups: [NomadPHP] and [PHPWomen]. [NomadPHP] offers twice monthly
-online user group meetings with presentations by some of the top speakers in the PHP community.
-[PHPWomen] is a non-exclusive user group originally targeted towards the women in the PHP world. Membership is open to
-everyone who supports a more diverse community. PHPWomen provide a network for support, mentorship and education, and
-generally promote the creating of a "female friendly" and professional atmosphere.
+Se debe hacer una mención especial de dos grupos de usuarios globales: [NomadPHP] y [PHPWomen]. [NomadPHP] ofrece reuniones
+en línea del grupo de usuarios dos veces al mes, con presentaciones de algunos de los mejores ponentes de la comunidad PHP.
+[PHPWomen] es un grupo de usuarios no exclusivo, originalmente dirigido a mujeres en el mundo PHP. La membresía está abierta
+a todas las personas que apoyen una comunidad más diversa. PHPWomen proporciona una red de apoyo, mentoría y educación, y promueve
+generalmente la creación de un ambiente "amigable para las mujeres" y profesional.
 
-[Read about User Groups on the PHP Wiki][php-wiki]
+[Lee sobre los Grupos de Usuarios en la Wiki de PHP][php-wiki]
 
 [google]: https://www.google.com/search?q=php+user+group+near+me
 [meetup]: https://www.meetup.com/find/
