@@ -22,6 +22,7 @@ _PHP: La Manera Correcta_ está traducido a muchos idiomas:
 * [English](https://www.phptherightway.com)
 * [Español](https://phpdevenezuela.github.io/php-the-right-way)
 * [Français](https://eilgin.github.io/php-the-right-way/)
+* [German](https://skipper-henrik.github.io/php-the-right-way/)
 * [Indonesia](https://id.phptherightway.com)
 * [Italiano](https://it.phptherightway.com)
 * [Polski](https://pl.phptherightway.com)

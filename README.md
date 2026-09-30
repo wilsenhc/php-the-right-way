@@ -38,6 +38,7 @@ You should read the `CONTRIBUTING.md` file for precise instructions and tips. Bu
 * [English](https://www.phptherightway.com)
 * [Español](https://phpdevenezuela.github.io/php-the-right-way)
 * [Français](https://eilgin.github.io/php-the-right-way/)
+* [German](https://skipper-henrik.github.io/php-the-right-way/)
 * [Indonesia](https://id.phptherightway.com)
 * [Italiano](https://it.phptherightway.com)
 * [Polski](https://pl.phptherightway.com)
@@ -78,7 +79,7 @@ There's been a lot of discussion lately about how the PHP community lacks suffic
 
 ## Who
 
-My name is [Josh Lockhart](https://twitter.com/codeguy). I'm the author of the [Slim Framework](https://www.slimframework.com/), and I work for [New Media Campaigns](https://www.newmediacampaigns.com/).
+My name is [Josh Lockhart](https://x.com/codeguy). I'm the author of the [Slim Framework](https://www.slimframework.com/), and I work for [New Media Campaigns](https://www.newmediacampaigns.com/).
 
 ### Collaborators
 

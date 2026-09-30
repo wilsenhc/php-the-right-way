@@ -23,5 +23,5 @@ generalmente la creación de un ambiente "amigable para las mujeres" y profesion
 [meetup]: https://www.meetup.com/find/
 [php-ug]: https://php.ug/
 [NomadPHP]: https://nomadphp.com/
-[PHPWomen]: https://twitter.com/PHPWomen
+[PHPWomen]: https://x.com/PHPWomen
 [php-wiki]: https://wiki.php.net/usergroups

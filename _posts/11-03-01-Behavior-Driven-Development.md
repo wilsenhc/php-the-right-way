@@ -27,6 +27,6 @@ Este framework está inspirado en el [proyecto RSpec][Rspec] para Ruby.
 
 [Behat]: https://behat.org/
 [Cucumber]: https://cucumber.io/
-[PHPSpec]: https://www.phpspec.net/
+[PHPSpec]: https://phpspec.net/
 [RSpec]: https://rspec.info/
 [Codeception]: https://codeception.com/

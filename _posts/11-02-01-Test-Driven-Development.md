@@ -64,7 +64,8 @@ Estas herramientas suelen funcionar utilizando datos reales y simulando usuarios
 
 #### Herramientas de Pruebas Funcionales
 
-* [Selenium](https://www.selenium.dev/)
+* [Codeception](https://codeception.com/) is a full-stack testing framework that includes acceptance testing tools
+* [Cypress](https://www.cypress.io/)
 * [Mink](https://mink.behat.org/)
-* [Codeception](https://codeception.com/) es un marco de pruebas de pila completa que incluye herramientas de pruebas de aceptación
-* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) es un marco de pruebas completo que permite crear y destruir entornos de prueba a petición del usuario.
+* [Selenium](https://www.selenium.dev/)
+* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) is a full-stack testing framework that includes support for creating and destroying test environments on demand

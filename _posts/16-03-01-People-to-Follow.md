@@ -10,5 +10,4 @@ Es difícil encontrar miembros de la comunidad PHP interesantes y bien informado
 Puedes encontrar una lista abreviada de miembros de la comunidad PHP para empezar en:
 
 * <https://www.ogprogrammer.com/2017/06/28/how-to-get-connected-with-the-php-community/>
-* <https://twitter.com/CalEvans/lists/phpeople>
-* <https://t.me/laravelVe>
+* <https://x.com/CalEvans/lists/phpeople>
