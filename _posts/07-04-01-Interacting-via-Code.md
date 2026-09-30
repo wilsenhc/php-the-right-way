@@ -24,7 +24,7 @@ y que va a dar salida a un montón de campos si no pones un límite.
 
 Aunque hay muchas otras soluciones para hacer esto - dependiendo de si prefieres [POO](/#programación-orientada-a-objetos) o [programación funcional](/#programación-funcional) - debe haber algún elemento de separación.
 
-Considere el paso más básico:
+Considera el paso más básico:
 
 {% highlight php %}
 <?php

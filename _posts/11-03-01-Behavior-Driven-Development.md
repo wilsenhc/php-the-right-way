@@ -11,11 +11,11 @@ en el comportamiento técnico del código, mientras que StoryBDD se centra en lo
 o de las características. PHP tiene frameworks para ambos tipos de BDD.
 
 Con StoryBDD, se escriben historias legibles que describen el comportamiento de la aplicación. Estas historias se pueden ejecutar
-como pruebas reales contra su aplicación. El framework utilizado en aplicaciones PHP para StoryBDD es [Behat], que está inspirado
+como pruebas reales contra tu aplicación. El framework utilizado en aplicaciones PHP para StoryBDD es [Behat], que está inspirado
 en el proyecto [Cucumber] de Ruby e implementa el DSL Gherkin para describir el comportamiento de las características.
 
 Con SpecBDD, se escriben especificaciones que describen cómo debe comportarse el código real. En lugar de probar una función o método,
-usted está describiendo cómo esa función o método debe comportarse. PHP ofrece el framework [PHPSpec] para este propósito.
+estás describiendo cómo esa función o método debe comportarse. PHP ofrece el framework [PHPSpec] para este propósito.
 Este framework está inspirado en el [proyecto RSpec][Rspec] para Ruby.
 
 ### Enlaces de BDD

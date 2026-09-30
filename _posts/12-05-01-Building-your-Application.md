@@ -1,10 +1,10 @@
 ---
-title:   Construir y Desplegar su Aplicación
+title:   Construir y Desplegar tu Aplicación
 isChild: true
 anchor:  construir_y_desplegar_su_aplicacion
 ---
 
-## Construir y Desplegar su Aplicación {#construir_y_desplegar_su_aplicacion_title}
+## Construir y Desplegar tu Aplicación {#construir_y_desplegar_su_aplicacion_title}
 
 Si te encuentras haciendo cambios manuales en el esquema de la base de datos o ejecutando tus pruebas manualmente antes
 de actualizar tus archivos (manualmente), ¡piénsalo dos veces! Con cada tarea manual adicional necesaria para desplegar

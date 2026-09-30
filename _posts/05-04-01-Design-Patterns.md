@@ -12,11 +12,11 @@ gestión del código y permite que otros desarrolladores comprendan rápidamente
 
 Si se utilizan un marco de trabajo (framework) entonces la mayor parte del código de nivel superior y la
 estructura del proyecto se basarán en ese marco de trabajo, por lo que muchas de las decisiones sobre patrones ya se han tomado
-por usted. Pero aún depende de usted elegir los mejores patrones para seguir en el código que desarrolla sobre el marco de trabajo.
-Si, por otro lado, no está utilizando un marco de trabajo para crear su aplicación, entonces debe encontrar los patrones que mejor
+por ti. Pero aún depende de ti elegir los mejores patrones para seguir en el código que desarrollas sobre el marco de trabajo.
+Si, por otro lado, no estás utilizando un marco de trabajo para crear tu aplicación, entonces debes encontrar los patrones que mejor
 se adapten al tipo y tamaño de la aplicación que está creando.
 
-Puede obtener más información sobre los patrones de diseño PHP y ver ejemplos prácticos en:
+Puedes obtener más información sobre los patrones de diseño PHP y ver ejemplos prácticos en:
 
 * <https://refactoring.guru/es/design-patterns/php>
 * [https://designpatternsphp.readthedocs.io/](https://designpatternsphp.readthedocs.io/es/latest/) ([PDF download](https://www.computer-pdf.com/web-programming/php/924-tutorial-designpatternsphp-documentation.html))

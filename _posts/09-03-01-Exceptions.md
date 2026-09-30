@@ -21,7 +21,7 @@ el método de error para esta clase, en lugar de que se te haga extremadamente o
 Otro problema es cuando las clases lanzan automáticamente un error en la pantalla y terminan el proceso.
 Cuando haces esto, detienes a otro desarrollador de poder manejar dinámicamente ese error.
 Las excepciones deben lanzarse para hacer que un desarrollador sea consciente de un error;
-luego puede elegir cómo manejarlo. Por ejemplo:
+luego puedes elegir cómo manejarlo. Por ejemplo:
 
 {% highlight php %}
 <?php

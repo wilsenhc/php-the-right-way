@@ -13,7 +13,7 @@ estas colisionan y causan problemas.
 Los _espacios de nombres_ (Namespaces) resuelven este problema. Como se describe en el manual de referencia de PHP, los espacios de nombres pueden compararse con los directorios del sistema operativo que _espacian_ o _separan_ los archivos; dos archivos con el mismo nombre pueden coexistir en directorios separados.
 Del mismo modo, dos clases PHP con el mismo nombre pueden coexistir en espacios de nombres PHP separados. Así de simple.
 
-Es importante que asigne un espacio de nombres a su código para que pueda ser utilizado por otros desarrolladores
+Es importante que asignes un espacio de nombres a tu código para que pueda ser utilizado por otros desarrolladores
 sin temor a colisionar con otras bibliotecas.
 
 Una forma recomendada de utilizar los espacios de nombres es la descrita en [PSR-4][psr4], cuyo objetivo es proporcionar

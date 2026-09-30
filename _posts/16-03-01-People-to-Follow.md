@@ -11,3 +11,4 @@ Puedes encontrar una lista abreviada de miembros de la comunidad PHP para empeza
 
 * <https://www.ogprogrammer.com/2017/06/28/how-to-get-connected-with-the-php-community/>
 * <https://x.com/CalEvans/lists/phpeople>
+* <https://t.me/laravelVe>

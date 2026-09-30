@@ -24,13 +24,13 @@ Es muy importante que todo desarrollador PHP aprenda [los fundamentos de la segu
    * [Ataques con texto cifrado elegido][7].
    * [Fugas de información por canales laterales][8].
 
-Hay gente mala lista y dispuesta a explotar su aplicación web. Es importante que tome las precauciones necesarias
-para reforzar la seguridad de su aplicación web. Por suerte, la buena gente de [The Open Web Application Security Project][1] (OWASP)
+Hay gente mala lista y dispuesta a explotar tu aplicación web. Es importante que tomes las precauciones necesarias
+para reforzar la seguridad de tu aplicación web. Por suerte, la buena gente de [The Open Web Application Security Project][1] (OWASP)
 ha recopilado una lista exhaustiva de problemas de seguridad conocidos y métodos para protegerse contra ellos. Se trata de una lectura
 obligatoria para los desarrolladores preocupados por la seguridad. [Survive The Deep End: PHP Security][3] de Padraic Brady es también
 otra buena guía de seguridad de aplicaciones web para PHP.
 
-* [Lea la Guía de seguridad de OWASP][2]
+* [Lee la Guía de seguridad de OWASP][2]
 
 
 [1]: https://www.owasp.org/

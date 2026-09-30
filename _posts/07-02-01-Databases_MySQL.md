@@ -21,7 +21,7 @@ Incluso si aún no está utilizando PHP 7.x o posterior, no considerar esta actu
 dificultades cuando se produzca la actualización de PHP. La mejor opción es reemplazar el uso de mysql por [mysqli] o [PDO] en tus
 aplicaciones dentro de tus propios calendarios de desarrollo para que no te veas apurado más adelante.
 
-**Si está actualizando de [mysql] a [mysqli], tenga cuidado con las guías de actualización perezosas que sugieren que simplemente puede encontrar y reemplazar `mysql_*` con `mysqli_*`. No sólo es una simplificación excesiva, sino que pierde las ventajas que mysqli proporciona, como la vinculación de parámetros, que también se ofrece en [PDO][pdo].**
+**Si estás actualizando de [mysql] a [mysqli], ten cuidado con las guías de actualización perezosas que sugieren que simplemente puedes encontrar y reemplazar `mysql_*` con `mysqli_*`. No sólo es una simplificación excesiva, sino que pierde las ventajas que mysqli proporciona, como la vinculación de parámetros, que también se ofrece en [PDO][pdo].**
 
 * [Sentencias Preparadas de MySQLi][mysqli_prepared_statements]
 * [PHP: Cómo elegir una API para MySQL][mysql_api]

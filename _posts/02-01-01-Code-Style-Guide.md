@@ -17,7 +17,7 @@ phpBB, AWS SDK, FuelPHP, Lithium, etc. adoptan. Puedes utilizarlas para tus prop
 
 Lo ideal sería escribir código PHP que se adhiera a un estándar conocido. Esto podría ser cualquier combinación de PSRs, o uno
 de los estándares de codificación hechos por PEAR o Zend. Esto significa que otros desarrolladores pueden leer y trabajar
-fácilmente con su código, y las aplicaciones que implementan los componentes pueden tener consistencia incluso cuando se trabaja con mucho código de terceros.
+fácilmente con tu código, y las aplicaciones que implementan los componentes pueden tener consistencia incluso cuando se trabaja con mucho código de terceros.
 
 * [Leer más sobre PSR-1][psr1]
 * [Leer más sobre PSR-12][psr12]
@@ -29,10 +29,10 @@ fácilmente con su código, y las aplicaciones que implementan los componentes p
 Puedes usar [PHP_CodeSniffer][phpcs] para comprobar el código contra cualquiera de estas recomendaciones, y plugins para editores
 de texto como [Sublime Text][st-cs] para recibir feedback en tiempo real.
 
-Puede corregir la estructura del código automáticamente utilizando una de las siguientes herramientas:
+Puedes corregir la estructura del código automáticamente utilizando una de las siguientes herramientas:
 
 - Uno es el [PHP Coding Standards Fixer][phpcsfixer] que tiene una base de código muy bien probada.
-- También puede usar la herramienta [PHP Code Beautifier and Fixer][phpcbf] que se incluye con PHP_CodeSniffer para ajustar su código de forma adecuada.
+- También puedes usar la herramienta [PHP Code Beautifier and Fixer][phpcbf] que se incluye con PHP_CodeSniffer para ajustar tu código de forma adecuada.
 
 Y puedes ejecutar phpcs manualmente desde el shell:
 
@@ -43,7 +43,7 @@ También puede ser útil incluir el comando `phpcs` en un git pre-commit hook co
 De este modo, el código que contenga errores contra la norma elegida no podrá entrar en el repositorio hasta que los
 errores hayan sido corregidos.
 
-Si tiene PHP_CodeSniffer, puede arreglar los problemas de estructura del código reportados por esta herramienta automáticamente,
+Si tienes PHP_CodeSniffer, puedes arreglar los problemas de estructura del código reportados por esta herramienta automáticamente,
 con [PHP Code Beautifier and Fixer][phpcbf].
 
     phpcbf -w --standard=PSR1 file.php

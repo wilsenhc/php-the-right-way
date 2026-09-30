@@ -10,15 +10,15 @@ macOS 12 (Monterey) y posteriores no vienen preempaquetados con PHP. Las version
 
 ### Instalar PHP vía Homebrew
 
-[Homebrew] is a package manager for macOS that helps you easily install PHP and various extensions. The Homebrew core repository provides "formulae" for PHP 8.1, 8.2, 8.3, 8.4 and 8.5. Install the latest version with this command:
+[Homebrew] es un gestor de paquetes para macOS que te ayuda a instalar fácilmente PHP y varias extensiones. El repositorio central de Homebrew proporciona "fórmulas" para PHP 8.1, 8.2, 8.3, 8.4 y 8.5. Instala la última versión con este comando:
 
 ```
 brew install php
 ```
 
-Puede cambiar entre las versiones de PHP de Homebrew modificando su variable `PATH`. Alternativamente, puede usar [brew-php-switcher][brew-php-switcher] para cambiar de versión de PHP automáticamente.
+Puedes cambiar entre las versiones de PHP de Homebrew modificando tu variable `PATH`. Alternativamente, puedes usar [brew-php-switcher][brew-php-switcher] para cambiar de versión de PHP automáticamente.
 
-También puede cambiar manualmente entre versiones de PHP desvinculando y vinculando la versión deseada:
+También puedes cambiar manualmente entre versiones de PHP desvinculando y vinculando la versión deseada:
 
 ```
 brew unlink php
@@ -38,14 +38,14 @@ actualizar software de código abierto basado en línea de comandos, X11 o Aqua 
 MacPorts soporta binarios pre-compilados, por lo que no necesitas recompilar cada dependencia desde los archivos tarball fuente,
 esto te salva la vida si no tienes ningún paquete instalado en tu sistema.
 
-At this point, you can install `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74`, `php80`, `php81`, `php82`, `php83`, or `php84` using the `port install` command, for example:
+En la actualidad, puedes instalar `php54`, `php55`, `php56`, `php70`, `php71`, `php72`, `php73`, `php74`, `php80`, `php81`, `php82`, `php83` o `php84` utilizando el comando `port install`, por ejemplo:
 
 ```
     sudo port install php74
     sudo port install php83
 ```
 
-And you can run `select` command to switch your active PHP:
+Y puedes ejecutar el comando `select` para cambiar tu PHP activo:
 
 ```
     sudo port select --set php php83
@@ -54,7 +54,7 @@ And you can run `select` command to switch your active PHP:
 ### Instalar PHP vía phpbrew
 
 [phpbrew] es una herramienta para instalar y gestionar múltiples versiones de PHP. Esto puede ser realmente útil si dos
-aplicaciones/proyectos requieren diferentes versiones de PHP, y no está utilizando máquinas virtuales.
+aplicaciones/proyectos requieren diferentes versiones de PHP, y no estás utilizando máquinas virtuales.
 
 ### Instalar PHP vía el instalador de binarios Liip
 
@@ -63,14 +63,14 @@ No sobrescribe los binarios PHP instalados por Apple, sino que instala todo en u
 
 ### Compilar desde el código fuente
 
-Otra opción que le da control sobre la versión de PHP que instala, es [compilarlo usted mismo][mac-compile].
-En ese caso asegúrese de tener instalado [Xcode][xcode-gcc-substitution] o el sustituto de Apple
+Otra opción que te da control sobre la versión de PHP que instalas, es [compilarlo tú mismo][mac-compile].
+En ese caso asegúrate de tener instalado [Xcode][xcode-gcc-substitution] o el sustituto de Apple
 ["Command Line Tools for XCode"] descargable desde el Centro de Desarrolladores de Apple.
 
 ### Instaladores Todo en Uno
 
 Las soluciones listadas arriba se encargan principalmente del propio PHP, y no suministran cosas como [Apache][apache], [Nginx][nginx] o un servidor SQL.
-Las soluciones "todo en uno" como [MAMP][mamp-downloads] y [XAMPP][xampp] instalarán estas otras partes del software por usted y las unirán todas,
+Las soluciones "todo en uno" como [MAMP][mamp-downloads] y [XAMPP][xampp] instalarán estas otras partes del software por ti y las unirán todas,
 pero la facilidad de configuración tiene como contrapartida la falta de flexibilidad.
 
 [Homebrew]: https://brew.sh/

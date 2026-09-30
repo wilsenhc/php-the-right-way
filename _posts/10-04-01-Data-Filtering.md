@@ -11,7 +11,7 @@ de usarla en el código. Las funciones `filter_var()` y `filter_input()` pueden 
 (por ejemplo, direcciones de correo electrónico).
 
 La entrada ajena puede ser cualquier cosa: datos de formulario `$_GET` y `$_POST`, algunos valores en el superglobal `$_SERVER`,
-y el cuerpo de la petición HTTP a través de `fopen('php://input', 'r')`. Recuerde, la entrada de datos externos
+y el cuerpo de la petición HTTP a través de `fopen('php://input', 'r')`. Recuerda, la entrada de datos externos
 no se limita a los datos del formulario enviados por el usuario. Los archivos cargados y descargados, los valores de sesión,
 los datos de cookies y los datos de servicios web de terceros también son entradas de datos externos.
 
@@ -20,13 +20,13 @@ Cada vez que proceses, des salida, concatenes o incluyas datos en tu código, pr
 y si son de confianza.
 
 Los datos pueden _filtrarse_ de forma diferente en función de su finalidad. Por ejemplo, cuando una entrada ajena no filtrada
-se pasa a la salida de una página HTML, ¡puede ejecutar HTML y JavaScript en su sitio! Esto se conoce como Cross-Site Scripting (XSS)
+se pasa a la salida de una página HTML, ¡puede ejecutar HTML y JavaScript en tu sitio! Esto se conoce como Cross-Site Scripting (XSS)
 y puede ser un ataque muy peligroso. Una forma de evitar XSS es desinfectar todos los datos generados por el usuario antes de enviarlos
 a la página eliminando las etiquetas HTML con la función `strip_tags()` o escapando caracteres con significado especial
 en sus respectivas entidades HTML con las funciones `htmlentities()` o `htmlspecialchars()`.
 
 Otro ejemplo es pasar opciones para ser ejecutadas en la línea de comandos. Esto puede ser extremadamente peligroso (y suele ser una mala idea),
-pero puede utilizar la función integrada `escapeshellarg()` para desinfectar los argumentos del comando ejecutado.
+pero puedes utilizar la función integrada `escapeshellarg()` para desinfectar los argumentos del comando ejecutado.
 
 Un último ejemplo es aceptar una entrada extraña para determinar un fichero a cargar del sistema de ficheros. Esto puede
 ser explotado cambiando el nombre del archivo a una ruta de archivo. Es necesario eliminar `"/"`, `"../"`,
@@ -42,7 +42,7 @@ ser explotado cambiando el nombre del archivo a una ruta de archivo. Es necesari
 La sanitización elimina (o escapa) caracteres ilegales o inseguros de los datos de entrada ajenos.
 
 Por ejemplo, debe desinfectar los datos de entrada ajenos antes de incluirla en HTML o insertarla en una consulta SQL sin procesar.
-Cuando use parámetros vinculados con [PDO](#bases_de_datos), se limpiarán los datos de entrada por usted.
+Cuando uses parámetros vinculados con [PDO](#bases_de_datos), se limpiarán los datos de entrada por ti.
 
 A veces es necesario permitir algunas etiquetas HTML seguras en los datos de entrada al incluirla en la página HTML.
 Esto es muy difícil de hacer y muchos lo evitan usando otros formatos más restringidos como Markdown o BBCode, aunque para ello

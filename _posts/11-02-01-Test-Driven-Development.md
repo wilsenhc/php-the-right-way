@@ -14,14 +14,14 @@ De [Wikipedia](https://wikipedia.org/wiki/Test-driven_development):
 > por último, refactoriza el nuevo código para que cumpla unos estándares aceptables. Kent Beck, a quien se atribuye haber
 > desarrollado o "redescubierto" la técnica, declaró en 2003 que el TDD fomenta los diseños sencillos e inspira confianza.
 
-Hay varios tipos diferentes de pruebas que puede realizar para su aplicación:
+Hay varios tipos diferentes de pruebas que puedes realizar para tu aplicación:
 
 ### Pruebas Unitarios
 
 Las pruebas unitarias son un enfoque de programación para garantizar que las funciones, clases y métodos funcionan como se espera,
 desde el momento en que se construyen hasta el final del ciclo de desarrollo. Comprobando los valores que entran y salen de varias
 funciones y métodos, puedes asegurarte de que la lógica interna funciona correctamente. Mediante el uso de la inyección de dependencias
-y la creación de clases y stubs "simulados", puede comprobar que las dependencias se utilizan correctamente para mejorar aún más la cobertura de las pruebas.
+y la creación de clases y stubs "simulados", puedes comprobar que las dependencias se utilizan correctamente para mejorar aún más la cobertura de las pruebas.
 
 Cuando creas una clase o función deberías crear una prueba unitaria para cada comportamiento que deba tener. A un nivel muy básico
 deberías asegurarte de que da error si le envías argumentos erróneos y asegurarte de que funciona si le envías argumentos válidos.
@@ -64,8 +64,8 @@ Estas herramientas suelen funcionar utilizando datos reales y simulando usuarios
 
 #### Herramientas de Pruebas Funcionales
 
-* [Codeception](https://codeception.com/) is a full-stack testing framework that includes acceptance testing tools
+* [Codeception](https://codeception.com/) es un marco de pruebas de pila completa que incluye herramientas de pruebas de aceptación
 * [Cypress](https://www.cypress.io/)
 * [Mink](https://mink.behat.org/)
 * [Selenium](https://www.selenium.dev/)
-* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) is a full-stack testing framework that includes support for creating and destroying test environments on demand
+* [Storyplayer](https://github.com/MeltwaterArchive/storyplayer) es un marco de pruebas completo que permite crear y destruir entornos de prueba a petición del usuario.

@@ -6,14 +6,14 @@ anchor:  reporte_de_errores
 
 ## Reporte de Errores {#reporte_de_errores_title}
 
-El registro de errores puede ser útil para encontrar los puntos problemáticos en su aplicación, pero también puede exponer
-información sobre la estructura de su aplicación al mundo exterior. Para proteger eficazmente su aplicación de los problemas
+El registro de errores puede ser útil para encontrar los puntos problemáticos en tu aplicación, pero también puede exponer
+información sobre la estructura de tu aplicación al mundo exterior. Para proteger eficazmente tu aplicación de los problemas
 que podrían ser causados por la salida de estos mensajes, es necesario configurar el servidor de manera
 diferente en el desarrollo frente a la producción (en vivo).
 
 ### Desarrollo
 
-Para mostrar todos los errores posibles durante el **desarrollo**, configure los siguientes parámetros en su `php.ini`:
+Para mostrar todos los errores posibles durante el **desarrollo**, configura los siguientes parámetros en tu `php.ini`:
 
 {% highlight ini %}
 display_errors = On
@@ -38,7 +38,7 @@ significa que debe utilizar `-1` o `E_ALL | E_STRICT`.
 
 ### Producción
 
-Para ocultar los errores en su entorno de **producción**, configure su `php.ini` así:
+Para ocultar los errores en tu entorno de **producción**, configura tu `php.ini` así:
 
 {% highlight ini %}
 display_errors = Off
@@ -48,7 +48,7 @@ log_errors = On
 {% endhighlight %}
 
 Con esta configuración en producción, los errores seguirán registrándose en los registros de errores del servidor web,
-pero no se mostrarán al usuario. Para más información sobre estos ajustes, consulte el manual de PHP:
+pero no se mostrarán al usuario. Para más información sobre estos ajustes, consulta el manual de PHP:
 
 * [error_reporting](https://www.php.net/errorfunc.configuration#ini.error-reporting)
 * [display_errors](https://www.php.net/errorfunc.configuration#ini.display-errors)

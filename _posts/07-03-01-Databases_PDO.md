@@ -7,7 +7,7 @@ anchor:  extension_pdo
 ## Extensión PDO {#extension_pdo_title}
 
 [PDO] es una librería de abstracción de conexión a bases de datos &mdash; incorporada en PHP desde 5.1.0 &mdash; que proporciona
-una interfaz común común para hablar con muchas bases de datos diferentes. Por ejemplo, puede utilizar código básicamente idéntico
+una interfaz común común para hablar con muchas bases de datos diferentes. Por ejemplo, puedes utilizar código básicamente idéntico
 para interactuar con MySQL o SQLite:
 
 {% highlight php %}
@@ -58,7 +58,7 @@ $stmt->execute();
 Este código es correcto. Utiliza un parámetro vinculado en una sentencia PDO. Esto escapa el ID de entrada externo
 antes de que sea introducido en la base de datos previniendo potenciales ataques de inyección SQL.
 
-Para escrituras, como INSERT o UPDATE, es especialmente crítico [filtrar sus datos](#filtrado_de_datos) primero y sanearlos para otras cosas (eliminación de etiquetas HTML, JavaScript, etc).  PDO sólo lo desinfectará para SQL, no para su aplicación.
+Para escrituras, como INSERT o UPDATE, es especialmente crítico [filtrar tus datos](#filtrado_de_datos) primero y sanearlos para otras cosas (eliminación de etiquetas HTML, JavaScript, etc).  PDO sólo lo desinfectará para SQL, no para tu aplicación.
 
 * [Más información sobre PDO][pdo]
 

@@ -18,7 +18,7 @@ y se han explicado con más detalle en la sección [Gestión de dependencias][De
 También existen frameworks basados en componentes y proveedores de componentes que no ofrecen ningún tipo de framework.
 Estos proyectos proporcionan otra fuente de paquetes que idealmente tienen poca o ninguna dependencia de otros paquetes, o frameworks específicos.
 
-Por ejemplo, puede utilizar el [Paquete de Validación FuelPHP][FuelPHP Validation package], sin necesidad de utilizar el propio framework FuelPHP.
+Por ejemplo, puedes utilizar el [Paquete de Validación FuelPHP][FuelPHP Validation package], sin necesidad de utilizar el propio framework FuelPHP.
 
 * [Aura]
 * Componentes CakePHP

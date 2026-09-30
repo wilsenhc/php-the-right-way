@@ -18,7 +18,7 @@ La forma más segura de descargar Composer es [siguiendo las instrucciones ofici
 Esto verificará que el instalador no está corrupto o manipulado.
 El instalador instala un binario `composer.phar` en su _directorio de trabajo actual_.
 
-Recomendamos instalar Composer *globalmente* (por ejemplo, una única copia en `/usr/local/bin`). Para ello, ejecute este comando a continuación:
+Recomendamos instalar Composer *globalmente* (por ejemplo, una única copia en `/usr/local/bin`). Para ello, ejecuta este comando a continuación:
 
 {% highlight console %}
 mv composer.phar /usr/local/bin/composer
@@ -43,15 +43,15 @@ tienes un archivo `composer.json`, se creará uno. Aquí tienes un ejemplo que a
 composer require twig/twig:^2.0
 {% endhighlight %}
 
-Como alternativa, el comando `composer init` le guiará a través de la creación de un archivo completo `composer.json` para su proyecto.
-De cualquier manera, una vez que haya creado su archivo `composer.json` puede decirle a Composer que descargue e instale sus dependencias en el directorio `vendor/`.
-Esto también se aplica a los proyectos que ha descargado que ya proporcionan un archivo `composer.json`:
+Como alternativa, el comando `composer init` te guiará a través de la creación de un archivo completo `composer.json` para tu proyecto.
+De cualquier manera, una vez que hayas creado tu archivo `composer.json` puedes decirle a Composer que descargue e instale tus dependencias en el directorio `vendor/`.
+Esto también se aplica a los proyectos que has descargado que ya proporcionan un archivo `composer.json`:
 
 {% highlight console %}
 composer install
 {% endhighlight %}
 
-A continuación, añada esta línea al archivo PHP principal de su aplicación; esto le dirá a PHP que utilice el autocargador (del Inglés "autoloader") de Composer para las dependencias de su proyecto.
+A continuación, añade esta línea al archivo PHP principal de tu aplicación; esto le dirá a PHP que utilice el autocargador (del Inglés "autoloader") de Composer para las dependencias de tu proyecto.
 
 {% highlight php %}
 <?php
@@ -63,20 +63,20 @@ Ahora puedes utilizar las dependencias de tu proyecto y se cargarán automática
 ### Actualizar las dependencias
 
 Composer crea un archivo llamado `composer.lock` que almacena la versión exacta de cada paquete que descargó
-cuando ejecutó por primera vez `composer install`. Si comparte su proyecto con otros,
-asegúrese de que el archivo `composer.lock` esté incluido, de modo que cuando ejecuten `composer install` obtengan
-las mismas versiones que usted.  Para actualizar sus dependencias, ejecute `composer update`. No utilice
+cuando ejecutó por primera vez `composer install`. Si compartes tu proyecto con otros,
+asegúrate de que el archivo `composer.lock` esté incluido, de modo que cuando ejecuten `composer install` obtengan
+las mismas versiones que tú.  Para actualizar tus dependencias, ejecuta `composer update`. No utilices
 `composer update` al desplegar, sólo `composer install`,
 de lo contrario puede terminar con diferentes versiones de paquetes en producción.
 
 Ts muy útil cuando se definen los requisitos de versión de forma flexible. Por ejemplo, un requisito de versión de `~1.8` significa
-"cualquier cosa más nueva que `1.8.0`, pero menos que `2.0.x-dev`". También puede utilizar el comodín `*` como en `1.8.*`.
+"cualquier cosa más nueva que `1.8.0`, pero menos que `2.0.x-dev`". También puedes utilizar el comodín `*` como en `1.8.*`.
 Ahora el comando `composer update` de Composer actualizará todas tus dependencias a la versión más reciente que se ajuste a las restricciones que definas.
 
 ### Notificaciones de Actualización
 
-Para recibir notificaciones sobre el lanzamiento de nuevas versiones puede suscribirse a [libraries.io], un servicio web
-que puede supervisar las dependencias y enviarle alertas sobre las actualizaciones.
+Para recibir notificaciones sobre el lanzamiento de nuevas versiones puedes suscribirte a [libraries.io], un servicio web
+que puede supervisar las dependencias y enviarte alertas sobre las actualizaciones.
 
 ### Comprobar la seguridad de las dependencias
 
@@ -95,7 +95,7 @@ composer global require phpunit/phpunit
 {% endhighlight %}
 
 Esto creará una carpeta `~/.composer` donde residen tus dependencias globales. Para que los binarios de los paquetes instalados,
-añada la carpeta `~/.composer/vendor/bin` a la variable `$PATH`.
+añade la carpeta `~/.composer/vendor/bin` a la variable `$PATH`.
 
 * [Más información sobre Composer][Learn about Composer]
 

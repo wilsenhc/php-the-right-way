@@ -20,7 +20,7 @@ HTML, pasando por SQL hasta PHP. Nos esforzamos por hacer un breve resumen prác
 Las operaciones básicas con cadenas, como la concatenación de dos cadenas o la asignación de cadenas a variables,
 no necesitan nada especial de UTF-8. Sin embargo, la mayoría de las funciones para el manejo de cadenas como
 `strpos()` o `strlen()`, necesitan consideración especial. A menudo, estas funciones tienen su contraparte con
-funciones `mb_*` como por ejemplo: `mb_strpos()` o `mb_strlen()`. Estas funciones `mb_*` están disponibles para usted
+funciones `mb_*` como por ejemplo: `mb_strpos()` o `mb_strlen()`. Estas funciones `mb_*` están disponibles para ti
 vía la extensión para el manejo de [Cadenas de Caracteres Cadenas Multibyte](https://php.net/manual/es/book.mbstring.php),
 y están diseñadas específicamente para operar con cadenas Unicode.
 
@@ -34,18 +34,18 @@ cadena Unicode podría quedar ilegible durante procesamientos posteriores.
 No todas las funciones de cadena tienen una contraparte `mb_*`. Si no existe alguna para lo que se quiere hacer, entonces
 te quedaste sin suerte.
 
-Se Debe utilizar la función `mb_internal_encoding()` al inicio de cualquier script PHP que escriba (o al inicio de su
-script de inclusión global), y la función `mb_http_output()` justo después, si su script genera salidas hacia un navegador.
+Se Debe utilizar la función `mb_internal_encoding()` al inicio de cualquier script PHP que escribas (o al inicio de tu
+script de inclusión global), y la función `mb_http_output()` justo después, si tu script genera salidas hacia un navegador.
 Definiendo explícitamente la codificación de sus cadenas en cada script le ahorrará muchos dolores de cabeza en el futuro.
 
 Adicionalmente, muchas funciones de PHP que operan sobre cadenas tienen un parámetro opcional que le permite especificar
 la codificación de caracteres. Siempre se debe indicar explícitamente UTF-8 cuando se les da la opción. Por ejemplo,
 `htmlentities()` tiene una opción para la codificación de caracteres, y siempre se debe especificar UTF-8 si se trata con este
-tipo de cadenas. Tenga en cuenta que a partir de PHP 5.4.0, UTF-8 es la codificación por defecto para `htmlentities()` y
+tipo de cadenas. Ten en cuenta que a partir de PHP 5.4.0, UTF-8 es la codificación por defecto para `htmlentities()` y
 `htmlspecialchars()`.
 
-Por último, si usted está construyendo una aplicación distribuida y no puede estar seguro de que la extensión `mbstring` estará
-habilitada, considere el uso del paquete de Composer [symfony/polyfill-mbstring](https://packagist.org/packages/symfony/polyfill-mbstring).
+Por último, si estás construyendo una aplicación distribuida y no puedes estar seguro de que la extensión `mbstring` estará
+habilitada, considera el uso del paquete de Composer [symfony/polyfill-mbstring](https://packagist.org/packages/symfony/polyfill-mbstring).
 Este usará `mbstring` si está disponible y recurrirá a funciones que no sean UTF-8 si no lo está.
 
 [Multibyte String Extension]: https://www.php.net/es/book.mbstring
@@ -57,14 +57,14 @@ Si su script accede a MySQL, existe la posibilidad de que sus cadenas se almacen
 si sigue todas las precauciones anteriores.
 
 Para asegurarse de que sus cadenas van de PHP a MySQL como UTF-8, establezca el juego de caracteres y el cotejamiento (collation) a `utf8mb4`
-para su base de datos y todas sus tablas, utilice también `utf8mb4` en la cadena de conexión PDO. Vea el código de ejemplo a continuación.
+para tu base de datos y todas tus tablas, utiliza también `utf8mb4` en la cadena de conexión PDO. Ve el código de ejemplo a continuación.
 Esto es de _importancia crítica_.
 
-Tenga en cuenta de que debe usar el juego de caracteres `utf8mb4` y no `utf8` para un soporte completo UTF-8. Lea más adelante para saber por qué.
+Ten en cuenta que debes usar el juego de caracteres `utf8mb4` y no `utf8` para un soporte completo UTF-8. Lee más adelante para saber por qué.
 
 ### UTF-8 a nivel del Navegador
 
-Utilice la función `mb_http_output()` para garantizar que su script PHP genera una salida con cadenas UTF-8 hacia su navegador.
+Utiliza la función `mb_http_output()` para garantizar que tu script PHP genera una salida con cadenas UTF-8 hacia tu navegador.
 
 Luego, la respuesta HTTP deberá indicarle al navegador que esta página debe considerarse como UTF-8. Hoy en día, es común configurar el conjunto de caracteres en el encabezado de respuesta HTTP de esta manera:
 
@@ -81,7 +81,7 @@ El enfoque histórico para hacerlo era incluir la [charset `<meta>` tag](http://
 mb_internal_encoding('UTF-8');
 $utf_set = ini_set('default_charset', 'utf-8');
 if (!$utf_set) {
-    throw new Exception('No se pudo establecer default_charset a utf-8, ¡asegúrese de que esté configurado en su sistema!');
+    throw new Exception('No se pudo establecer default_charset a utf-8, ¡asegúrate de que esté configurado en tu sistema!');
 }
 
 // Indicarle a PHP que se imprimirá  UTF-8 al navegador
@@ -96,8 +96,8 @@ $cadena = 'Êl síla erin lû e-govaned vîn.';
 $cadena = mb_substr($string, 0, 15);
 
 // Conéctese a una base de datos para almacenar la cadena transformada
-// Vea el ejemplo de PDO en este documento para obtener más información
-// Tenga en cuenta el `charset=utf8mb4` en el Nombre del origen de datos (DSN)
+// Ve el ejemplo de PDO en este documento para obtener más información
+// Ten en cuenta el `charset=utf8mb4` en el Nombre del origen de datos (DSN)
 $enlace = new PDO(
     'mysql:host=your-hostname;dbname=your-db;charset=utf8mb4',
     'tu-nombredeusuario',
@@ -109,7 +109,7 @@ $enlace = new PDO(
 );
 
 // Almacenamos nuestra cadena transformada como UTF-8 en nuestra base de datos
-// Su base de datos y sus tablas están en el conjunto de caracteres y la intercalación utf8mb4, ¿verdad?
+// Tu base de datos y tus tablas están en el conjunto de caracteres y la intercalación utf8mb4, ¿verdad?
 
 $handle = $enlace->prepare('insert into ElvishSentences (Id, Body, Priority) values (default, :cadena, :prioridad)');
 $handle->bindParam(':cadena', $cadena, PDO::PARAM_STR);

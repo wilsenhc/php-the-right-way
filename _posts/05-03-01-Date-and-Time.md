@@ -13,8 +13,8 @@ está fuera del alcance de esta breve introducción.
 
 Es posible realizar cálculos con DateTime gracias a la clase DateInterval. DateTime posee métodos como `add()` and `sub()` que
 utilizan DateInterval como argumento. No se debe escribir codigo que espere la misma cantidad de segundo en cada día. Tanto el
-horario de verano (daylight savings time) como las distintas zonas horarias invalidan esa suposición. En vez de eso, utilice
-los intervalos de fechas para hacer sus cálculos. Para calcular la diferencia entre fechas utilice el método `diff()`.
+horario de verano (daylight savings time) como las distintas zonas horarias invalidan esa suposición. En vez de eso, utiliza
+los intervalos de fechas para hacer sus cálculos. Para calcular la diferencia entre fechas utiliza el método `diff()`.
 Este devolverá un `new DateInterval`, el cual puede ser fácilmente impreso en la pantalla.
 
 
@@ -28,8 +28,8 @@ echo 'Fecha inicial: ' . $start->format('Y-m-d') . PHP_EOL;
 
 Es posible realizar calculos con DateTime gracias a la clase DateInterval. DateTime posee metodos como `add()` and `sub()` que
 utilizan DateInterval como argumento. No se debe escribir codigo que espere la misma cantidad de segundo en cada dia. Tanto el
-horario de verano (daylight savings time) como las distintas zonas horarias invalidaran esa suposicion. En vez de eso, utilice
-los intervalos de fechas para hacer sus calculos. Para calcular la diferencia entre fechas utilice el método `diff()`.
+horario de verano (daylight savings time) como las distintas zonas horarias invalidaran esa suposicion. En vez de eso, utiliza
+los intervalos de fechas para hacer sus calculos. Para calcular la diferencia entre fechas utiliza el método `diff()`.
 Este devolverá un `new DateInterval`, el cual puede ser fácilmente impreso en la pantalla.
 
 {% highlight php %}

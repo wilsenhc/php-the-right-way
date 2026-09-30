@@ -29,7 +29,7 @@ idiomas con un total de cuatro, cinco o seis formas, como el esloveno, el irland
 La forma más fácil de internacionalizar aplicaciones PHP es mediante el uso de archivos de array y utilizar dichas cadenas
 de texto en plantillas, como por ejemplo `<h1><?=$TRANS['title_about_page']?></h1>`. Sin embargo, esta forma no se
 recomienda para proyectos serios, ya que plantea algunos problemas de mantenimiento en el camino; algunos pueden aparecer
-al principio, como la pluralización. Por lo tanto, no intente esto si su proyecto contiene más de un par de páginas.
+al principio, como la pluralización. Por lo tanto, no intentes esto si tu proyecto contiene más de un par de páginas.
 
 La forma más clásica y que a menudo se toma como referencia para i18n y l10n es una [herramienta Unix llamada `gettext`][gettext]
 . Data de 1995 y sigue siendo una implementación completa para traducir software. Es bastante fácil de poner en funcionamiento,
@@ -389,7 +389,7 @@ caché de traducción y, en PHP7, rara vez es necesario.
 
 Como prefieren muchas personas, es más fácil usar `_()` en lugar de `gettext()`. Muchas bibliotecas i18n personalizadas
 de frameworks también usan algo similar a `t()` para hacer que el código traducido sea más corto. Sin embargo, esa
-es la única función que tiene un atajo. Es posible que desee agregar en su proyecto algunas otras, como `__()` o `_n()`
+es la única función que tiene un atajo. Es posible que desees agregar en tu proyecto algunas otras, como `__()` o `_n()`
 para `ngettext()`, o tal vez un `_r()` sofisticado que uniría las llamadas `gettext()` y `sprintf()`. Otras bibliotecas, como
 [Gettext de php-gettext][php-gettext] también proporcionan funciones auxiliares como estas.
 
